@@ -12,8 +12,22 @@ from transformers import StoppingCriteria, StoppingCriteriaList
 
 from eval.utils import TokenizedDataset, complete_code
 
-from openai import OpenAI
-client = OpenAI()
+# from openai import OpenAI
+# client = OpenAI()
+
+client = None
+
+def get_openai_client():
+    global client
+    if client is None:
+        from openai import OpenAI
+        import os
+        api_key = os.environ.get("OPENAI_API_KEY")
+        if api_key is None:
+            raise ValueError("OPENAI_API_KEY not set")
+        client = OpenAI(api_key=api_key)
+    return client
+
 
 class EndOfFunctionCriteria(StoppingCriteria):
     """Custom `StoppingCriteria` which checks if all generated functions in the batch are completed."""
@@ -361,7 +375,10 @@ def litellm_generations(
 # %% Gemini Generations
 import os, json
 import google.generativeai as genai
-genai.configure(api_key=os.environ["API_KEY"])
+# genai.configure(api_key=os.environ["API_KEY"])
+if "API_KEY" in os.environ:
+    genai.configure(api_key=os.environ["API_KEY"])
+
 
 def gemini_generations(
     task,

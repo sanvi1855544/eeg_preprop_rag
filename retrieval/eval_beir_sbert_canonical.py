@@ -136,7 +136,7 @@ def main():
             json.dump(avg_eval_results, f)
     else:
         dataset =  args.dataset
-        corpus, queries, qrels = GenericDataLoader(data_folder=os.path.join("datasets", args.dataset)).load(split="test")
+        corpus, queries, qrels = GenericDataLoader(data_folder=os.path.join("retrieval", "datasets", args.dataset)).load(split="test")
         #### Retrieve dense results (format of results is identical to qrels)
         start_time = time()
         results = retriever.retrieve(corpus, queries)

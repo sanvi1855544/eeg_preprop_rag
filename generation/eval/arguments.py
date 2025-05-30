@@ -44,4 +44,8 @@ class EvalArguments:
         default=False, 
         metadata={"help": "Whether to remove the linebreaks from the input prompts."},
     )
+    max_new_tokens: Optional[int] = field(
+        default=256,
+        metadata={"help": "Maximum number of new tokens to generate beyond the prompt length."},
+    )
 

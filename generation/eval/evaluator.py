@@ -156,9 +156,11 @@ class vllmEvaluator(Evaluator):
             'add_linebreak': 'Llama-3' in self.args.model,
             'max_length_input': self.args.max_length_input,
         }
+        print('calling', task.preprocess_all_data, 'with args', pre_kwargs)
         task.preprocess_all_data(**pre_kwargs)
+        print('preprocess finished')
         dataset = task.get_dataset()
-        prompts = [task.get_prompt(ex) for ex in dataset]
+        prompts = [task.get_prompt(ex) for ex in dataset[:5]]
         
         print("Generating..")
         sampling_params = SamplingParams(
@@ -168,6 +170,7 @@ class vllmEvaluator(Evaluator):
             ignore_eos=self.args.ignore_eos,
             n=self.args.n_samples,
         )
+        print('generate with model', self.model)
         outputs = self.model.generate(prompts, sampling_params)
         
         generations = []

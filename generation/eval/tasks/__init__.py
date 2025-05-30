@@ -1,16 +1,10 @@
 import inspect
 from pprint import pprint
 
-from . import (ds1000, humaneval, live_code_bench, mbpp, odex, repoeval, swe_bench)
+from . import (mne)
 
 TASK_REGISTRY = {
-    **ds1000.create_all_tasks(),
-    **humaneval.create_all_tasks(),
-    "lcb": live_code_bench.LCB,
-    "mbpp": mbpp.MBPP,
-    **odex.create_all_tasks(),
-    **repoeval.create_all_tasks(),
-    **swe_bench.create_all_tasks(),
+    **mne.create_all_tasks(),
 }
 
 ALL_TASKS = sorted(list(TASK_REGISTRY))
