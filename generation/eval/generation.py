@@ -10,7 +10,8 @@ from accelerate.utils import set_seed
 from torch.utils.data.dataloader import DataLoader
 from transformers import StoppingCriteria, StoppingCriteriaList
 
-from eval.utils import TokenizedDataset, complete_code
+#from eval.utils import TokenizedDataset, complete_code
+from .utils import TokenizedDataset, complete_code
 
 from openai import OpenAI
 client = OpenAI()

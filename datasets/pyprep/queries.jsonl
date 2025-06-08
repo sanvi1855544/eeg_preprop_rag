@@ -1,0 +1,40 @@
+{"_id": "pyprep_prep_pipeline.py___init___doc", "text": "How do I initialize the PREP class?", "metadata": {}}
+{"_id": "pyprep_prep_pipeline.py_raw_doc", "text": "How can I get a version of the EEG data that includes the non-EEG channels?", "metadata": {}}
+{"_id": "pyprep_prep_pipeline.py_fit_doc", "text": "How do I run the full PREP pipeline on EEG data?", "metadata": {}}
+{"_id": "pyprep_removeTrend.py_removeTrend_doc", "text": "How do I remove slow drifts or trends from EEG data using PyPREP?", "metadata": {}}
+{"_id": "pyprep_removeTrend.py_runline_doc", "text": "How can I perform local linear detrending using the runline method?", "metadata": {}}
+{"_id": "pyprep_reference.py___init___doc", "text": "How do I initialize the referencing class in PyPREP?", "metadata": {}}
+{"_id": "pyprep_reference.py_perform_reference_doc", "text": "How does the perform_reference function estimate the EEG signal mean and handle bad channels?", "metadata": {}}
+{"_id": "pyprep_reference.py_robust_reference_doc", "text": "How does the robust_reference function detect noisy channels and compute the robust reference signal?", "metadata": {}}
+{"_id": "pyprep_reference.py_remove_reference_doc", "text": "How do I remove a reference signal from EEG data using PyPREP?", "metadata": {}}
+{"_id": "pyprep_utils.py__union_doc", "text": "What does the union function in pyprep_utils.py do?", "metadata": {}}
+{"_id": "pyprep_utils.py__set_diff_doc", "text": "How do I find the difference between two sets in PyPREP?", "metadata": {}}
+{"_id": "pyprep_utils.py__mat_round_doc", "text": "How can I round a number like MATLAB does, with .5 always rounding up?", "metadata": {}}
+{"_id": "pyprep_utils.py__mat_quantile_doc", "text": "How do I calculate MATLAB-style quantiles for an array in PyPREP?", "metadata": {}}
+{"_id": "pyprep_utils.py__mat_iqr_doc", "text": "How can I calculate the inter-quartile range (IQR) like MATLAB does?", "metadata": {}}
+{"_id": "pyprep_utils.py__eeglab_create_highpass_doc", "text": "How do I create a high-pass FIR filter that mimics EEGLAB in MATLAB?", "metadata": {}}
+{"_id": "pyprep_utils.py__eeglab_fir_filter_doc", "text": "How do I apply an FIR filter to EEG data using EEGLAB’s method?", "metadata": {}}
+{"_id": "pyprep_utils.py__eeglab_calc_g_doc", "text": "How can I calculate the spherical spline G matrix for EEG interpolation?", "metadata": {}}
+{"_id": "pyprep_utils.py__eeglab_interpolate_doc", "text": "How do I interpolate bad EEG channels using electrode positions in PyPREP?", "metadata": {}}
+{"_id": "pyprep_utils.py__eeglab_interpolate_bads_doc", "text": "How do I interpolate bad channels in an MNE Raw object using EEGLAB's method?", "metadata": {}}
+{"_id": "pyprep_utils.py__get_random_subset_doc", "text": "How do I randomly sample a subset from a list or array without replacement?", "metadata": {}}
+{"_id": "pyprep_utils.py__correlate_arrays_doc", "text": "How can I calculate correlations between two 2D EEG arrays, with optional MATLAB-style behavior?"}
+{"_id": "pyprep_utils.py__filter_design_doc", "text": "How do I create a FIR low-pass filter for EEG data using the frequency sampling method?"}
+{"_id": "pyprep_utils.py__split_list_doc", "text": "How can I split a list into chunks of a specified size in Python?"}
+{"_id": "pyprep_utils.py__verify_free_ram_doc", "text": "How do I check if there is enough free RAM to safely run RANSAC on EEG data?"}
+{"_id": "pyprep_ransac.py_find_bad_by_ransac_doc", "text": "How can I use RANSAC to detect bad EEG channels that aren't predicted well by others?"}
+{"_id": "pyprep_ransac.py__make_interpolation_matrices_doc", "text": "How do I create interpolation matrices from spatial coordinates of EEG channels for RANSAC?"}
+{"_id": "pyprep_ransac.py__ransac_by_window_doc", "text": "How can I compute window-wise RANSAC correlations between EEG channels and their predictions?"}
+{"_id": "pyprep_ransac.py__predict_median_signals_doc", "text": "How do I compute the median RANSAC-predicted signal for a given EEG time window?"}
+{"_id": "pyprep_ransac.py__ransac_by_channel_doc", "text": "How can I compute RANSAC correlations by channel for a chunk of EEG data?"}
+{"_id": "pyprep_ransac.py__predict_median_signals_channelwise_doc", "text": "How do I calculate the median RANSAC-predicted EEG signals for a chunk of channels?"}
+{"_id": "pyprep_find_noisy_channels.py___init___doc", "text": "How do I initialize the NoisyChannels class?", "metadata": {}}
+{"_id": "pyprep_find_noisy_channels.py__get_filtered_data_doc", "text": "How can I apply a [1 Hz - 50 Hz] bandpass filter to the EEG signal?", "metadata": {}}
+{"_id": "pyprep_find_noisy_channels.py_get_bads_doc", "text": "How do I get the names of all EEG channels currently flagged as bad?", "metadata": {}}
+{"_id": "pyprep_find_noisy_channels.py_find_all_bads_doc", "text": "How can I run all the bad channel detection functions, including optional RANSAC?", "metadata": {}}
+{"_id": "pyprep_find_noisy_channels.py_find_bad_by_nan_flat_doc", "text": "How do I detect EEG channels that contain NaN values or have flat signals?", "metadata": {}}
+{"_id": "pyprep_find_noisy_channels.py_find_bad_by_deviation_doc", "text": "How do I identify EEG channels with unusually high or low amplitudes?", "metadata": {}}
+{"_id": "pyprep_find_noisy_channels.py_find_bad_by_hfnoise_doc", "text": "How can I detect EEG channels with high-frequency noise above 50 Hz?", "metadata": {}}
+{"_id": "pyprep_find_noisy_channels.py_find_bad_by_correlation_doc", "text": "How do I find EEG channels that don't correlate well with others or have intermittent dropouts?", "metadata": {}}
+{"_id": "pyprep_find_noisy_channels.py_find_bad_by_SNR_doc", "text": "How can I identify channels with a low signal-to-noise ratio (SNR)?", "metadata": {}}
+{"_id": "pyprep_find_noisy_channels.py_find_bad_by_ransac_doc", "text": "How do I use RANSAC to detect EEG channels that are poorly predicted by other channels?", "metadata": {}}

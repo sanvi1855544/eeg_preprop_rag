@@ -27,6 +27,14 @@ def get_top_docs(results: dict, corpus: dict, task_id: str, topk: int = 10) -> l
     doc_code_snippets = [corpus[code_id] for code_id, score in doc_scores_sorted]
     return doc_code_snippets
 
+def unify_id(id_str):
+    # Helper function to normalize IDs by stripping _doc or _code suffix
+    if id_str.endswith("_doc"):
+        return id_str[:-4]
+    elif id_str.endswith("_code"):
+        return id_str[:-5]
+    else:
+        return id_str
 
 def main():
     if os.path.exists(args.results_file):
@@ -57,6 +65,14 @@ def main():
             ).load(split="test")
             logging.info(f"Instance #{ins_dir}: #{len(corpus)} corpus, #{len(queries)} queries")
 
+            # -----------------------------
+            # MODIFYING HERE FOR QUERY-TO-QUERY RETRIEVAL
+            # Normalize IDs and replace corpus with queries
+            corpus = {unify_id(k): {"title": "", "text": v} for k, v in queries.items()}
+            queries = {unify_id(k): {"title": "", "text": v} for k, v in queries.items()}
+
+            # -----------------------------
+
             start_time = time()
             if len(queries) == 1:
                 queries.update({"dummy": "dummy"})
@@ -64,25 +80,34 @@ def main():
             if "dummy" in queries:
                 queries.pop("dummy")
                 results.pop("dummy")
+
+            # -----------------------------
+            # Remove self matches (query retrieving itself)
+            for qid in results:
+                if qid in results[qid]:
+                    del results[qid][qid]
+            # -----------------------------
+
             end_time = time()
             logging.info("Time taken to retrieve: {:.2f} seconds".format(end_time - start_time))
 
             # get topk retrieved docs
             if args.dataset.startswith("swe-bench"):
-                indices = [i for i,ex in enumerate(swebench) if ex["instance_id"] in queries]
+                indices = [i for i,ex in enumerate(swebench) if unify_id(ex["instance_id"]) in queries]
                 for index in indices:
-                    instance_id = swebench[index]["instance_id"]
+                    instance_id = unify_id(swebench[index]["instance_id"])
                     all_top_docs[index] = get_top_docs(results, corpus, instance_id)
             elif args.dataset.startswith("repoeval"):
                 args.dataset_path = "output/repoeval/datasets/function_level_completion_2k_context_codex.test.clean.jsonl"
                 tasks = [json.loads(line.strip()) for line in open(args.dataset_path, 'r')]
                 prompts, references, docs, metadatas = [], [], [], []
                 for task in tasks:
-                    if task["metadata"]["task_id"] not in queries: continue
+                    task_id = unify_id(task["metadata"]["task_id"])
+                    if task_id not in queries: continue
                     prompts.append(task["prompt"]) # save full prompt
                     references.append(task["metadata"]["ground_truth"])
                     docs.append(get_top_docs(
-                        results=results, corpus=corpus, task_id=task["metadata"]["task_id"],
+                        results=results, corpus=corpus, task_id=task_id,
                     ))
                     metadatas.append(task["metadata"])
                 assert len(prompts) == len(references) == len(docs)
@@ -137,9 +162,22 @@ def main():
     else:
         dataset =  args.dataset
         corpus, queries, qrels = GenericDataLoader(data_folder=os.path.join("datasets", args.dataset)).load(split="test")
-        #### Retrieve dense results (format of results is identical to qrels)
+
+        # -----------------------------
+        # MODIFYING HERE FOR QUERY-TO-QUERY RETRIEVAL
+        corpus = {unify_id(k): v for k, v in queries.items()}
+        queries = {unify_id(k): v for k, v in queries.items()}
+        # -----------------------------
+
         start_time = time()
         results = retriever.retrieve(corpus, queries)
+
+        # -----------------------------
+        for qid in results:
+            if qid in results[qid]:
+                del results[qid][qid]
+        # -----------------------------
+
         end_time = time()
         print("Time taken to retrieve: {:.2f} seconds".format(end_time - start_time))
 
@@ -155,7 +193,7 @@ def main():
                 id_key = "problem_id"
             all_top_docs = []
             for task_id in ds["test"][id_key]:
-                all_top_docs.append(get_top_docs(results, corpus, f"{task_id}_doc"))
+                all_top_docs.append(get_top_docs(results, corpus, unify_id(f"{task_id}_doc")))
             ds["test"] = ds["test"].add_column("docs", all_top_docs)
             ds["test"].to_json(args.results_file)  # this outputs to arrow format and read as .jsonl
         elif args.dataset.startswith("odex"):
@@ -163,7 +201,7 @@ def main():
             ds = load_dataset("neulab/odex", lang)
             all_top_docs = []
             for idx, task_id in enumerate(ds["test"]["task_id"]):
-                all_top_docs.append(get_top_docs(results, corpus, f"{idx}_{task_id}"))
+                all_top_docs.append(get_top_docs(results, corpus, unify_id(f"{idx}_{task_id}_doc")))
             ds["test"] = ds["test"].add_column("docs", all_top_docs)
             ds["test"].to_json(args.results_file)  # this outputs to arrow format and read as .jsonl
         elif args.dataset.startswith("ds1000"):
@@ -177,14 +215,14 @@ def main():
             example_ids = []
             for item in data:
                 example = item.data
-                example_id = f"{example['lib']}_{example['perturbation_origin_id']}"
+                example_id = unify_id(f"{example['lib']}_{example['perturbation_origin_id']}_doc")
                 all_docs.append(get_top_docs(results, corpus, example_id))
                 example_ids.append(example_id)
             assert len(all_docs) == len(
                 example_ids), f"length of all_docs should be {len(example_ids)}, now is {len(all_docs)}"
             with open(args.results_file, "w+") as fout:
                 for idx, all_doc in enumerate(all_docs):
-                    fout.write(json.dumps({"example_id": example_id,
+                    fout.write(json.dumps({"example_id": example_ids[idx],
                                         "docs": all_doc}) + "\n")
         else:
             with open(args.results_file, 'w+') as fw:

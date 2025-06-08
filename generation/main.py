@@ -377,6 +377,7 @@ def main():
                 )
 
             model_kwargs = {
+                #"tensor_parallel_size": 4,##HERE
                 "revision": args.revision,
                 "trust_remote_code": args.trust_remote_code,
                 "token": args.token,

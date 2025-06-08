@@ -117,7 +117,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--dataset", type=str, default="scifact",
                         choices=["humaneval", "mbpp", "apps", "code_search_net", "swe-bench-lite", "livecodebench", "code_search_net_python",
-                                 "odex_en", "odex_es", "odex_ja", "odex_ru", "docprompting_conala", "ds1000_all_completion", "ds1000_all_insertion", "repoeval/function",],
+                                 "odex_en", "odex_es", "odex_ja", "odex_ru", "docprompting_conala", "ds1000_all_completion", "ds1000_all_insertion", "repoeval/function", "pyprep"],
                         help="Dataset to use for evaluation")
     parser.add_argument("--model", type=str, default="text-embedding-3-small", help="Sentence-BERT model to use")
     parser.add_argument("--batch_size", type=int, default=64, help="Sentence-BERT model to use")
@@ -149,7 +149,8 @@ def main():
 
     if args.api_key_fp is not None:
         with open(args.api_key_fp) as f:
-            api_key = f.read()[:-1]
+            #api_key = f.read()[:-1]
+            api_key = f.read().strip()
     elif 'OPENAI_API_KEY' not in os.environ:
         raise ValueError("Please set environmental variable OPENAI_API_KEY to your API key, or pass in --api_key_fp")
     else:
