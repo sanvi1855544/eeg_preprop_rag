@@ -12,9 +12,9 @@
     "eos": "<|endoftext|>",
     "ignore_eos": false,
     "seed": 0,
-    "remove_linebreak": true,
+    "remove_linebreak": false,
     "model_backend": "vllm",
-    "model": "bigcode/starcoder2-7b",
+    "model": "meta-llama/Llama-2-7b-chat-hf",
     "modeltype": "causal",
     "peft_model": null,
     "revision": null,
@@ -28,7 +28,7 @@
     "topk_docs": 0,
     "precision": "bf16",
     "load_in_8bit": false,
-    "load_in_4bit": false,
+    "load_in_4bit": true,
     "left_padding": false,
     "limit": null,
     "limit_start": 0,
@@ -57,6 +57,6 @@
     "repoeval_input_repo_dir": "../retrieval/output/repoeval/repositories/function_level",
     "repoeval_cache_dir": "scripts/repoeval",
     "data_files": null,
-    "tokenizer": "bigcode/starcoder2-7b"
+    "tokenizer": "meta-llama/Llama-2-7b-chat-hf"
   }
 }

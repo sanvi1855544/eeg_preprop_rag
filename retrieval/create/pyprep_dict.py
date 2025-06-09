@@ -32,17 +32,17 @@ def load_retrieval_results_jsonl(path):
     return retrieval_results
 
 def main():
-    retrieval_results = load_retrieval_results_jsonl("output2/retrieval_results.json")
+    retrieval_results = load_retrieval_results_jsonl("output3/retrieval_results.json")
 
-    queries = load_jsonl_to_dict("datasets/pyprep/queries.jsonl", id_key="_id")
-    corpus = load_jsonl_to_dict("datasets/pyprep/corpus.jsonl", id_key="_id")
+    queries = load_jsonl_to_dict("datasets/combined/queries.jsonl", id_key="_id")
+    corpus = load_jsonl_to_dict("datasets/combined/corpus.jsonl", id_key="_id")
 
     prompt_docs = []
     for query_id in queries.keys():
         doc = build_doc_dict(query_id, queries, corpus, retrieval_results, topk=5)
         prompt_docs.append(doc)
 
-    with open("output2/prompt_docs.json", "w") as f:
+    with open("output3/prompt_docs.json", "w") as f:
         json.dump(prompt_docs, f, indent=2)
 
 if __name__ == "__main__":

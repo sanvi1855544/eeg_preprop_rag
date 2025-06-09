@@ -1,0 +1,15 @@
+{"_id": "query_001", "text": "How can I check if a specific EEG channel is marked as bad in PyPREP?", "metadata": {}}
+{"_id": "query_002", "text": "How do I compute the median of a matrix in a MATLAB-compatible way using PyPREP?", "metadata": {}}
+{"_id": "query_003", "text": "How can I calculate the mean of a matrix with behavior similar to MATLAB's mean function?", "metadata": {}}
+{"_id": "query_004", "text": "How do I visualize RANSAC correlation results to assess EEG channel quality?", "metadata": {}}
+{"_id": "query_005", "text": "How do I retrieve a boolean mask of bad EEG channels from the PREP pipeline?", "metadata": {}}
+{"_id": "query_006", "text": "How can I save the cleaned EEG data after running the PREP pipeline?", "metadata": {}}
+{"_id": "query_007", "text": "How do I check if two lists of EEG channels have any overlap?", "metadata": {}}
+{"_id": "query_008", "text": "How do I remove duplicates from a list while preserving the original order in PyPREP?", "metadata": {}}
+{"_id": "query_009", "text": "How do I plot statistical summaries of EEG channels after preprocessing?", "metadata": {}}
+{"_id": "query_010", "text": "How can I extract clean EEG epochs after bad channel rejection?", "metadata": {}}
+{"_id": "query_011", "text": "How do I compute the signal-to-noise ratio (SNR) of EEG signals using PyPREP?", "metadata": {}}
+{"_id": "query_012", "text": "How do I validate input EEG data before running the PREP pipeline?", "metadata": {}}
+{"_id": "query_013", "text": "How can I get a list of EEG channels not marked as bad?", "metadata": {}}
+{"_id": "query_014", "text": "How do I summarize configuration parameters used in a PyPREP run?", "metadata": {}}
+{"_id": "query_015", "text": "How do I run the PyPREP pipeline with custom filtering and reference settings?", "metadata": {}}

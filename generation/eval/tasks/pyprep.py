@@ -1,4 +1,5 @@
 import json
+import os
 from pathlib import Path
 import functools
 from eval.base import Task  # Assuming you're using the DS-1000 task base
@@ -11,7 +12,7 @@ def format_prompt(example):
     return f'"""{example["prompt"]}"""\n\ndef'
 
 class PyprepTask(Task):
-    def __init__(self, dataset_path="datasets/pyprep_dataset", split="test", data_files=None, cache_dir=None, **kwargs):
+    def __init__(self, dataset_path="datasets/combined", split="test", data_files=None, cache_dir=None, **kwargs):
         super().__init__(
             dataset_path=dataset_path,
             dataset_name=None,
@@ -28,7 +29,13 @@ class PyprepTask(Task):
        # with open("outputs2/results_pyprep.json") as f: ##This is wrong
         #    self.similarity_results = json.load(f)
 
-        with open("/p3/home/abaxter/eeg_preprop_rag/datasets/pyprep/corpus.jsonl") as f:
+        '''with open("/p3/home/abaxter/eeg_preprop_rag/datasets/combined/corpus.jsonl") as f:
+            self.corpus = {
+                entry["_id"]: entry["text"]
+                for entry in map(json.loads, f)
+            }'''
+        corpus_file = os.path.join(dataset_path, "corpus.jsonl")
+        with open(corpus_file) as f:
             self.corpus = {
                 entry["_id"]: entry["text"]
                 for entry in map(json.loads, f)
@@ -49,12 +56,11 @@ class PyprepTask(Task):
         top_k = sorted(similarity_scores.items(), key=lambda x: x[1], reverse=True)[:k]
         return [item[0] for item in top_k]'''
 
-
-    def get_prompt(self, doc, return_dict: bool = False, topk: int = 1):
+    def get_prompt(self, doc, return_dict: bool = False, topk: int = 3):
         query_id = doc["_id"]
         prompt = doc["prompt"]
         #sol = doc["canonical_solution"]
-        json_path = "/p3/home/abaxter/eeg_preprop_rag/output2/prompt_docs.json"
+        json_path = "/p3/home/abaxter/eeg_preprop_rag/output3/prompt_docs.json"
 
         # Open and load the JSON content into a Python dict
         with open(json_path, "r", encoding="utf-8") as f:
@@ -70,9 +76,22 @@ class PyprepTask(Task):
         top_docs_text = "\n\n".join(doc["text"] for doc in docs_data[:topk])
 
         # Optionally format a prompt, e.g. add the original question
-        prompt = f"Use the following documentation to answer the question below.\n\nDocumentation:\n{top_docs_text}\n\nQuestion:\n{prompt}\n\nAnswer:"
+        prompt = f"""
+        You are a helpful programming assistant.
 
-        print(prompt) #Could get rid of this
+        Using the documentation below, write the exact code needed to answer the question.
+
+        Documentation:
+        {top_docs_text}
+
+        Question:
+        {prompt}
+
+        Provide only the code as your answer, no explanations or extra text.
+        """
+
+       # print(prompt) #Could get rid of this
+        #quit()
         return prompt
 
 

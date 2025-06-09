@@ -13,7 +13,8 @@ from transformers import StoppingCriteria, StoppingCriteriaList
 #from eval.utils import TokenizedDataset, complete_code
 from .utils import TokenizedDataset, complete_code
 
-from openai import OpenAI
+from openai import OpenAI, RateLimitError
+import openai
 client = OpenAI()
 
 class EndOfFunctionCriteria(StoppingCriteria):
@@ -188,9 +189,36 @@ def parse_code_snippets(text: str) -> list[str]:
 
 
 # %% OpenAI Generations
-from openai import OpenAI, AzureOpenAI
 # fill in specification here
 gpt_tokenizer = tiktoken.get_encoding("cl100k_base")
+
+# def openai_generations(
+#     task,
+#     dataset,
+#     model,
+#     n_tasks,
+#     args,
+#     curr_sample_idx: int = 0,
+#     save_every_k_tasks: int = -1,
+#     intermediate_generations: Optional[List[Optional[List[Optional[str]]]]] = None,
+#     intermediate_save_generations_path: Optional[str] = None,
+# ):
+#     if args.load_generations_path:
+#         # load generated code
+#         with open(args.load_generations_path) as fp:
+#             generations = json.load(fp)
+#             print(
+#                 f"generations loaded, {n_tasks} selected from {len(generations)} with {len(generations[0])} candidates"
+#             )
+#             # if accelerator.is_main_process:
+#         return generations[:n_tasks]
+
+
+import openai
+import time
+import json
+from typing import Optional, List
+
 
 def openai_generations(
     task,
@@ -203,55 +231,85 @@ def openai_generations(
     intermediate_generations: Optional[List[Optional[List[Optional[str]]]]] = None,
     intermediate_save_generations_path: Optional[str] = None,
 ):
-    if args.load_generations_path:
-        # load generated code
-        with open(args.load_generations_path) as fp:
-            generations = json.load(fp)
-            print(
-                f"generations loaded, {n_tasks} selected from {len(generations)} with {len(generations[0])} candidates"
-            )
-            # if accelerator.is_main_process:
-        return generations[:n_tasks]
-    
-    def get_response(prompt: str, n_iters: int = 2, sleep: int = 10, repoeval_prompt=False, **kwargs) -> list[str]:
-        prompt_tokens = gpt_tokenizer.encode(prompt)
-        prompt = gpt_tokenizer.decode(prompt_tokens[: args.max_length_input])
-        
-        # response = client.chat.completions.create(
-        #     model=model, 
-        #     messages=[{"role": "user", "content": prompt}],
-        #     **kwargs
-        # )
-        # response = completion(
-        #     model=model, 
-        #     messages=[{"role": "user", "content": prompt}],
-        #     **kwargs
-        # )
-        # return [c.message.content for c in response.choices]
-        i_iters = 0
-        response = ""
-        while i_iters < n_iters:
-            i_iters += 1
+    generations = intermediate_generations if intermediate_generations else []
+    start = args.limit_start + curr_sample_idx
+    end = start + n_tasks
+
+    for i in range(start, end):
+        example = dataset[i]
+        prompt = task.get_prompt(example)
+
+        messages = [
+            {"role": "system", "content": "You are a helpful assistant for EEG preprocessing."},
+            {"role": "user", "content": prompt},
+        ]
+
+        for attempt in range(5):  # Retry logic for rate limits
             try:
-                if repoeval_prompt:
-                    messages = [
-                        {"role": "system", "content": "Instruction: Continue writing the code."},
-                        {"role": "system", "name": "example_user", "content": "Continue writing the following code:\n\n```\ndef return_none():\n```"},
-                        {"role": "system", "name": "example_assistant", "content": "```\n    return None\n```"},
-                        {"role": "user", "content": "Continue writing the following code:\n\n```\n" + prompt + '\n```'},
-                    ]
-                else:
-                    messages=[{"role": "user", "content": prompt}]
-                    
-                response = client.chat.completions.create(
-                    model=model, 
-                    messages = messages,
-                    **kwargs
+                response = client.chat.completions.create( 
+
+                    model=model,
+                    messages=messages,
+                    temperature=args.temperature,
+                    max_tokens=args.max_length_generation,
                 )
-                return [c.message.content for c in response.choices]
-            except:
-                time.sleep(i_iters * sleep)
-        return [response]
+                break
+            except RateLimitError:
+                wait = 2 ** attempt
+                print(f"Rate limited. Retrying in {wait} seconds...")
+                time.sleep(wait)
+
+        gen_text = response.choices[0].message.content
+
+        if args.postprocess:
+            gen_text = task.postprocess_generation(gen_text, i, new_tokens_only=args.new_tokens_only)
+
+        generations.append([gen_text])  # wrap in list for compatibility
+
+        # Optionally save every k generations
+        if save_every_k_tasks > 0 and (i - start + 1) % save_every_k_tasks == 0:
+            with open(intermediate_save_generations_path, "w") as f:
+                json.dump(generations, f)
+                print(f"Saved {i - start + 1} intermediate generations")
+
+    return generations
+
+
+
+def get_response(prompt: str, n_iters: int = 2, sleep: int = 10, repoeval_prompt=False, **kwargs) -> list[str]:
+    prompt_tokens = gpt_tokenizer.encode(prompt)
+    prompt = gpt_tokenizer.decode(prompt_tokens[: args.max_length_input])
+
+    i_iters = 0
+    while i_iters < n_iters:
+        i_iters += 1
+        try:
+            if repoeval_prompt:
+                messages = [
+                    {"role": "system", "content": "Instruction: Continue writing the code."},
+                    {"role": "system", "name": "example_user", "content": "Continue writing the following code:\n\n```\ndef return_none():\n```"},
+                    {"role": "system", "name": "example_assistant", "content": "```\n    return None\n```"},
+                    {"role": "user", "content": f"Continue writing the following code:\n\n```\n{prompt}\n```"},
+                ]
+            else:
+                messages = [{"role": "user", "content": prompt}]
+
+            response = client.chat.completions.create(
+                model=model,
+                messages=messages,
+                **kwargs
+            )
+            return [choice.message.content for choice in response.choices]
+
+        except RateLimitError:
+            print(f"Rate limit hit, sleeping for {i_iters * sleep} seconds...")
+            time.sleep(i_iters * sleep)
+        except Exception as e:
+            print(f"OpenAI API error: {e}")
+            time.sleep(i_iters * sleep)
+
+    return [""]
+
 
     # Setup generation settings
     gen_kwargs = {
@@ -360,9 +418,9 @@ def litellm_generations(
 
 
 # %% Gemini Generations
-import os, json
-import google.generativeai as genai
-genai.configure(api_key=os.environ["API_KEY"])
+# import os, json
+# import google.generativeai as genai
+# genai.configure(api_key=os.environ["API_KEY"])
 
 def gemini_generations(
     task,
