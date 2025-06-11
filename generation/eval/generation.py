@@ -344,7 +344,7 @@ def get_response(prompt: str, n_iters: int = 2, sleep: int = 10, repoeval_prompt
 
 
 # %% LiteLLM Generations
-# import litellm
+#import litellm
 # litellm.set_verbose=True
 from litellm import completion
 #import litellm ##HERE
