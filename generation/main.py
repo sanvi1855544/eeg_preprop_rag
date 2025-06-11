@@ -141,6 +141,11 @@ def parse_args():
         help="Number of samples to solve and evaluate from the benchmark",
     )
     parser.add_argument(
+       "--print_generation",
+        action="store_true",
+        help="Whether to print the generation output to the terminal"
+    )
+    parser.add_argument(
         "--limit_start",
         type=int,
         default=0,
@@ -532,6 +537,12 @@ def main():
                     task, intermediate_generations=intermediate_generations, user_prompt = args.user_prompt ##HERHE
                 )
                 if not accelerator or accelerator.is_main_process:
+                    if args.print_generation:
+                        print("\n=== Generated Outputs ===")
+                        for i, gen in enumerate(generations):
+                            print(f"\n--- Generation {i + 1} ---")
+                            print(gen)
+
                     save_generations_path = f"{os.path.splitext(args.save_generations_path)[0]}_{task}.json"
                     save_references_path = f"references_{task}.json"
                     evaluator.save_json_files(
