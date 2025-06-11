@@ -220,6 +220,12 @@ def parse_args():
         help="Prompt type to use for generation in HumanEvalPack tasks",
     )
     parser.add_argument(
+        "--user_prompt",
+        type=str,
+        default=None,
+        help="Optional user prompt string to use for generation (overrides default prompt)"
+    ) ##HERE
+    parser.add_argument(
         "--new_tokens_only",
         action="store_true",
         help="Whether to use only new tokens in the evaluation."
@@ -523,7 +529,7 @@ def main():
                 if not accelerator or accelerator.is_main_process:
                     print("generation mode only")
                 generations, references = evaluator.generate_text(
-                    task, intermediate_generations=intermediate_generations
+                    task, intermediate_generations=intermediate_generations, user_prompt = args.user_prompt ##HERHE
                 )
                 if not accelerator or accelerator.is_main_process:
                     save_generations_path = f"{os.path.splitext(args.save_generations_path)[0]}_{task}.json"
@@ -536,7 +542,7 @@ def main():
                     )
             else:
                 results[task] = evaluator.evaluate(
-                    task, intermediate_generations=intermediate_generations
+                    task, intermediate_generations=intermediate_generations, user_prompt=args.user_prompt
                 )
 
     # Save all args to config

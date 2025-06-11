@@ -13,7 +13,9 @@ python3 generation/main.py \
   --allow_code_execution \
   --save_generations \
   --save_generations_path /p3/home/abaxter/eeg_preprop_rag/output3/gpt4_generations.json \
-  --save_references_path /p3/home/abaxter/eeg_preprop_rag/output3/test_gpt4_references.json
+  --save_references_path /p3/home/abaxter/eeg_preprop_rag/output3/test_gpt4_references.json \
+  --user_prompt "What is 2 + 2?" \
+  --generation_only
 
 
 

@@ -58,11 +58,15 @@ class PyprepTask(Task):
         top_k = sorted(similarity_scores.items(), key=lambda x: x[1], reverse=True)[:k]
         return [item[0] for item in top_k]'''
 
-    def get_prompt(self, doc, return_dict: bool = False, topk: int = 2):
-        #query_id = doc["_id"]
-        #prompt = doc["prompt"]
+    def get_prompt(self, doc, return_dict: bool = False, topk: int = 2, user_prompt=None):
+        query_id = doc["_id"]
+        prompt = doc["prompt"]
         #sol = doc["canonical_solution"]
-        prompt = "How do I run inference using a trained CBraMod model to generate predictions?"
+        if user_prompt != None:
+            prompt = user_prompt
+        
+        print("Prompt: ", prompt)
+        #prompt = "How do I run inference using a trained CBraMod model to generate predictions?"
 
         # Load corpus embeddings and metadata
         corpus_embeddings = np.load("output3/corpus_embeddings.npy")
