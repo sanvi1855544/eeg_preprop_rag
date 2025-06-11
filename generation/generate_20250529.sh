@@ -9,7 +9,7 @@ python3 generation/main.py \
   --task "pyprep" \
   --model "gpt-3.5-turbo" \
   --dataset_path "/p3/home/abaxter/eeg_preprop_rag/datasets/combined/" \
-  --limit 10 \
+  --limit 1 \
   --allow_code_execution \
   --save_generations \
   --save_generations_path /p3/home/abaxter/eeg_preprop_rag/output3/gpt4_generations.json \

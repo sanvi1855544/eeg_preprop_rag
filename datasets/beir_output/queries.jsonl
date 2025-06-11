@@ -1,2 +1,58 @@
-{"query_id": "q1", "text": "How to load EEG data?"}
-{"query_id": "q2", "text": "Preprocessing pipeline for EEG signals"}
+{"_id": "finetune_evaluator.py_evaluate_doc", "text": "How do I evaluate a fine-tuned CBraMod model's performance?", "metadata": {}}
+{"_id": "finetune_main.py_main_doc", "text": "How do I run the fine-tuning main training loop for CBraMod models?", "metadata": {}}
+{"_id": "pretrain_trainer.py_train_doc", "text": "How can I pretrain a CBraMod model from scratch?", "metadata": {}}
+{"_id": "pretrain_main.py_main_doc", "text": "How do I execute the pretraining pipeline for CBraMod?", "metadata": {}}
+{"_id": "quick_example.py_example_doc", "text": "How do I run a quick example to test CBraMod functionality?", "metadata": {}}
+{"_id": "finetune_trainer.py_train_doc", "text": "How do I perform fine-tuning on a CBraMod model using the trainer?", "metadata": {}}
+{"_id": "models/model_for_mumtaz.py_model_doc", "text": "How do I load and use the Mumtaz model architecture in CBraMod?", "metadata": {}}
+{"_id": "models/model_for_seedv.py_model_doc", "text": "How do I initialize the SEEDV model in CBraMod?", "metadata": {}}
+{"_id": "models/model_for_faced.py_model_doc", "text": "How do I set up the FACED model for EEG classification in CBraMod?", "metadata": {}}
+{"_id": "models/criss_cross_transformer.py_transformer_doc", "text": "What is the criss-cross transformer model and how is it implemented in CBraMod?", "metadata": {}}
+{"_id": "models/model_for_tuev.py_model_doc", "text": "How do I use the TUEV model for EEG data in CBraMod?", "metadata": {}}
+{"_id": "models/model_for_isruc.py_model_doc", "text": "How do I initialize the ISRUC model in CBraMod?", "metadata": {}}
+{"_id": "models/model_for_speech.py_model_doc", "text": "How do I use the speech EEG model in CBraMod?", "metadata": {}}
+{"_id": "models/model_for_chb.py_model_doc", "text": "How do I set up the CHB model in CBraMod?", "metadata": {}}
+{"_id": "models/model_for_bciciv2a.py_model_doc", "text": "How do I use the BCICIV2a model for EEG data?", "metadata": {}}
+{"_id": "models/model_for_stress.py_model_doc", "text": "How do I initialize the stress detection model in CBraMod?", "metadata": {}}
+{"_id": "models/cbramod.py_cbramod_model_doc", "text": "How do I instantiate and use the core CBraMod model?", "metadata": {}}
+{"_id": "models/model_for_seedvig.py_model_doc", "text": "How do I set up the SEEDViG model in CBraMod?", "metadata": {}}
+{"_id": "models/model_for_physio.py_model_doc", "text": "How do I initialize the PhysioNet model in CBraMod?", "metadata": {}}
+{"_id": "models/model_for_shu.py_model_doc", "text": "How do I use the SHU model in CBraMod?", "metadata": {}}
+{"_id": "models/model_for_tuab.py_model_doc", "text": "How do I set up the TUAB model in CBraMod?", "metadata": {}}
+{"_id": "models/__init__.py_init_doc", "text": "What modules are initialized in the CBraMod models package?", "metadata": {}}
+{"_id": "datasets/seedvig_dataset.py_dataset_doc", "text": "How do I load and preprocess the SEEDViG dataset for CBraMod?", "metadata": {}}
+{"_id": "datasets/seedv_dataset.py_dataset_doc", "text": "How do I load and preprocess the SEEDV dataset for CBraMod?", "metadata": {}}
+{"_id": "datasets/tuev_dataset.py_dataset_doc", "text": "How do I access and prepare the TUEV dataset within CBraMod?", "metadata": {}}
+{"_id": "datasets/isruc_dataset.py_dataset_doc", "text": "How do I load and use the ISRUC dataset in CBraMod?", "metadata": {}}
+{"_id": "datasets/speech_dataset.py_dataset_doc", "text": "How do I load and preprocess the speech EEG dataset?", "metadata": {}}
+{"_id": "datasets/chb_dataset.py_dataset_doc", "text": "How do I access and preprocess the CHB dataset in CBraMod?", "metadata": {}}
+{"_id": "datasets/shu_dataset.py_dataset_doc", "text": "How do I load the SHU EEG dataset for CBraMod?", "metadata": {}}
+{"_id": "datasets/tuab_dataset.py_dataset_doc", "text": "How do I load and preprocess the TUAB dataset in CBraMod?", "metadata": {}}
+{"_id": "datasets/physio_dataset.py_dataset_doc", "text": "How do I work with the PhysioNet dataset in CBraMod?", "metadata": {}}
+{"_id": "datasets/mumtaz_dataset.py_dataset_doc", "text": "How do I load the Mumtaz dataset for CBraMod?", "metadata": {}}
+{"_id": "datasets/faced_dataset.py_dataset_doc", "text": "How do I prepare the FACED dataset for CBraMod?", "metadata": {}}
+{"_id": "datasets/pretraining_dataset.py_dataset_doc", "text": "How do I set up datasets for pretraining CBraMod models?", "metadata": {}}
+{"_id": "datasets/bciciv2a_dataset.py_dataset_doc", "text": "How do I load and preprocess the BCICIV2a dataset in CBraMod?", "metadata": {}}
+{"_id": "datasets/__init__.py_init_doc", "text": "What datasets are initialized in CBraMod?", "metadata": {}}
+{"_id": "datasets/stress_dataset.py_dataset_doc", "text": "How do I load the stress EEG dataset for CBraMod?", "metadata": {}}
+{"_id": "preprocessing/preprocessing_speech.py_preprocessing_doc", "text": "How do I preprocess speech EEG data in CBraMod?", "metadata": {}}
+{"_id": "preprocessing/preprocessing_bciciv2a.py_preprocessing_doc", "text": "How do I preprocess BCICIV2a EEG data?", "metadata": {}}
+{"_id": "preprocessing/preprocessing_tuev.py_preprocessing_doc", "text": "How do I preprocess TUEV EEG data?", "metadata": {}}
+{"_id": "preprocessing/preprocessing_physio.py_preprocessing_doc", "text": "How do I preprocess PhysioNet EEG data in CBraMod?", "metadata": {}}
+{"_id": "preprocessing/preprocessing_faced.py_preprocessing_doc", "text": "How do I preprocess FACED EEG data?", "metadata": {}}
+{"_id": "preprocessing/preprocessing_mumtaz.py_preprocessing_doc", "text": "How do I preprocess Mumtaz EEG data in CBraMod?", "metadata": {}}
+{"_id": "preprocessing/preprocessing_tueg_for_pretraining.py_preprocessing_doc", "text": "How do I preprocess TUEG data for CBraMod pretraining?", "metadata": {}}
+{"_id": "preprocessing/preprocessing_seedvig.py_preprocessing_doc", "text": "How do I preprocess SEEDViG EEG data?", "metadata": {}}
+{"_id": "preprocessing/preprocessing_SEEDV.py_preprocessing_doc", "text": "How do I preprocess SEEDV EEG data in CBraMod?", "metadata": {}}
+{"_id": "preprocessing/preprocessing_stress.py_preprocessing_doc", "text": "How do I preprocess stress EEG data in CBraMod?", "metadata": {}}
+{"_id": "preprocessing/preprocessing_tuab.py_preprocessing_doc", "text": "How do I preprocess TUAB EEG data?", "metadata": {}}
+{"_id": "preprocessing/preprocessing_shu.py_preprocessing_doc", "text": "How do I preprocess SHU EEG data in CBraMod?", "metadata": {}}
+{"_id": "preprocessing/__init__.py_init_doc", "text": "What preprocessing modules are initialized in CBraMod?", "metadata": {}}
+{"_id": "preprocessing/CHB-MIT/process2.py_process_doc", "text": "How do I preprocess CHB-MIT EEG data using process2.py?", "metadata": {}}
+{"_id": "preprocessing/CHB-MIT/process1.py_process_doc", "text": "How do I preprocess CHB-MIT EEG data using process1.py?", "metadata": {}}
+{"_id": "preprocessing/CHB-MIT/__init__.py_init_doc", "text": "What CHB-MIT preprocessing modules are included in CBraMod?", "metadata": {}}
+{"_id": "preprocessing/ISRUC/prepare_ISRUC_1.py_prepare_doc", "text": "How do I prepare ISRUC dataset files for CBraMod?", "metadata": {}}
+{"_id": "preprocessing/ISRUC/__init__.py_init_doc", "text": "What ISRUC preprocessing modules are included in CBraMod?", "metadata": {}}
+{"_id": "utils/signaltools.py_tools_doc", "text": "What utility functions are available for EEG signal processing in CBraMod?", "metadata": {}}
+{"_id": "utils/__init__.py_init_doc", "text": "What utility modules are initialized in CBraMod?", "metadata": {}}
+{"_id": "utils/util.py_util_doc", "text": "What general utility functions does CBraMod provide?", "metadata": {}}
