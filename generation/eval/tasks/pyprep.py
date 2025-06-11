@@ -45,7 +45,6 @@ class PyprepTask(Task):
 
         self.topk_docs = 5  # Or any k you want
 
-
     '''def get_prompt(self, doc, return_dict=False):
         prompt = format_prompt(doc)
         return {"prompt": prompt} if return_dict else prompt
@@ -62,7 +61,7 @@ class PyprepTask(Task):
         query_id = doc["_id"]
         prompt = doc["prompt"]
         #sol = doc["canonical_solution"]
-        
+
         if user_prompt is not None and user_prompt != "None":
             prompt = user_prompt
         #prompt = "How do I run inference using a trained CBraMod model to generate predictions?"
