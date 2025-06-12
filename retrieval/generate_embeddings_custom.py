@@ -83,7 +83,7 @@ def main(args):
 
         custom_passages = [
             {
-                "id": p.get("doc_id", f"custom_{i}"),
+                "id": p.get("_id", f"custom_{i}"),
                 "text": p.get("text", "")
             }
             for i, p in enumerate(custom_passages_raw)

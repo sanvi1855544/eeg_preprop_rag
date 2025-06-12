@@ -8,9 +8,9 @@ jsonlines
 rank_bm25
 tenacity
 openai
-tiktoken
+tiktoken>=0.7.0
 fastwarc
-vllm==0.4.2
+litellm
 chardet
 unidiff
 GitPython

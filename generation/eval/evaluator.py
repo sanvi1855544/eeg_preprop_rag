@@ -90,12 +90,12 @@ class Evaluator:
             )
         return generations, references
 
-    def evaluate(self, task_name, intermediate_generations=None):
+    def evaluate(self, task_name, intermediate_generations=None, user_prompt=None):
         task = tasks.get_task(task_name, self.args)
         if task.requires_execution and not self.allow_code_execution:
             raise ValueError(_WARNING)
 
-        generations, references = self.generate_text(task_name, intermediate_generations=intermediate_generations)
+        generations, references = self.generate_text(task_name, intermediate_generations=intermediate_generations, user_prompt=user_prompt)
 
         if not self.accelerator or self.accelerator.is_main_process:
             if not self.args.load_generations_path:
@@ -131,7 +131,7 @@ class vllmEvaluator(Evaluator):
     def __init__(self, accelerator, model, tokenizer, args):
         super().__init__(accelerator, model, tokenizer, args)
 
-    def generate_text(self, task_name, intermediate_generations=None):
+    def generate_text(self, task_name, intermediate_generations=None, user_prompt=None):
         # TBD: handle args.limit
         from vllm import LLM, SamplingParams
         
@@ -158,7 +158,7 @@ class vllmEvaluator(Evaluator):
         }
         task.preprocess_all_data(**pre_kwargs)
         dataset = task.get_dataset()
-        prompts = [task.get_prompt(ex) for ex in dataset]
+        prompts = [task.get_prompt(ex, user_prompt=user_prompt) for ex in dataset]
         
         print("Generating..")
         sampling_params = SamplingParams(
@@ -189,7 +189,7 @@ class ApiEvaluator(Evaluator):
     def __init__(self, model: str, args):
         super().__init__(None, model, None, args)
     
-    def generate_text(self, task_name, intermediate_generations=None):
+    def generate_text(self, task_name, intermediate_generations=None, user_prompt=None):
         task = tasks.get_task(task_name, self.args)
         dataset = task.get_dataset()
         # if args.limit is None, use all samples
@@ -263,6 +263,7 @@ class ApiEvaluator(Evaluator):
                 save_every_k_tasks=self.args.save_every_k_tasks,
                 intermediate_generations=curr_generations,
                 intermediate_save_generations_path=intermediate_save_generations_path,
+                user_prompt=user_prompt
             )
 
         if len(generations[0]) > self.args.n_samples:

@@ -229,7 +229,8 @@ def openai_generations(
     curr_sample_idx: int = 0,
     save_every_k_tasks: int = -1,
     intermediate_generations: Optional[List[Optional[List[Optional[str]]]]] = None,
-    intermediate_save_generations_path: Optional[str] = None,
+    intermediate_save_generations_path: Optional[str] = None, 
+    user_prompt = None,
 ):
     generations = intermediate_generations if intermediate_generations else []
     start = args.limit_start + curr_sample_idx
@@ -237,7 +238,7 @@ def openai_generations(
 
     for i in range(start, end):
         example = dataset[i]
-        prompt = task.get_prompt(example)
+        prompt = task.get_prompt(example, user_prompt=user_prompt)
 
         messages = [
             {"role": "system", "content": "You are a helpful assistant for EEG preprocessing."},
@@ -322,7 +323,7 @@ def get_response(prompt: str, n_iters: int = 2, sleep: int = 10, repoeval_prompt
     intermediate_generation_file = args.save_generations_path + '.partial'
     generations = []
     for i in tqdm(range(args.limit_start + curr_sample_idx, n_tasks)):
-        i_prompt = task.get_prompt(doc=dataset[i])
+        i_prompt = task.get_prompt(doc=dataset[i], user_prompt=user_prompt)
         i_resp = get_response(prompt=i_prompt, repoeval_prompt=task.__class__.__name__=='RepoEval', **gen_kwargs) # list[str]
         generations.append(i_resp)
         if len(generations) % save_every_k_tasks == 0:
@@ -343,9 +344,12 @@ def get_response(prompt: str, n_iters: int = 2, sleep: int = 10, repoeval_prompt
 
 
 # %% LiteLLM Generations
-# import litellm
+#import litellm
 # litellm.set_verbose=True
 from litellm import completion
+#import litellm ##HERE
+#litellm._turn_on_debug()
+
 
 def litellm_generations(
     task,
@@ -357,6 +361,7 @@ def litellm_generations(
     save_every_k_tasks: int = -1,
     intermediate_generations: Optional[List[Optional[List[Optional[str]]]]] = None,
     intermediate_save_generations_path: Optional[str] = None,
+    user_prompt=None,
 ):
     if args.load_generations_path:
         # load generated code
@@ -399,10 +404,11 @@ def litellm_generations(
         "max_tokens": args.max_length_generation,
         "temperature": args.temperature,
         "top_p": args.top_p,
+       # "user_prompt": user_prompt
     }
     generations = []
     for i in tqdm(range(args.limit_start + curr_sample_idx, n_tasks)):
-        i_prompt = task.get_prompt(doc=dataset[i])
+        i_prompt = task.get_prompt(doc=dataset[i], user_prompt=user_prompt)
         i_resp = get_response(prompt=i_prompt, **gen_kwargs) # list[str]
         generations.append(i_resp)
     
@@ -468,7 +474,7 @@ def gemini_generations(
 
     generations = []
     for i in tqdm(range(args.limit_start + curr_sample_idx, n_tasks)):
-        i_prompt = task.get_prompt(doc=dataset[i])
+        i_prompt = task.get_prompt(doc=dataset[i], user_prompt=user_prompt)
         i_resp = get_response(prompt=i_prompt) # list[str]
         if not (isinstance(i_resp, list) and isinstance(i_resp[0], str)):
             i_resp = [""]

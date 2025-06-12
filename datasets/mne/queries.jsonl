@@ -1,0 +1,1384 @@
+{"_id": "mne_parallel.py_parallel_func_doc", "text": "How to return parallel instance with delayed function?", "metadata": {}}
+{"_id": "mne_cov.py_read_cov_doc", "text": "How to read a noise covariance from a fif file?", "metadata": {}}
+{"_id": "mne_cov.py_make_ad_hoc_cov_doc", "text": "How to create an ad hoc noise covariance?", "metadata": {}}
+{"_id": "mne_cov.py_compute_raw_covariance_doc", "text": "How to estimate noise covariance matrix from a continuous segment of raw data?", "metadata": {}}
+{"_id": "mne_cov.py_compute_covariance_doc", "text": "How to estimate noise covariance matrix from epochs?", "metadata": {}}
+{"_id": "mne_cov.py_write_cov_doc", "text": "How to write a noise covariance matrix?", "metadata": {}}
+{"_id": "mne_cov.py_prepare_noise_cov_doc", "text": "How to prepare noise covariance matrix?", "metadata": {}}
+{"_id": "mne_cov.py_regularize_doc", "text": "How to regularize noise covariance matrix?", "metadata": {}}
+{"_id": "mne_cov.py_compute_whitener_doc", "text": "How to compute whitening matrix?", "metadata": {}}
+{"_id": "mne_cov.py_whiten_evoked_doc", "text": "How to whiten evoked data using given noise covariance?", "metadata": {}}
+{"_id": "mne_cov.py_data_doc", "text": "How to numpy array of noise covariance matrix?", "metadata": {}}
+{"_id": "mne_cov.py_ch_names_doc", "text": "How to channel names?", "metadata": {}}
+{"_id": "mne_cov.py_nfree_doc", "text": "How to number of degrees of freedom?", "metadata": {}}
+{"_id": "mne_cov.py_save_doc", "text": "How to save covariance matrix in a fif file?", "metadata": {}}
+{"_id": "mne_cov.py_copy_doc", "text": "How to copy the covariance object?", "metadata": {}}
+{"_id": "mne_cov.py_as_diag_doc", "text": "How to set covariance to be processed as being diagonal?", "metadata": {}}
+{"_id": "mne_cov.py_plot_topomap_doc", "text": "How to plot a topomap of the covariance diagonal?", "metadata": {}}
+{"_id": "mne_cov.py_pick_channels_doc", "text": "How to pick channels from this covariance matrix?", "metadata": {}}
+{"_id": "mne_cov.py_fit_doc", "text": "How to fit covariance model with classical diagonal regularization?", "metadata": {}}
+{"_id": "mne_cov.py_score_doc", "text": "How to delegate call to modified empiricalcovariance instance?", "metadata": {}}
+{"_id": "mne_cov.py_get_precision_doc", "text": "How to delegate call to modified empiricalcovariance instance?", "metadata": {}}
+{"_id": "mne_cov.py_fit_doc", "text": "How to fit covariance model with oracle shrinkage regularization?", "metadata": {}}
+{"_id": "mne_cov.py_score_doc", "text": "How to delegate to modified empiricalcovariance instance?", "metadata": {}}
+{"_id": "mne_cov.py_get_precision_doc", "text": "How to delegate to modified empiricalcovariance instance?", "metadata": {}}
+{"_id": "mne_label.py_read_label_doc", "text": "How to read freesurfer label file?", "metadata": {}}
+{"_id": "mne_label.py_write_label_doc", "text": "How to write a freesurfer label?", "metadata": {}}
+{"_id": "mne_label.py_split_label_doc", "text": "How to split a label into two or more parts?", "metadata": {}}
+{"_id": "mne_label.py_label_sign_flip_doc", "text": "How to compute sign for label averaging?", "metadata": {}}
+{"_id": "mne_label.py_stc_to_label_doc", "text": "How to compute a label from the non-zero sources in an stc object?", "metadata": {}}
+{"_id": "mne_label.py_grow_labels_doc", "text": "How to generate circular labels in source space with region growing?", "metadata": {}}
+{"_id": "mne_label.py_random_parcellation_doc", "text": "How to generate random cortex parcellation by growing labels?", "metadata": {}}
+{"_id": "mne_label.py_read_labels_from_annot_doc", "text": "How to read labels from a freesurfer annotation file?", "metadata": {}}
+{"_id": "mne_label.py_morph_labels_doc", "text": "How to morph a set of labels?", "metadata": {}}
+{"_id": "mne_label.py_labels_to_stc_doc", "text": "How to convert a set of labels and values to a stc?", "metadata": {}}
+{"_id": "mne_label.py_write_labels_to_annot_doc", "text": "How to create a freesurfer annotation from a list of labels?", "metadata": {}}
+{"_id": "mne_label.py_select_sources_doc", "text": "How to select sources from a label?", "metadata": {}}
+{"_id": "mne_label.py_save_doc", "text": "How to write to disk as freesurfer \\*.label file?", "metadata": {}}
+{"_id": "mne_label.py_copy_doc", "text": "How to copy the label instance?", "metadata": {}}
+{"_id": "mne_label.py_fill_doc", "text": "How to fill the surface between sources for a source space label?", "metadata": {}}
+{"_id": "mne_label.py_restrict_doc", "text": "How to restrict a label to a source space?", "metadata": {}}
+{"_id": "mne_label.py_smooth_doc", "text": "How to smooth the label?", "metadata": {}}
+{"_id": "mne_label.py_morph_doc", "text": "How to morph the label?", "metadata": {}}
+{"_id": "mne_label.py_split_doc", "text": "How to split the label into two or more parts?", "metadata": {}}
+{"_id": "mne_label.py_get_vertices_used_doc", "text": "How to get the source space's vertices inside the label?", "metadata": {}}
+{"_id": "mne_label.py_get_tris_doc", "text": "How to get the source space's triangles inside the label?", "metadata": {}}
+{"_id": "mne_label.py_center_of_mass_doc", "text": "How to compute the center of mass of the label?", "metadata": {}}
+{"_id": "mne_label.py_distances_to_outside_doc", "text": "How to compute the distance from each vertex to outside the label?", "metadata": {}}
+{"_id": "mne_label.py_compute_area_doc", "text": "How to compute the surface area of a label?", "metadata": {}}
+{"_id": "mne_cuda.py_get_cuda_memory_doc", "text": "How to get the amount of free memory for cuda operations?", "metadata": {}}
+{"_id": "mne_cuda.py_init_cuda_doc", "text": "How to initialize cuda functionality?", "metadata": {}}
+{"_id": "mne_cuda.py_set_cuda_device_doc", "text": "How to set the cuda device temporarily for the current session?", "metadata": {}}
+{"_id": "mne_annotations.py_read_annotations_doc", "text": "How to read annotations from a file?", "metadata": {}}
+{"_id": "mne_annotations.py_events_from_annotations_doc", "text": "How to get :term:`events` and ``event_id`` from an annotations object?", "metadata": {}}
+{"_id": "mne_annotations.py_annotations_from_events_doc", "text": "How to convert an event array to an annotations object?", "metadata": {}}
+{"_id": "mne_annotations.py_count_annotations_doc", "text": "How to count annotations?", "metadata": {}}
+{"_id": "mne_annotations.py_orig_time_doc", "text": "How to the time base of the annotations?", "metadata": {}}
+{"_id": "mne_annotations.py_append_doc", "text": "How to add an annotated segment. operates inplace?", "metadata": {}}
+{"_id": "mne_annotations.py_copy_doc", "text": "How to return a copy of the annotations?", "metadata": {}}
+{"_id": "mne_annotations.py_delete_doc", "text": "How to remove an annotation. operates inplace?", "metadata": {}}
+{"_id": "mne_annotations.py_to_data_frame_doc", "text": "How to export annotations in tabular structure as a pandas dataframe?", "metadata": {}}
+{"_id": "mne_annotations.py_count_doc", "text": "How to count annotations?", "metadata": {}}
+{"_id": "mne_annotations.py_save_doc", "text": "How to save annotations to fif, csv or txt?", "metadata": {}}
+{"_id": "mne_annotations.py_crop_doc", "text": "How to remove all annotation that are outside of [tmin, tmax]?", "metadata": {}}
+{"_id": "mne_annotations.py_set_durations_doc", "text": "How to set annotation duration(s). operates inplace?", "metadata": {}}
+{"_id": "mne_annotations.py_rename_doc", "text": "How to rename annotation description(s). operates inplace?", "metadata": {}}
+{"_id": "mne_annotations.py_set_annotations_doc", "text": "How to setter for epoch annotations from raw?", "metadata": {}}
+{"_id": "mne_annotations.py_get_annotations_per_epoch_doc", "text": "How to get a list of annotations that occur during each epoch?", "metadata": {}}
+{"_id": "mne_annotations.py_add_annotations_to_metadata_doc", "text": "How to add raw annotations into the epochs metadata data frame?", "metadata": {}}
+{"_id": "mne_conftest.py_pytest_configure_doc", "text": "How to configure pytest options?", "metadata": {}}
+{"_id": "mne_conftest.py_check_verbose_doc", "text": "How to set to the default logging level to ensure it's tested properly?", "metadata": {}}
+{"_id": "mne_conftest.py_close_all_doc", "text": "How to close all matplotlib plots, regardless of test status?", "metadata": {}}
+{"_id": "mne_conftest.py_add_mne_doc", "text": "How to add mne to the namespace?", "metadata": {}}
+{"_id": "mne_conftest.py_verbose_debug_doc", "text": "How to run a test with debug verbosity?", "metadata": {}}
+{"_id": "mne_conftest.py_qt_config_doc", "text": "How to configure the qt backend for viz tests?", "metadata": {}}
+{"_id": "mne_conftest.py_matplotlib_config_doc", "text": "How to configure matplotlib for viz tests?", "metadata": {}}
+{"_id": "mne_conftest.py_azure_windows_doc", "text": "How to determine if running on azure windows?", "metadata": {}}
+{"_id": "mne_conftest.py_raw_orig_doc", "text": "How to get raw data without any change to it from mne.io.tests.data?", "metadata": {}}
+{"_id": "mne_conftest.py_raw_doc", "text": "How to get raw data and pick channels to reduce load for testing?", "metadata": {}}
+{"_id": "mne_conftest.py_raw_ctf_doc", "text": "How to get ctf raw data from mne.io.tests.data?", "metadata": {}}
+{"_id": "mne_conftest.py_raw_spectrum_doc", "text": "How to get raw with power spectral density computed from mne.io.tests.data?", "metadata": {}}
+{"_id": "mne_conftest.py_events_doc", "text": "How to get events from mne.io.tests.data?", "metadata": {}}
+{"_id": "mne_conftest.py_epochs_doc", "text": "How to get minimal, pre-loaded epochs data suitable for most tests?", "metadata": {}}
+{"_id": "mne_conftest.py_epochs_unloaded_doc", "text": "How to get minimal, unloaded epochs data from mne.io.tests.data?", "metadata": {}}
+{"_id": "mne_conftest.py_epochs_full_doc", "text": "How to get full, preloaded epochs from mne.io.tests.data?", "metadata": {}}
+{"_id": "mne_conftest.py_epochs_spectrum_doc", "text": "How to get epochs with power spectral density computed from mne.io.tests.data?", "metadata": {}}
+{"_id": "mne_conftest.py_epochs_tfr_doc", "text": "How to get an epochstfr computed from mne.io.tests.data?", "metadata": {}}
+{"_id": "mne_conftest.py_average_tfr_doc", "text": "How to get an averagetfr computed by averaging an epochstfr (this is small & fast)?", "metadata": {}}
+{"_id": "mne_conftest.py_full_average_tfr_doc", "text": "How to get an averagetfr computed from evoked?", "metadata": {}}
+{"_id": "mne_conftest.py_raw_tfr_doc", "text": "How to get a rawtfr computed from mne.io.tests.data?", "metadata": {}}
+{"_id": "mne_conftest.py_epochs_empty_doc", "text": "How to get empty epochs from mne.io.tests.data?", "metadata": {}}
+{"_id": "mne_conftest.py_evoked_doc", "text": "How to get truncated evoked data?", "metadata": {}}
+{"_id": "mne_conftest.py_full_evoked_doc", "text": "How to get full-duration evoked data (needed for, e.g., testing tfr)?", "metadata": {}}
+{"_id": "mne_conftest.py_noise_cov_doc", "text": "How to get a noise cov from the testing dataset?", "metadata": {}}
+{"_id": "mne_conftest.py_noise_cov_io_doc", "text": "How to get noise-covariance (from mne.io.tests.data)?", "metadata": {}}
+{"_id": "mne_conftest.py_bias_params_free_doc", "text": "How to provide inputs for free bias functions?", "metadata": {}}
+{"_id": "mne_conftest.py_bias_params_fixed_doc", "text": "How to provide inputs for fixed bias functions?", "metadata": {}}
+{"_id": "mne_conftest.py_garbage_collect_doc", "text": "How to garbage collect on exit?", "metadata": {}}
+{"_id": "mne_conftest.py_mpl_backend_doc", "text": "How to use for epochs/ica when not implemented with pyqtgraph yet?", "metadata": {}}
+{"_id": "mne_conftest.py_pg_backend_doc", "text": "How to use for pyqtgraph-specific test-functions?", "metadata": {}}
+{"_id": "mne_conftest.py_browser_backend_doc", "text": "How to parametrizes the name of the browser backend?", "metadata": {}}
+{"_id": "mne_conftest.py_renderer_doc", "text": "How to yield the 3d backends?", "metadata": {}}
+{"_id": "mne_conftest.py_renderer_pyvistaqt_doc", "text": "How to yield the pyvista backend?", "metadata": {}}
+{"_id": "mne_conftest.py_renderer_notebook_doc", "text": "How to yield the 3d notebook renderer?", "metadata": {}}
+{"_id": "mne_conftest.py_renderer_interactive_pyvistaqt_doc", "text": "How to yield the interactive pyvista backend?", "metadata": {}}
+{"_id": "mne_conftest.py_renderer_interactive_doc", "text": "How to yield the interactive 3d backends?", "metadata": {}}
+{"_id": "mne_conftest.py_pixel_ratio_doc", "text": "How to get the pixel ratio?", "metadata": {}}
+{"_id": "mne_conftest.py_subjects_dir_tmp_doc", "text": "How to copy mne-testing-data subjects_dir to a temp dir for manipulation?", "metadata": {}}
+{"_id": "mne_conftest.py_subjects_dir_tmp_few_doc", "text": "How to copy fewer files to a tmp_path?", "metadata": {}}
+{"_id": "mne_conftest.py_fwd_volume_small_doc", "text": "How to provide a small volumetric source space?", "metadata": {}}
+{"_id": "mne_conftest.py_all_src_types_inv_evoked_doc", "text": "How to all source types of inverses, allowing for possible modification?", "metadata": {}}
+{"_id": "mne_conftest.py_mixed_fwd_cov_evoked_doc", "text": "How to compute inverses for all source types?", "metadata": {}}
+{"_id": "mne_conftest.py_src_volume_labels_doc", "text": "How to create a 7mm source space with labels?", "metadata": {}}
+{"_id": "mne_conftest.py_download_is_error_doc", "text": "How to prevent downloading by raising an error when it's attempted?", "metadata": {}}
+{"_id": "mne_conftest.py_fake_retrieve_doc", "text": "How to monkeypatch pooch.retrieve to avoid downloading (just touch files)?", "metadata": {}}
+{"_id": "mne_conftest.py_options_3d_doc", "text": "How to disable advanced 3d rendering?", "metadata": {}}
+{"_id": "mne_conftest.py_protect_config_doc", "text": "How to protect ~/.mne?", "metadata": {}}
+{"_id": "mne_conftest.py_brain_gc_doc", "text": "How to ensure that brain can be properly garbage collected?", "metadata": {}}
+{"_id": "mne_conftest.py_pytest_sessionfinish_doc", "text": "How to handle the end of the session?", "metadata": {}}
+{"_id": "mne_conftest.py_pytest_terminal_summary_doc", "text": "How to print the module-level timings?", "metadata": {}}
+{"_id": "mne_conftest.py_pytest_report_header_doc", "text": "How to add information to the pytest run header?", "metadata": {}}
+{"_id": "mne_conftest.py_numba_conditional_doc", "text": "How to test both code paths on machines that have numba?", "metadata": {}}
+{"_id": "mne_conftest.py_nbexec_doc", "text": "How to execute python code in a notebook?", "metadata": {}}
+{"_id": "mne_conftest.py_pytest_runtest_call_doc", "text": "How to run notebook code written in python?", "metadata": {}}
+{"_id": "mne_conftest.py_nirx_snirf_doc", "text": "How to return a (raw_nirx, raw_snirf) matched pair?", "metadata": {}}
+{"_id": "mne_conftest.py_qt_windows_closed_doc", "text": "How to ensure that no new qt windows are open after a test?", "metadata": {}}
+{"_id": "mne_conftest.py_pytest_runtest_makereport_doc", "text": "How to stash the status of each item and turn unexpected skips into errors?", "metadata": {}}
+{"_id": "mne_conftest.py_pytest_make_collect_report_doc", "text": "How to turn unexpected skips during collection (e.g., module-level) into errors?", "metadata": {}}
+{"_id": "mne_conftest.py_eyetrack_cal_doc", "text": "How to create a toy calibration instance?", "metadata": {}}
+{"_id": "mne_conftest.py_eyetrack_raw_doc", "text": "How to create a toy raw instance with eyetracking channels?", "metadata": {}}
+{"_id": "mne_baseline.py_rescale_doc", "text": "How to rescale (baseline correct) data?", "metadata": {}}
+{"_id": "mne_surface.py_get_head_surf_doc", "text": "How to load the subject head surface?", "metadata": {}}
+{"_id": "mne_surface.py_get_meg_helmet_surf_doc", "text": "How to load the meg helmet associated with the meg sensors?", "metadata": {}}
+{"_id": "mne_surface.py_fast_cross_3d_doc", "text": "How to compute cross product between list of 3d vectors?", "metadata": {}}
+{"_id": "mne_surface.py_complete_surface_info_doc", "text": "How to complete surface information?", "metadata": {}}
+{"_id": "mne_surface.py_read_curvature_doc", "text": "How to load in curvature values from the ?h.curv file?", "metadata": {}}
+{"_id": "mne_surface.py_read_surface_doc", "text": "How to load a freesurfer surface mesh in triangular format?", "metadata": {}}
+{"_id": "mne_surface.py_write_surface_doc", "text": "How to write a triangular freesurfer surface mesh?", "metadata": {}}
+{"_id": "mne_surface.py_decimate_surface_doc", "text": "How to decimate surface data?", "metadata": {}}
+{"_id": "mne_surface.py_mesh_edges_doc", "text": "How to return sparse matrix with edges as an adjacency matrix?", "metadata": {}}
+{"_id": "mne_surface.py_mesh_dist_doc", "text": "How to compute adjacency matrix weighted by distances?", "metadata": {}}
+{"_id": "mne_surface.py_read_tri_doc", "text": "How to read triangle definitions from an ascii file?", "metadata": {}}
+{"_id": "mne_surface.py_dig_mri_distances_doc", "text": "How to compute distances between head shape points and the scalp surface?", "metadata": {}}
+{"_id": "mne_surface.py_get_montage_volume_labels_doc", "text": "How to get regions of interest near channels from a freesurfer parcellation?", "metadata": {}}
+{"_id": "mne_transforms.py_apply_trans_doc", "text": "How to apply a transform matrix to an array of points?", "metadata": {}}
+{"_id": "mne_transforms.py_rotation_doc", "text": "How to create an array with a 4 dimensional rotation matrix?", "metadata": {}}
+{"_id": "mne_transforms.py_rotation3d_doc", "text": "How to create an array with a 3 dimensional rotation matrix?", "metadata": {}}
+{"_id": "mne_transforms.py_rotation3d_align_z_axis_doc", "text": "How to compute a rotation matrix to align [ 0 0 1] with supplied target z axis?", "metadata": {}}
+{"_id": "mne_transforms.py_rotation_angles_doc", "text": "How to find rotation angles from a transformation matrix?", "metadata": {}}
+{"_id": "mne_transforms.py_scaling_doc", "text": "How to create an array with a scaling matrix?", "metadata": {}}
+{"_id": "mne_transforms.py_translation_doc", "text": "How to create an array with a translation matrix?", "metadata": {}}
+{"_id": "mne_transforms.py_combine_transforms_doc", "text": "How to combine two transforms?", "metadata": {}}
+{"_id": "mne_transforms.py_read_trans_doc", "text": "How to read a ``-trans.fif`` file?", "metadata": {}}
+{"_id": "mne_transforms.py_write_trans_doc", "text": "How to write a transformation fif file?", "metadata": {}}
+{"_id": "mne_transforms.py_invert_transform_doc", "text": "How to invert a transformation between coordinate systems?", "metadata": {}}
+{"_id": "mne_transforms.py_transform_surface_to_doc", "text": "How to transform surface to the desired coordinate system?", "metadata": {}}
+{"_id": "mne_transforms.py_get_ras_to_neuromag_trans_doc", "text": "How to construct a transformation matrix to the mne head coordinate system?", "metadata": {}}
+{"_id": "mne_transforms.py_quat_to_rot_doc", "text": "How to convert a set of quaternions to rotations?", "metadata": {}}
+{"_id": "mne_transforms.py_rot_to_quat_doc", "text": "How to convert a set of rotations to quaternions?", "metadata": {}}
+{"_id": "mne_transforms.py_read_ras_mni_t_doc", "text": "How to read a subject's ras to mni transform?", "metadata": {}}
+{"_id": "mne_transforms.py_compute_volume_registration_doc", "text": "How to align two volumes using an affine and, optionally, sdr?", "metadata": {}}
+{"_id": "mne_transforms.py_apply_volume_registration_doc", "text": "How to apply volume registration?", "metadata": {}}
+{"_id": "mne_transforms.py_apply_volume_registration_points_doc", "text": "How to apply volume registration?", "metadata": {}}
+{"_id": "mne_transforms.py_from_str_doc", "text": "How to the \"from\" frame as a string?", "metadata": {}}
+{"_id": "mne_transforms.py_to_str_doc", "text": "How to the \"to\" frame as a string?", "metadata": {}}
+{"_id": "mne_transforms.py_save_doc", "text": "How to save the transform as -trans.fif file?", "metadata": {}}
+{"_id": "mne_transforms.py_copy_doc", "text": "How to make a copy of the transform?", "metadata": {}}
+{"_id": "mne_transforms.py_transform_doc", "text": "How to apply the warp?", "metadata": {}}
+{"_id": "mne_transforms.py_fit_doc", "text": "How to fit the warp from source points to destination points?", "metadata": {}}
+{"_id": "mne_transforms.py_transform_doc", "text": "How to transform arbitrary source points to the destination?", "metadata": {}}
+{"_id": "mne_epochs.py_make_metadata_doc", "text": "How to automatically generate metadata for use with `mne.epochs` from events?", "metadata": {}}
+{"_id": "mne_epochs.py_combine_event_ids_doc", "text": "How to collapse event_ids from an epochs instance into a new event_id?", "metadata": {}}
+{"_id": "mne_epochs.py_equalize_epoch_counts_doc", "text": "How to equalize the number of trials in multiple epochs or epochstfr instances?", "metadata": {}}
+{"_id": "mne_epochs.py_read_epochs_doc", "text": "How to read epochs from a fif file?", "metadata": {}}
+{"_id": "mne_epochs.py_bootstrap_doc", "text": "How to compute epochs selected by bootstrapping?", "metadata": {}}
+{"_id": "mne_epochs.py_concatenate_epochs_doc", "text": "How to concatenate a list of `~mne.epochs` into one `~mne.epochs` object?", "metadata": {}}
+{"_id": "mne_epochs.py_average_movements_doc", "text": "How to average data using maxwell filtering, transforming using head positions?", "metadata": {}}
+{"_id": "mne_epochs.py_make_fixed_length_epochs_doc", "text": "How to divide continuous raw data into equal-sized consecutive epochs?", "metadata": {}}
+{"_id": "mne_epochs.py_reset_drop_log_selection_doc", "text": "How to reset the drop_log and selection entries?", "metadata": {}}
+{"_id": "mne_epochs.py_load_data_doc", "text": "How to load the data if not already preloaded?", "metadata": {}}
+{"_id": "mne_epochs.py_apply_baseline_doc", "text": "How to baseline correct epochs?", "metadata": {}}
+{"_id": "mne_epochs.py_iter_evoked_doc", "text": "How to iterate over epochs as a sequence of evoked objects?", "metadata": {}}
+{"_id": "mne_epochs.py_subtract_evoked_doc", "text": "How to subtract an evoked response from each epoch?", "metadata": {}}
+{"_id": "mne_epochs.py_average_doc", "text": "How to compute an average over epochs?", "metadata": {}}
+{"_id": "mne_epochs.py_standard_error_doc", "text": "How to compute standard error over epochs?", "metadata": {}}
+{"_id": "mne_epochs.py_ch_names_doc", "text": "How to channel names?", "metadata": {}}
+{"_id": "mne_epochs.py_drop_bad_doc", "text": "How to drop bad epochs without retaining the epochs data?", "metadata": {}}
+{"_id": "mne_epochs.py_drop_log_stats_doc", "text": "How to compute the channel stats based on a drop_log from epochs?", "metadata": {}}
+{"_id": "mne_epochs.py_drop_doc", "text": "How to drop epochs based on indices or boolean mask?", "metadata": {}}
+{"_id": "mne_epochs.py_get_data_doc", "text": "How to get all epochs as a 3d array?", "metadata": {}}
+{"_id": "mne_epochs.py_apply_function_doc", "text": "How to apply a function to a subset of channels?", "metadata": {}}
+{"_id": "mne_epochs.py_filename_doc", "text": "How to the filename if the epochs are loaded from disk?", "metadata": {}}
+{"_id": "mne_epochs.py_crop_doc", "text": "How to crop a time interval from the epochs?", "metadata": {}}
+{"_id": "mne_epochs.py_copy_doc", "text": "How to return copy of epochs instance?", "metadata": {}}
+{"_id": "mne_epochs.py_save_doc", "text": "How to save epochs in a fif file?", "metadata": {}}
+{"_id": "mne_epochs.py_export_doc", "text": "How to export epochs to external formats?", "metadata": {}}
+{"_id": "mne_epochs.py_equalize_event_counts_doc", "text": "How to equalize the number of trials in each condition?", "metadata": {}}
+{"_id": "mne_epochs.py_compute_psd_doc", "text": "How to perform spectral analysis on sensor data?", "metadata": {}}
+{"_id": "mne_epochs.py_compute_tfr_doc", "text": "How to compute a time-frequency representation of epoched data?", "metadata": {}}
+{"_id": "mne_epochs.py_plot_psd_doc", "text": "How to %(plot_psd_doc)s?", "metadata": {}}
+{"_id": "mne_epochs.py_to_data_frame_doc", "text": "How to export data in tabular structure as a pandas dataframe?", "metadata": {}}
+{"_id": "mne_epochs.py_as_type_doc", "text": "How to compute virtual epochs using interpolated fields?", "metadata": {}}
+{"_id": "mne_evoked.py_combine_evoked_doc", "text": "How to merge evoked data by weighted addition or subtraction?", "metadata": {}}
+{"_id": "mne_evoked.py_read_evokeds_doc", "text": "How to read evoked dataset(s)?", "metadata": {}}
+{"_id": "mne_evoked.py_write_evokeds_doc", "text": "How to write an evoked dataset to a file?", "metadata": {}}
+{"_id": "mne_evoked.py_filename_doc", "text": "How to the filename of the evoked object, if it exists?", "metadata": {}}
+{"_id": "mne_evoked.py_kind_doc", "text": "How to the data kind?", "metadata": {}}
+{"_id": "mne_evoked.py_data_doc", "text": "How to the data matrix?", "metadata": {}}
+{"_id": "mne_evoked.py_data_doc", "text": "How to set the data matrix?", "metadata": {}}
+{"_id": "mne_evoked.py_get_data_doc", "text": "How to get evoked data as 2d array?", "metadata": {}}
+{"_id": "mne_evoked.py_apply_function_doc", "text": "How to apply a function to a subset of channels?", "metadata": {}}
+{"_id": "mne_evoked.py_apply_baseline_doc", "text": "How to baseline correct evoked data?", "metadata": {}}
+{"_id": "mne_evoked.py_save_doc", "text": "How to save evoked data to a file?", "metadata": {}}
+{"_id": "mne_evoked.py_export_doc", "text": "How to export evoked to external formats?", "metadata": {}}
+{"_id": "mne_evoked.py_ch_names_doc", "text": "How to channel names?", "metadata": {}}
+{"_id": "mne_evoked.py_plot_topo_doc", "text": "How to ?", "metadata": {}}
+{"_id": "mne_evoked.py_animate_topomap_doc", "text": "How to make animation of evoked data as topomap timeseries?", "metadata": {}}
+{"_id": "mne_evoked.py_as_type_doc", "text": "How to compute virtual evoked using interpolated fields?", "metadata": {}}
+{"_id": "mne_evoked.py_detrend_doc", "text": "How to detrend data?", "metadata": {}}
+{"_id": "mne_evoked.py_copy_doc", "text": "How to copy the instance of evoked?", "metadata": {}}
+{"_id": "mne_evoked.py_get_peak_doc", "text": "How to get location and latency of peak amplitude?", "metadata": {}}
+{"_id": "mne_evoked.py_compute_psd_doc", "text": "How to perform spectral analysis on sensor data?", "metadata": {}}
+{"_id": "mne_evoked.py_compute_tfr_doc", "text": "How to compute a time-frequency representation of evoked data?", "metadata": {}}
+{"_id": "mne_evoked.py_plot_psd_doc", "text": "How to %(plot_psd_doc)s?", "metadata": {}}
+{"_id": "mne_evoked.py_to_data_frame_doc", "text": "How to export data in tabular structure as a pandas dataframe?", "metadata": {}}
+{"_id": "mne_proj.py_read_proj_doc", "text": "How to read projections from a fif file?", "metadata": {}}
+{"_id": "mne_proj.py_write_proj_doc", "text": "How to write projections to a fif file?", "metadata": {}}
+{"_id": "mne_proj.py_compute_proj_epochs_doc", "text": "How to compute ssp (signal-space projection) vectors on epoched data?", "metadata": {}}
+{"_id": "mne_proj.py_compute_proj_evoked_doc", "text": "How to compute ssp (signal-space projection) vectors on evoked data?", "metadata": {}}
+{"_id": "mne_proj.py_compute_proj_raw_doc", "text": "How to compute ssp (signal-space projection) vectors on continuous data?", "metadata": {}}
+{"_id": "mne_proj.py_sensitivity_map_doc", "text": "How to compute sensitivity map?", "metadata": {}}
+{"_id": "mne_misc.py_parse_config_doc", "text": "How to parse a config file (like .ave and .cov files)?", "metadata": {}}
+{"_id": "mne_misc.py_read_reject_parameters_doc", "text": "How to read rejection parameters from .cov or .ave config file?", "metadata": {}}
+{"_id": "mne_fixes.py_rng_uniform_doc", "text": "How to get the uniform/randint from the rng?", "metadata": {}}
+{"_id": "mne_fixes.py_empirical_covariance_doc", "text": "How to compute the maximum likelihood covariance estimator?", "metadata": {}}
+{"_id": "mne_fixes.py_log_likelihood_doc", "text": "How to compute the sample mean of the log_likelihood under a covariance model?", "metadata": {}}
+{"_id": "mne_fixes.py_stable_cumsum_doc", "text": "How to use high precision for cumsum and check that final value matches sum?", "metadata": {}}
+{"_id": "mne_fixes.py_minimum_phase_doc", "text": "How to wrap scipy.signal.minimum_phase with half option?", "metadata": {}}
+{"_id": "mne_fixes.py_sph_harm_y_doc", "text": "How to wrap scipy.special.sph_harm for sph_harm_y?", "metadata": {}}
+{"_id": "mne_fixes.py_get_params_doc", "text": "How to get parameters for this estimator?", "metadata": {}}
+{"_id": "mne_fixes.py_set_params_doc", "text": "How to set the parameters of this estimator?", "metadata": {}}
+{"_id": "mne_fixes.py_get_precision_doc", "text": "How to getter for the precision matrix?", "metadata": {}}
+{"_id": "mne_fixes.py_fit_doc", "text": "How to fit the maximum likelihood estimator covariance model?", "metadata": {}}
+{"_id": "mne_fixes.py_score_doc", "text": "How to compute the log-likelihood of a gaussian dataset?", "metadata": {}}
+{"_id": "mne_fixes.py_error_norm_doc", "text": "How to compute the mean squared error between two covariance estimators?", "metadata": {}}
+{"_id": "mne_fixes.py_mahalanobis_doc", "text": "How to compute the squared mahalanobis distances of given observations?", "metadata": {}}
+{"_id": "mne__freesurfer.py_get_volume_labels_from_aseg_doc", "text": "How to return a list of names and colors of segmented volumes?", "metadata": {}}
+{"_id": "mne__freesurfer.py_head_to_mri_doc", "text": "How to convert pos from head coordinate system to mri ones?", "metadata": {}}
+{"_id": "mne__freesurfer.py_vertex_to_mni_doc", "text": "How to convert the array of vertices for a hemisphere to mni coordinates?", "metadata": {}}
+{"_id": "mne__freesurfer.py_head_to_mni_doc", "text": "How to convert pos from head coordinate system to mni ones?", "metadata": {}}
+{"_id": "mne__freesurfer.py_get_mni_fiducials_doc", "text": "How to estimate fiducials for a subject?", "metadata": {}}
+{"_id": "mne__freesurfer.py_estimate_head_mri_t_doc", "text": "How to estimate the head->mri transform from fsaverage fiducials?", "metadata": {}}
+{"_id": "mne__freesurfer.py_read_lta_doc", "text": "How to read a freesurfer linear transform array file?", "metadata": {}}
+{"_id": "mne__freesurfer.py_read_talxfm_doc", "text": "How to compute mri-to-mni transform from freesurfer talairach.xfm file?", "metadata": {}}
+{"_id": "mne__freesurfer.py_read_freesurfer_lut_doc", "text": "How to read a freesurfer-formatted lut?", "metadata": {}}
+{"_id": "mne_morph_map.py_read_morph_map_doc", "text": "How to read morph map?", "metadata": {}}
+{"_id": "mne_event.py_pick_events_doc", "text": "How to select some :term:`events`?", "metadata": {}}
+{"_id": "mne_event.py_define_target_events_doc", "text": "How to define new events by co-occurrence of existing events?", "metadata": {}}
+{"_id": "mne_event.py_read_events_doc", "text": "How to read :term:`events` from fif or text file?", "metadata": {}}
+{"_id": "mne_event.py_write_events_doc", "text": "How to write :term:`events` to file?", "metadata": {}}
+{"_id": "mne_event.py_find_stim_steps_doc", "text": "How to find all steps in data from a stim channel?", "metadata": {}}
+{"_id": "mne_event.py_find_events_doc", "text": "How to find :term:`events` from raw file?", "metadata": {}}
+{"_id": "mne_event.py_merge_events_doc", "text": "How to merge a set of :term:`events`?", "metadata": {}}
+{"_id": "mne_event.py_shift_time_events_doc", "text": "How to shift a set of :term:`events`?", "metadata": {}}
+{"_id": "mne_event.py_make_fixed_length_events_doc", "text": "How to make a set of :term:`events` separated by a fixed duration?", "metadata": {}}
+{"_id": "mne_event.py_concatenate_events_doc", "text": "How to concatenate event lists to be compatible with concatenate_raws?", "metadata": {}}
+{"_id": "mne_event.py_match_event_names_doc", "text": "How to search a collection of event names for matching (sub-)groups of events?", "metadata": {}}
+{"_id": "mne_event.py_count_events_doc", "text": "How to count events?", "metadata": {}}
+{"_id": "mne_event.py_categories_doc", "text": "How to return list of averaging categories ordered by dacq index?", "metadata": {}}
+{"_id": "mne_event.py_events_doc", "text": "How to return events ordered by dacq index?", "metadata": {}}
+{"_id": "mne_event.py_get_condition_doc", "text": "How to get averaging parameters for a condition (averaging category)?", "metadata": {}}
+{"_id": "mne_morph.py_compute_source_morph_doc", "text": "How to create a sourcemorph from one subject to another?", "metadata": {}}
+{"_id": "mne_morph.py_read_source_morph_doc", "text": "How to load the morph for source estimates from a file?", "metadata": {}}
+{"_id": "mne_morph.py_grade_to_vertices_doc", "text": "How to convert a grade to source space vertices for a given subject?", "metadata": {}}
+{"_id": "mne_morph.py_apply_doc", "text": "How to morph source space data?", "metadata": {}}
+{"_id": "mne_morph.py_compute_vol_morph_mat_doc", "text": "How to compute the sparse matrix representation of the volumetric morph?", "metadata": {}}
+{"_id": "mne_morph.py_save_doc", "text": "How to save the morph for source estimates to a file?", "metadata": {}}
+{"_id": "mne_chpi.py_read_head_pos_doc", "text": "How to read maxfilter-formatted head position parameters?", "metadata": {}}
+{"_id": "mne_chpi.py_write_head_pos_doc", "text": "How to write maxfilter-formatted head position parameters?", "metadata": {}}
+{"_id": "mne_chpi.py_head_pos_to_trans_rot_t_doc", "text": "How to convert maxfilter-formatted head position quaternions?", "metadata": {}}
+{"_id": "mne_chpi.py_extract_chpi_locs_ctf_doc", "text": "How to extract chpi locations from ctf data?", "metadata": {}}
+{"_id": "mne_chpi.py_extract_chpi_locs_kit_doc", "text": "How to extract chpi locations from kit data?", "metadata": {}}
+{"_id": "mne_chpi.py_get_chpi_info_doc", "text": "How to retrieve chpi information from the data?", "metadata": {}}
+{"_id": "mne_chpi.py_compute_head_pos_doc", "text": "How to compute time-varying head positions?", "metadata": {}}
+{"_id": "mne_chpi.py_compute_chpi_snr_doc", "text": "How to compute time-varying estimates of chpi snr?", "metadata": {}}
+{"_id": "mne_chpi.py_compute_chpi_amplitudes_doc", "text": "How to compute time-varying chpi amplitudes?", "metadata": {}}
+{"_id": "mne_chpi.py_compute_chpi_locs_doc", "text": "How to compute locations of each chpi coils over time?", "metadata": {}}
+{"_id": "mne_chpi.py_filter_chpi_doc", "text": "How to remove chpi and line noise from data?", "metadata": {}}
+{"_id": "mne_chpi.py_get_active_chpi_doc", "text": "How to determine how many hpi coils were active for a time point?", "metadata": {}}
+{"_id": "mne_source_estimate.py_read_source_estimate_doc", "text": "How to read a source estimate object?", "metadata": {}}
+{"_id": "mne_source_estimate.py_spatio_temporal_src_adjacency_doc", "text": "How to compute adjacency for a source space activation over time?", "metadata": {}}
+{"_id": "mne_source_estimate.py_grade_to_tris_doc", "text": "How to get tris defined for a certain grade?", "metadata": {}}
+{"_id": "mne_source_estimate.py_spatio_temporal_tris_adjacency_doc", "text": "How to compute adjacency from triangles and time instants?", "metadata": {}}
+{"_id": "mne_source_estimate.py_spatio_temporal_dist_adjacency_doc", "text": "How to compute adjacency from distances in a source space and time instants?", "metadata": {}}
+{"_id": "mne_source_estimate.py_spatial_src_adjacency_doc", "text": "How to compute adjacency for a source space activation?", "metadata": {}}
+{"_id": "mne_source_estimate.py_spatial_tris_adjacency_doc", "text": "How to compute adjacency from triangles?", "metadata": {}}
+{"_id": "mne_source_estimate.py_spatial_dist_adjacency_doc", "text": "How to compute adjacency from distances in a source space?", "metadata": {}}
+{"_id": "mne_source_estimate.py_spatial_inter_hemi_adjacency_doc", "text": "How to get vertices on each hemisphere that are close to the other hemisphere?", "metadata": {}}
+{"_id": "mne_source_estimate.py_extract_label_time_course_doc", "text": "How to extract label time course for lists of labels and source estimates?", "metadata": {}}
+{"_id": "mne_source_estimate.py_stc_near_sensors_doc", "text": "How to create a stc from ecog, seeg and dbs sensor data?", "metadata": {}}
+{"_id": "mne_source_estimate.py_get_peak_doc", "text": "How to get location and latency of peak amplitude?", "metadata": {}}
+{"_id": "mne_source_estimate.py_extract_label_time_course_doc", "text": "How to extract label time courses for lists of labels?", "metadata": {}}
+{"_id": "mne_source_estimate.py_apply_function_doc", "text": "How to apply a function to a subset of vertices?", "metadata": {}}
+{"_id": "mne_source_estimate.py_apply_baseline_doc", "text": "How to baseline correct source estimate data?", "metadata": {}}
+{"_id": "mne_source_estimate.py_save_doc", "text": "How to save the full source estimate to an hdf5 file?", "metadata": {}}
+{"_id": "mne_source_estimate.py_sfreq_doc", "text": "How to sample rate of the data?", "metadata": {}}
+{"_id": "mne_source_estimate.py_crop_doc", "text": "How to restrict sourceestimate to a time interval?", "metadata": {}}
+{"_id": "mne_source_estimate.py_resample_doc", "text": "How to resample data?", "metadata": {}}
+{"_id": "mne_source_estimate.py_data_doc", "text": "How to numpy array of source estimate data?", "metadata": {}}
+{"_id": "mne_source_estimate.py_shape_doc", "text": "How to shape of the data?", "metadata": {}}
+{"_id": "mne_source_estimate.py_tmin_doc", "text": "How to the first timestamp?", "metadata": {}}
+{"_id": "mne_source_estimate.py_tstep_doc", "text": "How to the change in time between two consecutive samples (1 / sfreq)?", "metadata": {}}
+{"_id": "mne_source_estimate.py_times_doc", "text": "How to a timestamp for each sample?", "metadata": {}}
+{"_id": "mne_source_estimate.py_mean_doc", "text": "How to make a summary stc file with mean over time points?", "metadata": {}}
+{"_id": "mne_source_estimate.py_sum_doc", "text": "How to make a summary stc file with sum over time points?", "metadata": {}}
+{"_id": "mne_source_estimate.py_sqrt_doc", "text": "How to take the square root?", "metadata": {}}
+{"_id": "mne_source_estimate.py_copy_doc", "text": "How to return copy of source estimate instance?", "metadata": {}}
+{"_id": "mne_source_estimate.py_bin_doc", "text": "How to return a source estimate object with data summarized over time bins?", "metadata": {}}
+{"_id": "mne_source_estimate.py_transform_data_doc", "text": "How to get data after a linear (time) transform has been applied?", "metadata": {}}
+{"_id": "mne_source_estimate.py_transform_doc", "text": "How to apply linear transform?", "metadata": {}}
+{"_id": "mne_source_estimate.py_to_data_frame_doc", "text": "How to export data in tabular structure as a pandas dataframe?", "metadata": {}}
+{"_id": "mne_source_estimate.py_lh_data_doc", "text": "How to left hemisphere data?", "metadata": {}}
+{"_id": "mne_source_estimate.py_rh_data_doc", "text": "How to right hemisphere data?", "metadata": {}}
+{"_id": "mne_source_estimate.py_lh_vertno_doc", "text": "How to left hemisphere vertno?", "metadata": {}}
+{"_id": "mne_source_estimate.py_rh_vertno_doc", "text": "How to right hemisphere vertno?", "metadata": {}}
+{"_id": "mne_source_estimate.py_in_label_doc", "text": "How to get a source estimate object restricted to a label?", "metadata": {}}
+{"_id": "mne_source_estimate.py_save_as_surface_doc", "text": "How to save a surface source estimate (stc) as a gifti file?", "metadata": {}}
+{"_id": "mne_source_estimate.py_expand_doc", "text": "How to expand sourceestimate to include more vertices?", "metadata": {}}
+{"_id": "mne_source_estimate.py_to_original_src_doc", "text": "How to get a source estimate from morphed source to the original subject?", "metadata": {}}
+{"_id": "mne_source_estimate.py_get_peak_doc", "text": "How to get location and latency of peak amplitude?", "metadata": {}}
+{"_id": "mne_source_estimate.py_save_doc", "text": "How to save the source estimates to a file?", "metadata": {}}
+{"_id": "mne_source_estimate.py_estimate_snr_doc", "text": "How to compute time-varying snr in the source space?", "metadata": {}}
+{"_id": "mne_source_estimate.py_center_of_mass_doc", "text": "How to compute the center of mass of activity?", "metadata": {}}
+{"_id": "mne_source_estimate.py_magnitude_doc", "text": "How to compute magnitude of activity without directionality?", "metadata": {}}
+{"_id": "mne_source_estimate.py_project_doc", "text": "How to project the data for each vertex in a given direction?", "metadata": {}}
+{"_id": "mne_source_estimate.py_extract_label_time_course_doc", "text": "How to extract label time courses for lists of labels?", "metadata": {}}
+{"_id": "mne_source_estimate.py_in_label_doc", "text": "How to get a source estimate object restricted to a label?", "metadata": {}}
+{"_id": "mne_source_estimate.py_save_as_volume_doc", "text": "How to save a volume source estimate in a nifti file?", "metadata": {}}
+{"_id": "mne_source_estimate.py_as_volume_doc", "text": "How to export volume source estimate as a nifti object?", "metadata": {}}
+{"_id": "mne_source_estimate.py_save_doc", "text": "How to save the source estimates to a file?", "metadata": {}}
+{"_id": "mne_source_estimate.py_surface_doc", "text": "How to return the cortical surface source estimate?", "metadata": {}}
+{"_id": "mne_source_estimate.py_volume_doc", "text": "How to return the volume surface source estimate?", "metadata": {}}
+{"_id": "mne_filter.py_next_fast_len_doc", "text": "How to find the next fast size of input data to `fft`, for zero-padding, etc?", "metadata": {}}
+{"_id": "mne_filter.py_estimate_ringing_samples_doc", "text": "How to estimate filter ringing?", "metadata": {}}
+{"_id": "mne_filter.py_construct_iir_filter_doc", "text": "How to use iir parameters to get filtering coefficients?", "metadata": {}}
+{"_id": "mne_filter.py_filter_data_doc", "text": "How to filter a subset of channels?", "metadata": {}}
+{"_id": "mne_filter.py_create_filter_doc", "text": "How to create a fir or iir filter?", "metadata": {}}
+{"_id": "mne_filter.py_notch_filter_doc", "text": "How to notch filter for the signal x?", "metadata": {}}
+{"_id": "mne_filter.py_resample_doc", "text": "How to resample an array?", "metadata": {}}
+{"_id": "mne_filter.py_detrend_doc", "text": "How to detrend the array x?", "metadata": {}}
+{"_id": "mne_filter.py_design_mne_c_filter_doc", "text": "How to create a fir filter like that used by mne-c?", "metadata": {}}
+{"_id": "mne_filter.py_savgol_filter_doc", "text": "How to filter the data using savitzky-golay polynomial method?", "metadata": {}}
+{"_id": "mne_filter.py_filter_doc", "text": "How to filter a subset of channels/vertices?", "metadata": {}}
+{"_id": "mne_filter.py_resample_doc", "text": "How to resample data?", "metadata": {}}
+{"_id": "mne_filter.py_apply_hilbert_doc", "text": "How to compute analytic signal or envelope for a subset of channels/vertices?", "metadata": {}}
+{"_id": "mne_bem.py_make_bem_solution_doc", "text": "How to create a bem solution using the linear collocation approach?", "metadata": {}}
+{"_id": "mne_bem.py_make_bem_model_doc", "text": "How to create a bem model for a subject?", "metadata": {}}
+{"_id": "mne_bem.py_make_sphere_model_doc", "text": "How to create a spherical model for forward solution calculation?", "metadata": {}}
+{"_id": "mne_bem.py_fit_sphere_to_headshape_doc", "text": "How to fit a sphere to the headshape points to determine head center?", "metadata": {}}
+{"_id": "mne_bem.py_get_fitting_dig_doc", "text": "How to get digitization points suitable for sphere fitting?", "metadata": {}}
+{"_id": "mne_bem.py_make_watershed_bem_doc", "text": "How to create bem surfaces using the freesurfer watershed algorithm?", "metadata": {}}
+{"_id": "mne_bem.py_read_bem_surfaces_doc", "text": "How to read the bem surfaces from a fif file?", "metadata": {}}
+{"_id": "mne_bem.py_read_bem_solution_doc", "text": "How to read the bem solution from a file?", "metadata": {}}
+{"_id": "mne_bem.py_write_bem_surfaces_doc", "text": "How to write bem surfaces to a fif file?", "metadata": {}}
+{"_id": "mne_bem.py_write_head_bem_doc", "text": "How to write a head surface to a fif file?", "metadata": {}}
+{"_id": "mne_bem.py_write_bem_solution_doc", "text": "How to write a bem model with solution?", "metadata": {}}
+{"_id": "mne_bem.py_convert_flash_mris_doc", "text": "How to synthesize the flash 5 files for use with make_flash_bem?", "metadata": {}}
+{"_id": "mne_bem.py_make_flash_bem_doc", "text": "How to create 3-layer bem model from prepared flash mri images?", "metadata": {}}
+{"_id": "mne_bem.py_make_scalp_surfaces_doc", "text": "How to create surfaces of the scalp and neck?", "metadata": {}}
+{"_id": "mne_bem.py_distance_to_bem_doc", "text": "How to calculate the distance of positions to inner skull surface?", "metadata": {}}
+{"_id": "mne_bem.py_copy_doc", "text": "How to return copy of conductormodel instance?", "metadata": {}}
+{"_id": "mne_bem.py_radius_doc", "text": "How to sphere radius if an eeg sphere model?", "metadata": {}}
+{"_id": "mne_coreg.py_coregister_fiducials_doc", "text": "How to create a head-mri transform by aligning 3 fiducial points?", "metadata": {}}
+{"_id": "mne_coreg.py_create_default_subject_doc", "text": "How to create an average brain subject for subjects without structural mri?", "metadata": {}}
+{"_id": "mne_coreg.py_fit_matched_points_doc", "text": "How to find a transform between matched sets of points?", "metadata": {}}
+{"_id": "mne_coreg.py_read_mri_cfg_doc", "text": "How to read information from the cfg file of a scaled mri brain?", "metadata": {}}
+{"_id": "mne_coreg.py_scale_bem_doc", "text": "How to scale a bem file?", "metadata": {}}
+{"_id": "mne_coreg.py_scale_labels_doc", "text": "How to scale labels to match a brain that was previously created by scaling?", "metadata": {}}
+{"_id": "mne_coreg.py_scale_mri_doc", "text": "How to create a scaled copy of an mri subject?", "metadata": {}}
+{"_id": "mne_coreg.py_scale_source_space_doc", "text": "How to scale a source space for an mri created with scale_mri()?", "metadata": {}}
+{"_id": "mne_coreg.py_set_scale_mode_doc", "text": "How to select how to fit the scale parameters?", "metadata": {}}
+{"_id": "mne_coreg.py_set_grow_hair_doc", "text": "How to compensate for hair on the digitizer head shape?", "metadata": {}}
+{"_id": "mne_coreg.py_set_rotation_doc", "text": "How to set the rotation parameter?", "metadata": {}}
+{"_id": "mne_coreg.py_set_translation_doc", "text": "How to set the translation parameter?", "metadata": {}}
+{"_id": "mne_coreg.py_set_scale_doc", "text": "How to set the scale parameter?", "metadata": {}}
+{"_id": "mne_coreg.py_scale_doc", "text": "How to get the current scale factor?", "metadata": {}}
+{"_id": "mne_coreg.py_fit_fiducials_doc", "text": "How to find rotation and translation to fit all 3 fiducials?", "metadata": {}}
+{"_id": "mne_coreg.py_set_fid_match_doc", "text": "How to set the strategy for fitting anatomical landmark (fiducial) points?", "metadata": {}}
+{"_id": "mne_coreg.py_fit_icp_doc", "text": "How to find mri scaling, translation, and rotation to match hsp?", "metadata": {}}
+{"_id": "mne_coreg.py_omit_head_shape_points_doc", "text": "How to exclude head shape points that are far away from the mri head?", "metadata": {}}
+{"_id": "mne_coreg.py_compute_dig_mri_distances_doc", "text": "How to compute distance between head shape points and mri skin surface?", "metadata": {}}
+{"_id": "mne_coreg.py_trans_doc", "text": "How to the head->mri :class:`~mne.transforms.transform`?", "metadata": {}}
+{"_id": "mne_coreg.py_reset_doc", "text": "How to reset all the parameters affecting the coregistration?", "metadata": {}}
+{"_id": "mne__ola.py_feed_generator_doc", "text": "How to feed data and get interpolators as a generator?", "metadata": {}}
+{"_id": "mne__ola.py_feed_doc", "text": "How to feed data and get interpolated values?", "metadata": {}}
+{"_id": "mne__ola.py_feed_doc", "text": "How to pass in a chunk of data?", "metadata": {}}
+{"_id": "mne_dipole.py_read_dipole_doc", "text": "How to read a dipole object from a file?", "metadata": {}}
+{"_id": "mne_dipole.py_fit_dipole_doc", "text": "How to fit a dipole?", "metadata": {}}
+{"_id": "mne_dipole.py_get_phantom_dipoles_doc", "text": "How to get standard phantom dipole locations and orientations?", "metadata": {}}
+{"_id": "mne_dipole.py_pos_doc", "text": "How to the dipoles positions (m) in head coordinates?", "metadata": {}}
+{"_id": "mne_dipole.py_amplitude_doc", "text": "How to the amplitude of the dipoles (am)?", "metadata": {}}
+{"_id": "mne_dipole.py_ori_doc", "text": "How to the dipole orientations (normalized to unit length)?", "metadata": {}}
+{"_id": "mne_dipole.py_gof_doc", "text": "How to the goodness of fit?", "metadata": {}}
+{"_id": "mne_dipole.py_name_doc", "text": "How to name of the dipole?", "metadata": {}}
+{"_id": "mne_dipole.py_conf_doc", "text": "How to confidence limits in dipole orientation?", "metadata": {}}
+{"_id": "mne_dipole.py_khi2_doc", "text": "How to the \u03c7^2 values for the fits?", "metadata": {}}
+{"_id": "mne_dipole.py_nfree_doc", "text": "How to the number of free parameters for each fit?", "metadata": {}}
+{"_id": "mne_dipole.py_save_doc", "text": "How to save dipole in a ``.dip`` or ``.bdip`` file?", "metadata": {}}
+{"_id": "mne_dipole.py_crop_doc", "text": "How to crop data to a given time interval?", "metadata": {}}
+{"_id": "mne_dipole.py_copy_doc", "text": "How to copy the dipoles object?", "metadata": {}}
+{"_id": "mne_dipole.py_to_mni_doc", "text": "How to convert dipole location from head to mni coordinates?", "metadata": {}}
+{"_id": "mne_dipole.py_to_mri_doc", "text": "How to convert dipole location from head to mri surface ras coordinates?", "metadata": {}}
+{"_id": "mne_dipole.py_to_volume_labels_doc", "text": "How to find an roi in atlas for the dipole positions?", "metadata": {}}
+{"_id": "mne_dipole.py_plot_amplitudes_doc", "text": "How to plot the dipole amplitudes as a function of time?", "metadata": {}}
+{"_id": "mne_dipole.py_copy_doc", "text": "How to copy the dipolefixed object?", "metadata": {}}
+{"_id": "mne_dipole.py_ch_names_doc", "text": "How to channel names?", "metadata": {}}
+{"_id": "mne_dipole.py_save_doc", "text": "How to save fixed dipole in fif format?", "metadata": {}}
+{"_id": "mne_dipole.py_plot_doc", "text": "How to plot dipole data?", "metadata": {}}
+{"_id": "mne_rank.py_estimate_rank_doc", "text": "How to estimate the rank of data?", "metadata": {}}
+{"_id": "mne_rank.py_compute_rank_doc", "text": "How to compute the rank of data or noise covariance?", "metadata": {}}
+{"_id": "mne_io/_read_raw.py_split_name_ext_doc", "text": "How to return name and supported file extension?", "metadata": {}}
+{"_id": "mne_io/_read_raw.py_read_raw_doc", "text": "How to read raw file?", "metadata": {}}
+{"_id": "mne_io/base.py_concatenate_raws_doc", "text": "How to concatenate `~mne.io.raw` instances as if they were continuous?", "metadata": {}}
+{"_id": "mne_io/base.py_match_channel_orders_doc", "text": "How to ensure consistent channel order across instances (raw, epochs, or evoked)?", "metadata": {}}
+{"_id": "mne_io/base.py_apply_gradient_compensation_doc", "text": "How to apply ctf gradient compensation?", "metadata": {}}
+{"_id": "mne_io/base.py_load_data_doc", "text": "How to load raw data?", "metadata": {}}
+{"_id": "mne_io/base.py_first_samp_doc", "text": "How to the first data sample?", "metadata": {}}
+{"_id": "mne_io/base.py_first_time_doc", "text": "How to the first time point (including first_samp but not meas_date)?", "metadata": {}}
+{"_id": "mne_io/base.py_last_samp_doc", "text": "How to the last data sample?", "metadata": {}}
+{"_id": "mne_io/base.py_time_as_index_doc", "text": "How to convert time to indices?", "metadata": {}}
+{"_id": "mne_io/base.py_annotations_doc", "text": "How to :class:`~mne.annotations` for marking segments of data?", "metadata": {}}
+{"_id": "mne_io/base.py_filenames_doc", "text": "How to the filenames used?", "metadata": {}}
+{"_id": "mne_io/base.py_filenames_doc", "text": "How to the filenames used, cast to list of paths?", "metadata": {}}
+{"_id": "mne_io/base.py_set_annotations_doc", "text": "How to setter for annotations?", "metadata": {}}
+{"_id": "mne_io/base.py_get_data_doc", "text": "How to get data in the given range?", "metadata": {}}
+{"_id": "mne_io/base.py_apply_function_doc", "text": "How to apply a function to a subset of channels?", "metadata": {}}
+{"_id": "mne_io/base.py_notch_filter_doc", "text": "How to notch filter a subset of channels?", "metadata": {}}
+{"_id": "mne_io/base.py_resample_doc", "text": "How to resample all channels?", "metadata": {}}
+{"_id": "mne_io/base.py_rescale_doc", "text": "How to rescale channels?", "metadata": {}}
+{"_id": "mne_io/base.py_crop_doc", "text": "How to crop raw data file?", "metadata": {}}
+{"_id": "mne_io/base.py_crop_by_annotations_doc", "text": "How to get crops of raw data file for selected annotations?", "metadata": {}}
+{"_id": "mne_io/base.py_save_doc", "text": "How to save raw data to file?", "metadata": {}}
+{"_id": "mne_io/base.py_export_doc", "text": "How to export raw to external formats?", "metadata": {}}
+{"_id": "mne_io/base.py_ch_names_doc", "text": "How to channel names?", "metadata": {}}
+{"_id": "mne_io/base.py_times_doc", "text": "How to time points?", "metadata": {}}
+{"_id": "mne_io/base.py_n_times_doc", "text": "How to number of time points?", "metadata": {}}
+{"_id": "mne_io/base.py_duration_doc", "text": "How to duration of the data in seconds?", "metadata": {}}
+{"_id": "mne_io/base.py_load_bad_channels_doc", "text": "How to mark channels as bad from a text file?", "metadata": {}}
+{"_id": "mne_io/base.py_append_doc", "text": "How to concatenate raw instances as if they were continuous?", "metadata": {}}
+{"_id": "mne_io/base.py_close_doc", "text": "How to clean up the object?", "metadata": {}}
+{"_id": "mne_io/base.py_copy_doc", "text": "How to return copy of raw instance?", "metadata": {}}
+{"_id": "mne_io/base.py_add_events_doc", "text": "How to add events to stim channel?", "metadata": {}}
+{"_id": "mne_io/base.py_compute_psd_doc", "text": "How to perform spectral analysis on sensor data?", "metadata": {}}
+{"_id": "mne_io/base.py_compute_tfr_doc", "text": "How to compute a time-frequency representation of sensor data?", "metadata": {}}
+{"_id": "mne_io/base.py_to_data_frame_doc", "text": "How to export data in tabular structure as a pandas dataframe?", "metadata": {}}
+{"_id": "mne_io/base.py_describe_doc", "text": "How to describe channels (name, type, descriptive statistics)?", "metadata": {}}
+{"_id": "mne_io/snirf/_snirf.py_read_raw_snirf_doc", "text": "How to reader for a continuous wave snirf data?", "metadata": {}}
+{"_id": "mne_io/nirx/nirx.py_read_raw_nirx_doc", "text": "How to reader for a nirx fnirs recording?", "metadata": {}}
+{"_id": "mne_io/bti/read.py_read_char_doc", "text": "How to read character from bti file?", "metadata": {}}
+{"_id": "mne_io/bti/read.py_read_uint16_doc", "text": "How to read unsigned 16bit integer from bti file?", "metadata": {}}
+{"_id": "mne_io/bti/read.py_read_int16_doc", "text": "How to read 16bit integer from bti file?", "metadata": {}}
+{"_id": "mne_io/bti/read.py_read_uint32_doc", "text": "How to read unsigned 32bit integer from bti file?", "metadata": {}}
+{"_id": "mne_io/bti/read.py_read_int32_doc", "text": "How to read 32bit integer from bti file?", "metadata": {}}
+{"_id": "mne_io/bti/read.py_read_int64_doc", "text": "How to read 64bit integer from bti file?", "metadata": {}}
+{"_id": "mne_io/bti/read.py_read_float_doc", "text": "How to read 32bit float from bti file?", "metadata": {}}
+{"_id": "mne_io/bti/read.py_read_double_doc", "text": "How to read 64bit float from bti file?", "metadata": {}}
+{"_id": "mne_io/bti/read.py_read_int16_matrix_doc", "text": "How to read 16bit integer matrix from bti file?", "metadata": {}}
+{"_id": "mne_io/bti/read.py_read_float_matrix_doc", "text": "How to read 32bit float matrix from bti file?", "metadata": {}}
+{"_id": "mne_io/bti/read.py_read_double_matrix_doc", "text": "How to read 64bit float matrix from bti file?", "metadata": {}}
+{"_id": "mne_io/bti/read.py_read_transform_doc", "text": "How to read 64bit float matrix transform from bti file?", "metadata": {}}
+{"_id": "mne_io/bti/read.py_read_dev_header_doc", "text": "How to create a dev header?", "metadata": {}}
+{"_id": "mne_io/bti/bti.py_read_raw_bti_doc", "text": "How to raw object from 4d neuroimaging magneswh3600 data?", "metadata": {}}
+{"_id": "mne_io/neuralynx/neuralynx.py_read_raw_neuralynx_doc", "text": "How to reader for neuralynx files?", "metadata": {}}
+{"_id": "mne_io/hitachi/hitachi.py_read_raw_hitachi_doc", "text": "How to reader for a hitachi fnirs recording?", "metadata": {}}
+{"_id": "mne_io/brainvision/brainvision.py_read_raw_brainvision_doc", "text": "How to reader for brain vision eeg file?", "metadata": {}}
+{"_id": "mne_io/fil/fil.py_read_raw_fil_doc", "text": "How to raw object from fil-opmeg formatted data?", "metadata": {}}
+{"_id": "mne_io/eximia/eximia.py_read_raw_eximia_doc", "text": "How to reader for an eximia eeg file?", "metadata": {}}
+{"_id": "mne_io/nsx/nsx.py_read_raw_nsx_doc", "text": "How to reader function for nsx (blackrock microsystems) files?", "metadata": {}}
+{"_id": "mne_io/ant/ant.py_read_raw_ant_doc", "text": "How to returns?", "metadata": {}}
+{"_id": "mne_io/fiff/raw.py_read_raw_fif_doc", "text": "How to reader function for raw fif data?", "metadata": {}}
+{"_id": "mne_io/fiff/raw.py_fix_mag_coil_types_doc", "text": "How to fix elekta magnetometer coil types?", "metadata": {}}
+{"_id": "mne_io/fiff/raw.py_acqparser_doc", "text": "How to the acqparserfif for the measurement info?", "metadata": {}}
+{"_id": "mne_io/eyelink/eyelink.py_read_raw_eyelink_doc", "text": "How to reader for an eyelink ``.asc`` file?", "metadata": {}}
+{"_id": "mne_io/artemis123/artemis123.py_read_raw_artemis123_doc", "text": "How to read artemis123 data as raw object?", "metadata": {}}
+{"_id": "mne_io/kit/kit.py_get_kit_info_doc", "text": "How to extract all the information from the sqd/con file?", "metadata": {}}
+{"_id": "mne_io/kit/kit.py_read_raw_kit_doc", "text": "How to reader function for ricoh/kit conversion to fif?", "metadata": {}}
+{"_id": "mne_io/kit/kit.py_read_epochs_kit_doc", "text": "How to reader function for ricoh/kit epochs files?", "metadata": {}}
+{"_id": "mne_io/kit/kit.py_read_stim_ch_doc", "text": "How to read events from data?", "metadata": {}}
+{"_id": "mne_io/kit/coreg.py_read_mrk_doc", "text": "How to marker point extraction in meg space directly from sqd?", "metadata": {}}
+{"_id": "mne_io/kit/coreg.py_read_sns_doc", "text": "How to sensor coordinate extraction in meg space?", "metadata": {}}
+{"_id": "mne_io/egi/egi.py_read_raw_egi_doc", "text": "How to read egi simple binary as raw object?", "metadata": {}}
+{"_id": "mne_io/egi/egimff.py_read_evokeds_mff_doc", "text": "How to read averaged mff file as evokedarray or list of evokedarray?", "metadata": {}}
+{"_id": "mne_io/persyst/persyst.py_read_raw_persyst_doc", "text": "How to reader for a persyst (.lay/.dat) recording?", "metadata": {}}
+{"_id": "mne_io/nihon/nihon.py_read_raw_nihon_doc", "text": "How to reader for an nihon kohden eeg file?", "metadata": {}}
+{"_id": "mne_io/besa/besa.py_read_evoked_besa_doc", "text": "How to reader function for besa ``.avr`` or ``.mul`` files?", "metadata": {}}
+{"_id": "mne_io/cnt/cnt.py_read_raw_cnt_doc", "text": "How to read cnt data as raw object?", "metadata": {}}
+{"_id": "mne_io/nicolet/nicolet.py_read_raw_nicolet_doc", "text": "How to read nicolet data as raw object?", "metadata": {}}
+{"_id": "mne_io/eeglab/eeglab.py_read_raw_eeglab_doc", "text": "How to read an eeglab .set file?", "metadata": {}}
+{"_id": "mne_io/eeglab/eeglab.py_read_epochs_eeglab_doc", "text": "How to reader function for eeglab epochs files?", "metadata": {}}
+{"_id": "mne_io/ctf/ctf.py_read_raw_ctf_doc", "text": "How to raw object from ctf directory?", "metadata": {}}
+{"_id": "mne_io/fieldtrip/fieldtrip.py_read_raw_fieldtrip_doc", "text": "How to load continuous (raw) data from a fieldtrip preprocessing structure?", "metadata": {}}
+{"_id": "mne_io/fieldtrip/fieldtrip.py_read_epochs_fieldtrip_doc", "text": "How to load epoched data from a fieldtrip preprocessing structure?", "metadata": {}}
+{"_id": "mne_io/fieldtrip/fieldtrip.py_read_evoked_fieldtrip_doc", "text": "How to load evoked data from a fieldtrip timelocked structure?", "metadata": {}}
+{"_id": "mne_io/boxy/boxy.py_read_raw_boxy_doc", "text": "How to reader for an optical imaging recording?", "metadata": {}}
+{"_id": "mne_io/nedf/nedf.py_read_raw_nedf_doc", "text": "How to read neuroelectrics .nedf files?", "metadata": {}}
+{"_id": "mne_io/curry/curry.py_read_raw_curry_doc", "text": "How to read raw data from curry files?", "metadata": {}}
+{"_id": "mne_io/edf/edf.py_read_raw_edf_doc", "text": "How to reader function for edf and edf+ files?", "metadata": {}}
+{"_id": "mne_io/edf/edf.py_read_raw_bdf_doc", "text": "How to reader function for bdf files?", "metadata": {}}
+{"_id": "mne_io/edf/edf.py_read_raw_gdf_doc", "text": "How to reader function for gdf files?", "metadata": {}}
+{"_id": "mne_report/report.py_open_report_doc", "text": "How to read a saved report or, if it doesn't exist yet, create a new one?", "metadata": {}}
+{"_id": "mne_report/report.py_copy_doc", "text": "How to return a deepcopy of the report?", "metadata": {}}
+{"_id": "mne_report/report.py_get_contents_doc", "text": "How to get the content of the report?", "metadata": {}}
+{"_id": "mne_report/report.py_reorder_doc", "text": "How to reorder the report content?", "metadata": {}}
+{"_id": "mne_report/report.py_html_doc", "text": "How to a list of html representations for all content elements?", "metadata": {}}
+{"_id": "mne_report/report.py_tags_doc", "text": "How to a sorted tuple of all tags currently used in the report?", "metadata": {}}
+{"_id": "mne_report/report.py_add_custom_css_doc", "text": "How to add custom css to the report?", "metadata": {}}
+{"_id": "mne_report/report.py_add_custom_js_doc", "text": "How to add custom javascript to the report?", "metadata": {}}
+{"_id": "mne_report/report.py_add_epochs_doc", "text": "How to add `~mne.epochs` to the report?", "metadata": {}}
+{"_id": "mne_report/report.py_add_evokeds_doc", "text": "How to add `~mne.evoked` objects to the report?", "metadata": {}}
+{"_id": "mne_report/report.py_add_raw_doc", "text": "How to add `~mne.io.raw` objects to the report?", "metadata": {}}
+{"_id": "mne_report/report.py_add_stc_doc", "text": "How to add a `~mne.sourceestimate` (stc) to the report?", "metadata": {}}
+{"_id": "mne_report/report.py_add_forward_doc", "text": "How to add a forward solution?", "metadata": {}}
+{"_id": "mne_report/report.py_add_inverse_operator_doc", "text": "How to add an inverse operator?", "metadata": {}}
+{"_id": "mne_report/report.py_add_trans_doc", "text": "How to add a coregistration visualization to the report?", "metadata": {}}
+{"_id": "mne_report/report.py_add_covariance_doc", "text": "How to add covariance to the report?", "metadata": {}}
+{"_id": "mne_report/report.py_add_events_doc", "text": "How to add events to the report?", "metadata": {}}
+{"_id": "mne_report/report.py_add_projs_doc", "text": "How to render (ssp) projection vectors?", "metadata": {}}
+{"_id": "mne_report/report.py_add_ica_doc", "text": "How to add (a fitted) `~mne.preprocessing.ica` to the report?", "metadata": {}}
+{"_id": "mne_report/report.py_remove_doc", "text": "How to remove elements from the report?", "metadata": {}}
+{"_id": "mne_report/report.py_add_code_doc", "text": "How to add a code snippet (e.g., an analysis script) to the report?", "metadata": {}}
+{"_id": "mne_report/report.py_add_sys_info_doc", "text": "How to add a mne-python system information to the report?", "metadata": {}}
+{"_id": "mne_report/report.py_add_figure_doc", "text": "How to add figures to the report?", "metadata": {}}
+{"_id": "mne_report/report.py_add_image_doc", "text": "How to add an image (e.g., png or jpeg pictures) to the report?", "metadata": {}}
+{"_id": "mne_report/report.py_add_html_doc", "text": "How to add html content to the report?", "metadata": {}}
+{"_id": "mne_report/report.py_add_bem_doc", "text": "How to render a visualization of the boundary element model (bem) surfaces?", "metadata": {}}
+{"_id": "mne_report/report.py_parse_folder_doc", "text": "How to render all the files in the folder?", "metadata": {}}
+{"_id": "mne_report/report.py_save_doc", "text": "How to save the report and optionally open it in browser?", "metadata": {}}
+{"_id": "mne_export/_egimff.py_export_evokeds_mff_doc", "text": "How to export evoked dataset to mff?", "metadata": {}}
+{"_id": "mne_export/_export.py_export_raw_doc", "text": "How to export raw to external formats?", "metadata": {}}
+{"_id": "mne_export/_export.py_export_epochs_doc", "text": "How to export epochs to external formats?", "metadata": {}}
+{"_id": "mne_export/_export.py_export_evokeds_doc", "text": "How to export evoked dataset to external formats?", "metadata": {}}
+{"_id": "mne_datasets/_fetch.py_fetch_dataset_doc", "text": "How to fetch an mne-compatible dataset using pooch?", "metadata": {}}
+{"_id": "mne_datasets/utils.py_default_path_doc", "text": "How to get the default mne_data path?", "metadata": {}}
+{"_id": "mne_datasets/utils.py_has_dataset_doc", "text": "How to check for presence of a dataset?", "metadata": {}}
+{"_id": "mne_datasets/utils.py_fetch_aparc_sub_parcellation_doc", "text": "How to fetch the modified subdivided aparc parcellation?", "metadata": {}}
+{"_id": "mne_datasets/utils.py_fetch_hcp_mmp_parcellation_doc", "text": "How to fetch the hcp-mmp parcellation?", "metadata": {}}
+{"_id": "mne_datasets/_fsaverage/base.py_fetch_fsaverage_doc", "text": "How to fetch and update fsaverage?", "metadata": {}}
+{"_id": "mne_datasets/_infant/base.py_fetch_infant_template_doc", "text": "How to fetch and update an infant mri template?", "metadata": {}}
+{"_id": "mne_datasets/kiloword/kiloword.py_data_path_doc", "text": "How to get path to local copy of the kiloword dataset?", "metadata": {}}
+{"_id": "mne_datasets/kiloword/kiloword.py_get_version_doc", "text": "How to get dataset version?", "metadata": {}}
+{"_id": "mne_datasets/limo/limo.py_data_path_doc", "text": "How to get path to local copy of limo dataset url?", "metadata": {}}
+{"_id": "mne_datasets/limo/limo.py_load_data_doc", "text": "How to fetch subjects epochs data for the limo data set?", "metadata": {}}
+{"_id": "mne_datasets/_phantom/base.py_fetch_phantom_doc", "text": "How to fetch and update a phantom subject?", "metadata": {}}
+{"_id": "mne_datasets/sleep_physionet/age.py_fetch_data_doc", "text": "How to get paths to local copies of physionet polysomnography dataset files?", "metadata": {}}
+{"_id": "mne_datasets/sleep_physionet/temazepam.py_fetch_data_doc", "text": "How to get paths to local copies of physionet polysomnography dataset files?", "metadata": {}}
+{"_id": "mne_datasets/testing/_testing.py_requires_testing_data_doc", "text": "How to skip testing data test?", "metadata": {}}
+{"_id": "mne_datasets/eegbci/eegbci.py_data_path_doc", "text": "How to get path to local copy of eegmmi dataset url?", "metadata": {}}
+{"_id": "mne_datasets/eegbci/eegbci.py_load_data_doc", "text": "How to get paths to local copies of eegbci dataset files?", "metadata": {}}
+{"_id": "mne_datasets/eegbci/eegbci.py_standardize_doc", "text": "How to standardize channel positions and names?", "metadata": {}}
+{"_id": "mne_datasets/hf_sef/hf_sef.py_data_path_doc", "text": "How to get path to local copy of the high frequency sef dataset?", "metadata": {}}
+{"_id": "mne_datasets/visual_92_categories/visual_92_categories.py_data_path_doc", "text": "How to get path to local copy of visual_92_categories dataset?", "metadata": {}}
+{"_id": "mne_datasets/visual_92_categories/visual_92_categories.py_get_version_doc", "text": "How to get dataset version?", "metadata": {}}
+{"_id": "mne_datasets/spm_face/spm_data.py_requires_spm_data_doc", "text": "How to skip testing data test?", "metadata": {}}
+{"_id": "mne_datasets/brainstorm/bst_auditory.py_description_doc", "text": "How to get description of brainstorm (bst_auditory) dataset?", "metadata": {}}
+{"_id": "mne_datasets/brainstorm/bst_phantom_ctf.py_description_doc", "text": "How to get description of brainstorm (bst_phantom_ctf) dataset?", "metadata": {}}
+{"_id": "mne_datasets/brainstorm/bst_raw.py_description_doc", "text": "How to get description of brainstorm (bst_raw) dataset?", "metadata": {}}
+{"_id": "mne_datasets/brainstorm/bst_raw.py_requires_bstraw_data_doc", "text": "How to skip testing data test?", "metadata": {}}
+{"_id": "mne_datasets/brainstorm/bst_resting.py_description_doc", "text": "How to get description of brainstorm (bst_resting) dataset?", "metadata": {}}
+{"_id": "mne_datasets/brainstorm/bst_phantom_elekta.py_description_doc", "text": "How to get description of brainstorm (bst_phantom_elekta) dataset?", "metadata": {}}
+{"_id": "mne_time_frequency/spectrum.py_combine_spectrum_doc", "text": "How to merge spectral data by weighted addition?", "metadata": {}}
+{"_id": "mne_time_frequency/spectrum.py_read_spectrum_doc", "text": "How to load a :class:`mne.time_frequency.spectrum` object from disk?", "metadata": {}}
+{"_id": "mne_time_frequency/spectrum.py_plot_psd_doc", "text": "How to %(plot_psd_doc)s?", "metadata": {}}
+{"_id": "mne_time_frequency/spectrum.py_plot_psd_topo_doc", "text": "How to plot power spectral density, separately for each channel?", "metadata": {}}
+{"_id": "mne_time_frequency/spectrum.py_plot_psd_topomap_doc", "text": "How to plot scalp topography of psd for chosen frequency bands?", "metadata": {}}
+{"_id": "mne_time_frequency/spectrum.py_copy_doc", "text": "How to return copy of the spectrum instance?", "metadata": {}}
+{"_id": "mne_time_frequency/spectrum.py_get_data_doc", "text": "How to get spectrum data in numpy array format?", "metadata": {}}
+{"_id": "mne_time_frequency/spectrum.py_plot_doc", "text": "How to %(plot_psd_doc)s?", "metadata": {}}
+{"_id": "mne_time_frequency/spectrum.py_plot_topo_doc", "text": "How to plot power spectral density, separately for each channel?", "metadata": {}}
+{"_id": "mne_time_frequency/spectrum.py_plot_topomap_doc", "text": "How to plot scalp topography of psd for chosen frequency bands?", "metadata": {}}
+{"_id": "mne_time_frequency/spectrum.py_save_doc", "text": "How to save spectrum data to disk (in hdf5 format)?", "metadata": {}}
+{"_id": "mne_time_frequency/spectrum.py_to_data_frame_doc", "text": "How to export data in tabular structure as a pandas dataframe?", "metadata": {}}
+{"_id": "mne_time_frequency/spectrum.py_units_doc", "text": "How to get the spectrum units for each channel type?", "metadata": {}}
+{"_id": "mne_time_frequency/spectrum.py_average_doc", "text": "How to average the spectra across epochs?", "metadata": {}}
+{"_id": "mne_time_frequency/_stockwell.py_tfr_array_stockwell_doc", "text": "How to compute power and intertrial coherence using stockwell (s) transform?", "metadata": {}}
+{"_id": "mne_time_frequency/_stockwell.py_tfr_stockwell_doc", "text": "How to compute time-frequency representation (tfr) using stockwell transform?", "metadata": {}}
+{"_id": "mne_time_frequency/csd.py_pick_channels_csd_doc", "text": "How to pick channels from cross-spectral density matrix?", "metadata": {}}
+{"_id": "mne_time_frequency/csd.py_read_csd_doc", "text": "How to read a crossspectraldensity object from an hdf5 file?", "metadata": {}}
+{"_id": "mne_time_frequency/csd.py_csd_fourier_doc", "text": "How to estimate cross-spectral density from an array using short-time fourier?", "metadata": {}}
+{"_id": "mne_time_frequency/csd.py_csd_array_fourier_doc", "text": "How to estimate cross-spectral density from an array using short-time fourier?", "metadata": {}}
+{"_id": "mne_time_frequency/csd.py_csd_multitaper_doc", "text": "How to estimate cross-spectral density from epochs using a multitaper method?", "metadata": {}}
+{"_id": "mne_time_frequency/csd.py_csd_array_multitaper_doc", "text": "How to estimate cross-spectral density from an array using a multitaper method?", "metadata": {}}
+{"_id": "mne_time_frequency/csd.py_csd_morlet_doc", "text": "How to estimate cross-spectral density from epochs using morlet wavelets?", "metadata": {}}
+{"_id": "mne_time_frequency/csd.py_csd_array_morlet_doc", "text": "How to estimate cross-spectral density from an array using morlet wavelets?", "metadata": {}}
+{"_id": "mne_time_frequency/csd.py_csd_tfr_doc", "text": "How to compute covariance matrices across frequencies for tfr epochs?", "metadata": {}}
+{"_id": "mne_time_frequency/csd.py_n_channels_doc", "text": "How to number of time series defined in this csd object?", "metadata": {}}
+{"_id": "mne_time_frequency/csd.py_sum_doc", "text": "How to calculate the sum csd in the given frequency range(s)?", "metadata": {}}
+{"_id": "mne_time_frequency/csd.py_mean_doc", "text": "How to calculate the mean csd in the given frequency range(s)?", "metadata": {}}
+{"_id": "mne_time_frequency/csd.py_pick_frequency_doc", "text": "How to get a crossspectraldensity object with only the given frequency?", "metadata": {}}
+{"_id": "mne_time_frequency/csd.py_get_data_doc", "text": "How to get the csd matrix for a given frequency as numpy array?", "metadata": {}}
+{"_id": "mne_time_frequency/csd.py_save_doc", "text": "How to save the csd to an hdf5 file?", "metadata": {}}
+{"_id": "mne_time_frequency/csd.py_copy_doc", "text": "How to return copy of the crossspectraldensity object?", "metadata": {}}
+{"_id": "mne_time_frequency/csd.py_pick_channels_doc", "text": "How to pick channels from this cross-spectral density matrix?", "metadata": {}}
+{"_id": "mne_time_frequency/tfr.py_morlet_doc", "text": "How to compute morlet wavelets for the given frequency range?", "metadata": {}}
+{"_id": "mne_time_frequency/tfr.py_fwhm_doc", "text": "How to compute the full-width half maximum of a morlet wavelet?", "metadata": {}}
+{"_id": "mne_time_frequency/tfr.py_cwt_doc", "text": "How to compute time-frequency decomposition with continuous wavelet transform?", "metadata": {}}
+{"_id": "mne_time_frequency/tfr.py_tfr_morlet_doc", "text": "How to compute time-frequency representation (tfr) using morlet wavelets?", "metadata": {}}
+{"_id": "mne_time_frequency/tfr.py_tfr_array_morlet_doc", "text": "How to compute time-frequency representation (tfr) using morlet wavelets?", "metadata": {}}
+{"_id": "mne_time_frequency/tfr.py_tfr_multitaper_doc", "text": "How to compute time-frequency representation (tfr) using dpss tapers?", "metadata": {}}
+{"_id": "mne_time_frequency/tfr.py_combine_tfr_doc", "text": "How to merge averagetfr data by weighted addition?", "metadata": {}}
+{"_id": "mne_time_frequency/tfr.py_write_tfrs_doc", "text": "How to write a tfr dataset to hdf5?", "metadata": {}}
+{"_id": "mne_time_frequency/tfr.py_read_tfrs_doc", "text": "How to load a tfr object from disk?", "metadata": {}}
+{"_id": "mne_time_frequency/tfr.py_baseline_doc", "text": "How to start and end of the baseline period (in seconds)?", "metadata": {}}
+{"_id": "mne_time_frequency/tfr.py_ch_names_doc", "text": "How to the channel names?", "metadata": {}}
+{"_id": "mne_time_frequency/tfr.py_data_doc", "text": "How to the time-frequency-resolved power estimates?", "metadata": {}}
+{"_id": "mne_time_frequency/tfr.py_freqs_doc", "text": "How to the frequencies at which power estimates were computed?", "metadata": {}}
+{"_id": "mne_time_frequency/tfr.py_method_doc", "text": "How to the method used to compute the time-frequency power estimates?", "metadata": {}}
+{"_id": "mne_time_frequency/tfr.py_sfreq_doc", "text": "How to sampling frequency of the data?", "metadata": {}}
+{"_id": "mne_time_frequency/tfr.py_shape_doc", "text": "How to data shape?", "metadata": {}}
+{"_id": "mne_time_frequency/tfr.py_times_doc", "text": "How to the time points present in the data (in seconds)?", "metadata": {}}
+{"_id": "mne_time_frequency/tfr.py_weights_doc", "text": "How to the weights used for each taper in the time-frequency estimates?", "metadata": {}}
+{"_id": "mne_time_frequency/tfr.py_crop_doc", "text": "How to crop data to a given time interval in place?", "metadata": {}}
+{"_id": "mne_time_frequency/tfr.py_copy_doc", "text": "How to return copy of the tfr instance?", "metadata": {}}
+{"_id": "mne_time_frequency/tfr.py_apply_baseline_doc", "text": "How to baseline correct the data?", "metadata": {}}
+{"_id": "mne_time_frequency/tfr.py_get_data_doc", "text": "How to get time-frequency data in numpy array format?", "metadata": {}}
+{"_id": "mne_time_frequency/tfr.py_plot_doc", "text": "How to plot tfrs as two-dimensional time-frequency images?", "metadata": {}}
+{"_id": "mne_time_frequency/tfr.py_plot_joint_doc", "text": "How to plot tfrs as a two-dimensional image with topomap highlights?", "metadata": {}}
+{"_id": "mne_time_frequency/tfr.py_plot_topo_doc", "text": "How to plot a tfr image for each channel in a sensor layout arrangement?", "metadata": {}}
+{"_id": "mne_time_frequency/tfr.py_save_doc", "text": "How to save time-frequency data to disk (in hdf5 format)?", "metadata": {}}
+{"_id": "mne_time_frequency/tfr.py_to_data_frame_doc", "text": "How to export data in tabular structure as a pandas dataframe?", "metadata": {}}
+{"_id": "mne_time_frequency/tfr.py_average_doc", "text": "How to aggregate the epochstfr across epochs, frequencies, or times?", "metadata": {}}
+{"_id": "mne_time_frequency/tfr.py_drop_doc", "text": "How to drop epochs based on indices or boolean mask?", "metadata": {}}
+{"_id": "mne_time_frequency/tfr.py_iter_evoked_doc", "text": "How to iterate over epochstfr to yield a sequence of averagetfr objects?", "metadata": {}}
+{"_id": "mne_time_frequency/multitaper.py_dpss_windows_doc", "text": "How to compute discrete prolate spheroidal sequences?", "metadata": {}}
+{"_id": "mne_time_frequency/multitaper.py_psd_array_multitaper_doc", "text": "How to compute power spectral density (psd) using a multi-taper method?", "metadata": {}}
+{"_id": "mne_time_frequency/multitaper.py_tfr_array_multitaper_doc", "text": "How to compute time-frequency representation (tfr) using dpss tapers?", "metadata": {}}
+{"_id": "mne_time_frequency/ar.py_fit_iir_model_raw_doc", "text": "How to fit an ar model to raw data and creates the corresponding iir filter?", "metadata": {}}
+{"_id": "mne_time_frequency/_stft.py_stft_doc", "text": "How to stft short-term fourier transform using a sine window?", "metadata": {}}
+{"_id": "mne_time_frequency/_stft.py_istft_doc", "text": "How to istft inverse short-term fourier transform using a sine window?", "metadata": {}}
+{"_id": "mne_time_frequency/_stft.py_stftfreq_doc", "text": "How to compute frequencies of stft transformation?", "metadata": {}}
+{"_id": "mne_time_frequency/_stft.py_stft_norm2_doc", "text": "How to compute l2 norm of stft transform?", "metadata": {}}
+{"_id": "mne_time_frequency/_stft.py_stft_norm1_doc", "text": "How to compute l1 norm of stft transform?", "metadata": {}}
+{"_id": "mne_time_frequency/psd.py_psd_array_welch_doc", "text": "How to compute power spectral density (psd) using welch's method?", "metadata": {}}
+{"_id": "mne_inverse_sparse/mxne_debiasing.py_power_iteration_kron_doc", "text": "How to find the largest singular value for the matrix kron(c.t, a)?", "metadata": {}}
+{"_id": "mne_inverse_sparse/mxne_debiasing.py_compute_bias_doc", "text": "How to compute scaling to correct amplitude bias?", "metadata": {}}
+{"_id": "mne_inverse_sparse/_gamma_map.py_gamma_map_doc", "text": "How to hierarchical bayes (gamma-map) sparse source localization method?", "metadata": {}}
+{"_id": "mne_inverse_sparse/mxne_inverse.py_make_stc_from_dipoles_doc", "text": "How to convert a list of spatio-temporal dipoles into a sourceestimate?", "metadata": {}}
+{"_id": "mne_inverse_sparse/mxne_inverse.py_mixed_norm_doc", "text": "How to mixed-norm estimate (mxne) and iterative reweighted mxne (irmxne)?", "metadata": {}}
+{"_id": "mne_inverse_sparse/mxne_inverse.py_tf_mixed_norm_doc", "text": "How to time-frequency mixed-norm estimate (tf-mxne)?", "metadata": {}}
+{"_id": "mne_inverse_sparse/mxne_optim.py_groups_norm2_doc", "text": "How to compute squared l2 norms of groups inplace?", "metadata": {}}
+{"_id": "mne_inverse_sparse/mxne_optim.py_norm_l2inf_doc", "text": "How to l2-inf norm?", "metadata": {}}
+{"_id": "mne_inverse_sparse/mxne_optim.py_norm_l21_doc", "text": "How to l21 norm?", "metadata": {}}
+{"_id": "mne_inverse_sparse/mxne_optim.py_dgap_l21_doc", "text": "How to duality gap for the mixed norm inverse problem?", "metadata": {}}
+{"_id": "mne_inverse_sparse/mxne_optim.py_mixed_norm_solver_doc", "text": "How to solve l1/l2 mixed-norm inverse problem with active set strategy?", "metadata": {}}
+{"_id": "mne_inverse_sparse/mxne_optim.py_iterative_mixed_norm_solver_doc", "text": "How to solve l0.5/l2 mixed-norm inverse problem with active set strategy?", "metadata": {}}
+{"_id": "mne_inverse_sparse/mxne_optim.py_norm_l21_tf_doc", "text": "How to l21 norm for tf?", "metadata": {}}
+{"_id": "mne_inverse_sparse/mxne_optim.py_norm_l1_tf_doc", "text": "How to l1 norm for tf?", "metadata": {}}
+{"_id": "mne_inverse_sparse/mxne_optim.py_norm_epsilon_doc", "text": "How to weighted epsilon norm?", "metadata": {}}
+{"_id": "mne_inverse_sparse/mxne_optim.py_norm_epsilon_inf_doc", "text": "How to weighted epsilon-inf norm of phi(np.dot(g.t, r))?", "metadata": {}}
+{"_id": "mne_inverse_sparse/mxne_optim.py_dgap_l21l1_doc", "text": "How to duality gap for the time-frequency mixed norm inverse problem?", "metadata": {}}
+{"_id": "mne_inverse_sparse/mxne_optim.py_tf_mixed_norm_solver_doc", "text": "How to solve tf l21+l1 inverse solver with bcd and active set approach?", "metadata": {}}
+{"_id": "mne_inverse_sparse/mxne_optim.py_iterative_tf_mixed_norm_solver_doc", "text": "How to solve tf l0.5/l1 + l0.5 inverse problem with bcd + active set approach?", "metadata": {}}
+{"_id": "mne_inverse_sparse/mxne_optim.py_norm_doc", "text": "How to squared l2 norm if ord == 2 and l1 norm if order == 1?", "metadata": {}}
+{"_id": "mne_preprocessing/ssp.py_compute_proj_ecg_doc", "text": "How to compute ssp (signal-space projection) vectors for ecg artifacts?", "metadata": {}}
+{"_id": "mne_preprocessing/ssp.py_compute_proj_eog_doc", "text": "How to compute ssp (signal-space projection) vectors for eog artifacts?", "metadata": {}}
+{"_id": "mne_preprocessing/_lof.py_find_bad_channels_lof_doc", "text": "How to find bad channels using local outlier factor (lof) algorithm?", "metadata": {}}
+{"_id": "mne_preprocessing/artifact_detection.py_annotate_muscle_zscore_doc", "text": "How to create annotations for segments that likely contain muscle artifacts?", "metadata": {}}
+{"_id": "mne_preprocessing/artifact_detection.py_annotate_movement_doc", "text": "How to detect segments with movement?", "metadata": {}}
+{"_id": "mne_preprocessing/artifact_detection.py_compute_average_dev_head_t_doc", "text": "How to get new device to head transform based on good segments?", "metadata": {}}
+{"_id": "mne_preprocessing/artifact_detection.py_annotate_break_doc", "text": "How to create `~mne.annotations` for breaks in an ongoing recording?", "metadata": {}}
+{"_id": "mne_preprocessing/otp.py_oversampled_temporal_projection_doc", "text": "How to denoise meg channels using leave-one-out temporal projection?", "metadata": {}}
+{"_id": "mne_preprocessing/realign.py_realign_raw_doc", "text": "How to realign two simultaneous recordings?", "metadata": {}}
+{"_id": "mne_preprocessing/hfc.py_compute_proj_hfc_doc", "text": "How to generate projectors to perform homogeneous/harmonic correction to data?", "metadata": {}}
+{"_id": "mne_preprocessing/_fine_cal.py_compute_fine_calibration_doc", "text": "How to compute fine calibration from empty-room data?", "metadata": {}}
+{"_id": "mne_preprocessing/_fine_cal.py_read_fine_calibration_doc", "text": "How to read fine calibration information from a ``.dat`` file?", "metadata": {}}
+{"_id": "mne_preprocessing/_fine_cal.py_write_fine_calibration_doc", "text": "How to write fine calibration information to a ``.dat`` file?", "metadata": {}}
+{"_id": "mne_preprocessing/eog.py_find_eog_events_doc", "text": "How to locate eog artifacts?", "metadata": {}}
+{"_id": "mne_preprocessing/eog.py_create_eog_epochs_doc", "text": "How to conveniently generate epochs around eog artifact events?", "metadata": {}}
+{"_id": "mne_preprocessing/infomax_.py_infomax_doc", "text": "How to run (extended) infomax ica decomposition on raw data?", "metadata": {}}
+{"_id": "mne_preprocessing/_pca_obs.py_apply_pca_obs_doc", "text": "How to apply the pca-obs algorithm to picks of a raw object?", "metadata": {}}
+{"_id": "mne_preprocessing/ctps_.py_ctps_doc", "text": "How to compute cross-trial-phase-statistics [1]?", "metadata": {}}
+{"_id": "mne_preprocessing/ctps_.py_kuiper_doc", "text": "How to kuiper's test of uniform distribution?", "metadata": {}}
+{"_id": "mne_preprocessing/_peak_finder.py_peak_finder_doc", "text": "How to noise-tolerant fast peak-finding algorithm?", "metadata": {}}
+{"_id": "mne_preprocessing/ica.py_get_score_funcs_doc", "text": "How to get the score functions?", "metadata": {}}
+{"_id": "mne_preprocessing/ica.py_ica_find_ecg_events_doc", "text": "How to find ecg peaks from one selected ica source?", "metadata": {}}
+{"_id": "mne_preprocessing/ica.py_ica_find_eog_events_doc", "text": "How to locate eog artifacts from one selected ica source?", "metadata": {}}
+{"_id": "mne_preprocessing/ica.py_read_ica_doc", "text": "How to restore ica solution from fif file?", "metadata": {}}
+{"_id": "mne_preprocessing/ica.py_corrmap_doc", "text": "How to find similar independent components across subjects by map similarity?", "metadata": {}}
+{"_id": "mne_preprocessing/ica.py_read_ica_eeglab_doc", "text": "How to load ica information saved in an eeglab .set file?", "metadata": {}}
+{"_id": "mne_preprocessing/ica.py_fit_doc", "text": "How to run the ica decomposition on raw data?", "metadata": {}}
+{"_id": "mne_preprocessing/ica.py_get_components_doc", "text": "How to get ica topomap for components as numpy arrays?", "metadata": {}}
+{"_id": "mne_preprocessing/ica.py_get_explained_variance_ratio_doc", "text": "How to get the proportion of data variance explained by ica components?", "metadata": {}}
+{"_id": "mne_preprocessing/ica.py_get_sources_doc", "text": "How to estimate sources given the unmixing matrix?", "metadata": {}}
+{"_id": "mne_preprocessing/ica.py_score_sources_doc", "text": "How to assign score to components based on statistic or metric?", "metadata": {}}
+{"_id": "mne_preprocessing/ica.py_find_bads_ecg_doc", "text": "How to detect ecg related components?", "metadata": {}}
+{"_id": "mne_preprocessing/ica.py_find_bads_ref_doc", "text": "How to detect meg reference related components using correlation?", "metadata": {}}
+{"_id": "mne_preprocessing/ica.py_find_bads_muscle_doc", "text": "How to detect muscle-related components?", "metadata": {}}
+{"_id": "mne_preprocessing/ica.py_find_bads_eog_doc", "text": "How to detect eog related components using correlation?", "metadata": {}}
+{"_id": "mne_preprocessing/ica.py_apply_doc", "text": "How to remove selected components from the signal?", "metadata": {}}
+{"_id": "mne_preprocessing/ica.py_save_doc", "text": "How to store ica solution into a fiff file?", "metadata": {}}
+{"_id": "mne_preprocessing/ica.py_copy_doc", "text": "How to copy the ica object?", "metadata": {}}
+{"_id": "mne_preprocessing/_csd.py_compute_current_source_density_doc", "text": "How to get the current source density (csd) transformation?", "metadata": {}}
+{"_id": "mne_preprocessing/_csd.py_compute_bridged_electrodes_doc", "text": "How to compute bridged eeg electrodes using the intrinsic hjorth algorithm?", "metadata": {}}
+{"_id": "mne_preprocessing/_regress.py_regress_artifact_doc", "text": "How to remove artifacts using regression based on reference channels?", "metadata": {}}
+{"_id": "mne_preprocessing/_regress.py_read_eog_regression_doc", "text": "How to read an eog regression model from an hdf5 file?", "metadata": {}}
+{"_id": "mne_preprocessing/_regress.py_fit_doc", "text": "How to fit eog regression coefficients?", "metadata": {}}
+{"_id": "mne_preprocessing/_regress.py_apply_doc", "text": "How to apply the regression coefficients to data?", "metadata": {}}
+{"_id": "mne_preprocessing/_regress.py_save_doc", "text": "How to save the regression model to an hdf5 file?", "metadata": {}}
+{"_id": "mne_preprocessing/_annotate_amplitude.py_annotate_amplitude_doc", "text": "How to annotate raw data based on peak-to-peak amplitude?", "metadata": {}}
+{"_id": "mne_preprocessing/_css.py_cortical_signal_suppression_doc", "text": "How to apply cortical signal suppression (css) to evoked data?", "metadata": {}}
+{"_id": "mne_preprocessing/_annotate_nan.py_annotate_nan_doc", "text": "How to detect segments with nan and return a new annotations instance?", "metadata": {}}
+{"_id": "mne_preprocessing/maxwell.py_maxwell_filter_prepare_emptyroom_doc", "text": "How to prepare an empty-room recording for maxwell filtering?", "metadata": {}}
+{"_id": "mne_preprocessing/maxwell.py_maxwell_filter_doc", "text": "How to maxwell filter data using multipole moments?", "metadata": {}}
+{"_id": "mne_preprocessing/maxwell.py_find_bad_channels_maxwell_doc", "text": "How to find bad channels using maxwell filtering?", "metadata": {}}
+{"_id": "mne_preprocessing/maxwell.py_compute_maxwell_basis_doc", "text": "How to compute the sss basis for a given measurement info structure?", "metadata": {}}
+{"_id": "mne_preprocessing/maxwell.py_initialize_doc", "text": "How to secondary initialization?", "metadata": {}}
+{"_id": "mne_preprocessing/maxwell.py_get_avg_op_doc", "text": "How to apply an average transformation over the next interval?", "metadata": {}}
+{"_id": "mne_preprocessing/xdawn.py_fit_doc", "text": "How to fit xdawn spatial filters?", "metadata": {}}
+{"_id": "mne_preprocessing/xdawn.py_transform_doc", "text": "How to transform data with spatial filters?", "metadata": {}}
+{"_id": "mne_preprocessing/xdawn.py_inverse_transform_doc", "text": "How to remove selected components from the signal?", "metadata": {}}
+{"_id": "mne_preprocessing/xdawn.py_fit_doc", "text": "How to fit xdawn from epochs?", "metadata": {}}
+{"_id": "mne_preprocessing/xdawn.py_transform_doc", "text": "How to apply xdawn dim reduction?", "metadata": {}}
+{"_id": "mne_preprocessing/xdawn.py_apply_doc", "text": "How to remove selected components from the signal?", "metadata": {}}
+{"_id": "mne_preprocessing/xdawn.py_inverse_transform_doc", "text": "How to not implemented, see xdawn.apply() instead?", "metadata": {}}
+{"_id": "mne_preprocessing/ecg.py_qrs_detector_doc", "text": "How to detect qrs component in ecg channels?", "metadata": {}}
+{"_id": "mne_preprocessing/ecg.py_find_ecg_events_doc", "text": "How to find ecg events by localizing the r wave peaks?", "metadata": {}}
+{"_id": "mne_preprocessing/ecg.py_create_ecg_epochs_doc", "text": "How to conveniently generate epochs around ecg artifact events?", "metadata": {}}
+{"_id": "mne_preprocessing/stim.py_fix_stim_artifact_doc", "text": "How to eliminate stimulation's artifacts from instance?", "metadata": {}}
+{"_id": "mne_preprocessing/interpolate.py_equalize_bads_doc", "text": "How to interpolate or mark bads consistently for a list of instances?", "metadata": {}}
+{"_id": "mne_preprocessing/interpolate.py_interpolate_bridged_electrodes_doc", "text": "How to interpolate bridged electrode pairs?", "metadata": {}}
+{"_id": "mne_preprocessing/eyetracking/calibration.py_read_eyelink_calibration_doc", "text": "How to return info on calibrations collected in an eyelink file?", "metadata": {}}
+{"_id": "mne_preprocessing/eyetracking/calibration.py_copy_doc", "text": "How to copy the instance?", "metadata": {}}
+{"_id": "mne_preprocessing/eyetracking/calibration.py_plot_doc", "text": "How to visualize calibration?", "metadata": {}}
+{"_id": "mne_preprocessing/eyetracking/_pupillometry.py_interpolate_blinks_doc", "text": "How to interpolate eyetracking signals during blinks?", "metadata": {}}
+{"_id": "mne_preprocessing/eyetracking/eyetracking.py_set_channel_types_eyetrack_doc", "text": "How to define sensor type for eyetrack channels?", "metadata": {}}
+{"_id": "mne_preprocessing/eyetracking/eyetracking.py_convert_units_doc", "text": "How to convert eyegaze data from pixels to radians of visual angle or vice versa?", "metadata": {}}
+{"_id": "mne_preprocessing/eyetracking/utils.py_get_screen_visual_angle_doc", "text": "How to calculate the radians of visual angle that the participant screen subtends?", "metadata": {}}
+{"_id": "mne_preprocessing/nirs/_beer_lambert_law.py_beer_lambert_law_doc", "text": "How to convert nirs optical density data to haemoglobin concentration?", "metadata": {}}
+{"_id": "mne_preprocessing/nirs/_tddr.py_temporal_derivative_distribution_repair_doc", "text": "How to apply temporal derivative distribution repair to data?", "metadata": {}}
+{"_id": "mne_preprocessing/nirs/_scalp_coupling_index.py_scalp_coupling_index_doc", "text": "How to calculate scalp coupling index?", "metadata": {}}
+{"_id": "mne_preprocessing/nirs/nirs.py_source_detector_distances_doc", "text": "How to determine the distance between nirs source and detectors?", "metadata": {}}
+{"_id": "mne_preprocessing/nirs/nirs.py_short_channels_doc", "text": "How to determine which nirs channels are short?", "metadata": {}}
+{"_id": "mne_preprocessing/nirs/_optical_density.py_optical_density_doc", "text": "How to convert nirs raw data to optical density?", "metadata": {}}
+{"_id": "mne_preprocessing/ieeg/_projection.py_project_sensors_onto_brain_doc", "text": "How to project sensors onto the brain surface?", "metadata": {}}
+{"_id": "mne_preprocessing/ieeg/_volume.py_warp_montage_doc", "text": "How to warp a montage to a template with image volumes using sdr?", "metadata": {}}
+{"_id": "mne_preprocessing/ieeg/_volume.py_make_montage_volume_doc", "text": "How to make a volume from intracranial electrode contact locations?", "metadata": {}}
+{"_id": "mne_gui/_gui.py_coregistration_doc", "text": "How to coregister an mri with a subject's head shape?", "metadata": {}}
+{"_id": "mne_gui/_coreg.py_close_doc", "text": "How to close interface and cleanup data structure?", "metadata": {}}
+{"_id": "mne_viz/_proj.py_plot_projs_joint_doc", "text": "How to plot projectors and evoked jointly?", "metadata": {}}
+{"_id": "mne_viz/raw.py_plot_raw_doc", "text": "How to plot raw data?", "metadata": {}}
+{"_id": "mne_viz/raw.py_plot_raw_psd_doc", "text": "How to %(plot_psd_doc)s?", "metadata": {}}
+{"_id": "mne_viz/raw.py_plot_raw_psd_topo_doc", "text": "How to plot power spectral density, separately for each channel?", "metadata": {}}
+{"_id": "mne_viz/topo.py_iter_topography_doc", "text": "How to create iterator over channel positions?", "metadata": {}}
+{"_id": "mne_viz/topo.py_plot_topo_image_epochs_doc", "text": "How to plot event related potential / fields image on topographies?", "metadata": {}}
+{"_id": "mne_viz/topo.py_format_coord_unified_doc", "text": "How to update status bar with channel name under cursor?", "metadata": {}}
+{"_id": "mne_viz/topo.py_format_coord_multiaxis_doc", "text": "How to update status bar with channel name under cursor?", "metadata": {}}
+{"_id": "mne_viz/conftest.py_fnirs_evoked_doc", "text": "How to create an fnirs evoked structure?", "metadata": {}}
+{"_id": "mne_viz/conftest.py_fnirs_epochs_doc", "text": "How to create an fnirs epoch structure?", "metadata": {}}
+{"_id": "mne_viz/ui_events.py_publish_doc", "text": "How to publish an event to all subscribers of the figure's channel?", "metadata": {}}
+{"_id": "mne_viz/ui_events.py_subscribe_doc", "text": "How to subscribe to an event on a figure's event channel?", "metadata": {}}
+{"_id": "mne_viz/ui_events.py_unsubscribe_doc", "text": "How to unsubscribe from an event on a figure's event channel?", "metadata": {}}
+{"_id": "mne_viz/ui_events.py_link_doc", "text": "How to link the event channels of two figures together?", "metadata": {}}
+{"_id": "mne_viz/ui_events.py_unlink_doc", "text": "How to remove all links involving the event channel of the given figure?", "metadata": {}}
+{"_id": "mne_viz/ui_events.py_disable_ui_events_doc", "text": "How to temporarily disable generation of ui events. use as context manager?", "metadata": {}}
+{"_id": "mne_viz/ui_events.py_name_doc", "text": "How to the name of the event, which is the class name in snake case?", "metadata": {}}
+{"_id": "mne_viz/ui_events.py_delete_event_channel_doc", "text": "How to delete the event channel (callback function)?", "metadata": {}}
+{"_id": "mne_viz/montage.py_plot_montage_doc", "text": "How to plot a montage?", "metadata": {}}
+{"_id": "mne_viz/ica.py_plot_ica_sources_doc", "text": "How to plot estimated latent sources given the unmixing matrix?", "metadata": {}}
+{"_id": "mne_viz/ica.py_plot_ica_properties_doc", "text": "How to display component properties?", "metadata": {}}
+{"_id": "mne_viz/ica.py_plot_ica_scores_doc", "text": "How to plot scores related to detected components?", "metadata": {}}
+{"_id": "mne_viz/ica.py_plot_ica_overlay_doc", "text": "How to overlay of raw and cleaned signals given the unmixing matrix?", "metadata": {}}
+{"_id": "mne_viz/epochs.py_plot_epochs_image_doc", "text": "How to plot event related potential / fields image?", "metadata": {}}
+{"_id": "mne_viz/epochs.py_plot_drop_log_doc", "text": "How to show the channel stats based on a drop_log from epochs?", "metadata": {}}
+{"_id": "mne_viz/epochs.py_plot_epochs_doc", "text": "How to visualize epochs?", "metadata": {}}
+{"_id": "mne_viz/epochs.py_plot_epochs_psd_doc", "text": "How to %(plot_psd_doc)s?", "metadata": {}}
+{"_id": "mne_viz/evoked.py_plot_evoked_doc", "text": "How to plot evoked data using butterfly plots?", "metadata": {}}
+{"_id": "mne_viz/evoked.py_plot_evoked_topo_doc", "text": "How to plot 2d topography of evoked responses?", "metadata": {}}
+{"_id": "mne_viz/evoked.py_plot_evoked_image_doc", "text": "How to plot evoked data as images?", "metadata": {}}
+{"_id": "mne_viz/evoked.py_plot_evoked_white_doc", "text": "How to plot whitened evoked response?", "metadata": {}}
+{"_id": "mne_viz/evoked.py_plot_snr_estimate_doc", "text": "How to plot a data snr estimate?", "metadata": {}}
+{"_id": "mne_viz/evoked.py_plot_evoked_joint_doc", "text": "How to plot evoked data as butterfly plot and add topomaps for time points?", "metadata": {}}
+{"_id": "mne_viz/evoked.py_plot_compare_evokeds_doc", "text": "How to plot evoked time courses for one or more conditions and/or channels?", "metadata": {}}
+{"_id": "mne_viz/evoked.py_whitened_gfp_doc", "text": "How to whitened global field power?", "metadata": {}}
+{"_id": "mne_viz/evoked_field.py_set_time_doc", "text": "How to set the time to display (in seconds)?", "metadata": {}}
+{"_id": "mne_viz/evoked_field.py_set_contours_doc", "text": "How to adjust the number of contour lines to use when drawing the fieldlines?", "metadata": {}}
+{"_id": "mne_viz/evoked_field.py_set_vmax_doc", "text": "How to change the color range of the density maps?", "metadata": {}}
+{"_id": "mne_viz/misc.py_plot_cov_doc", "text": "How to plot covariance data?", "metadata": {}}
+{"_id": "mne_viz/misc.py_plot_source_spectrogram_doc", "text": "How to plot source power in time-freqency grid?", "metadata": {}}
+{"_id": "mne_viz/misc.py_plot_bem_doc", "text": "How to plot bem contours on anatomical mri slices?", "metadata": {}}
+{"_id": "mne_viz/misc.py_plot_events_doc", "text": "How to plot :term:`events` to get a visual display of the paradigm?", "metadata": {}}
+{"_id": "mne_viz/misc.py_plot_dipole_amplitudes_doc", "text": "How to plot the amplitude traces of a set of dipoles?", "metadata": {}}
+{"_id": "mne_viz/misc.py_adjust_axes_doc", "text": "How to adjust some properties of axes?", "metadata": {}}
+{"_id": "mne_viz/misc.py_plot_filter_doc", "text": "How to plot properties of a filter?", "metadata": {}}
+{"_id": "mne_viz/misc.py_plot_ideal_filter_doc", "text": "How to plot an ideal filter response?", "metadata": {}}
+{"_id": "mne_viz/misc.py_plot_csd_doc", "text": "How to plot csd matrices?", "metadata": {}}
+{"_id": "mne_viz/misc.py_plot_chpi_snr_doc", "text": "How to plot time-varying snr estimates of the hpi coils?", "metadata": {}}
+{"_id": "mne_viz/topomap.py_plot_projs_topomap_doc", "text": "How to plot topographic maps of ssp projections?", "metadata": {}}
+{"_id": "mne_viz/topomap.py_plot_topomap_doc", "text": "How to plot a topographic map as image?", "metadata": {}}
+{"_id": "mne_viz/topomap.py_plot_ica_components_doc", "text": "How to project mixing matrix on interpolated sensor topography?", "metadata": {}}
+{"_id": "mne_viz/topomap.py_plot_tfr_topomap_doc", "text": "How to plot topographic maps of specific time-frequency intervals of tfr data?", "metadata": {}}
+{"_id": "mne_viz/topomap.py_plot_evoked_topomap_doc", "text": "How to plot topographic maps of specific time points of evoked data?", "metadata": {}}
+{"_id": "mne_viz/topomap.py_plot_epochs_psd_topomap_doc", "text": "How to plot the topomap of the power spectral density across epochs?", "metadata": {}}
+{"_id": "mne_viz/topomap.py_plot_psds_topomap_doc", "text": "How to plot spatial maps of psds?", "metadata": {}}
+{"_id": "mne_viz/topomap.py_plot_layout_doc", "text": "How to plot the sensor positions?", "metadata": {}}
+{"_id": "mne_viz/topomap.py_plot_arrowmap_doc", "text": "How to plot arrow map?", "metadata": {}}
+{"_id": "mne_viz/topomap.py_plot_bridged_electrodes_doc", "text": "How to topoplot electrode distance matrix with bridged electrodes connected?", "metadata": {}}
+{"_id": "mne_viz/topomap.py_plot_ch_adjacency_doc", "text": "How to plot channel adjacency?", "metadata": {}}
+{"_id": "mne_viz/topomap.py_plot_regression_weights_doc", "text": "How to plot the regression weights of a fitted eogregression model?", "metadata": {}}
+{"_id": "mne_viz/topomap.py_set_values_doc", "text": "How to set the values at interpolation points?", "metadata": {}}
+{"_id": "mne_viz/topomap.py_set_locations_doc", "text": "How to set locations for easier (delayed) calling?", "metadata": {}}
+{"_id": "mne_viz/utils.py_safe_event_doc", "text": "How to protect against qt exiting on event-handling errors?", "metadata": {}}
+{"_id": "mne_viz/utils.py_plt_show_doc", "text": "How to show a figure while suppressing warnings?", "metadata": {}}
+{"_id": "mne_viz/utils.py_mne_analyze_colormap_doc", "text": "How to return a colormap similar to that used by mne_analyze?", "metadata": {}}
+{"_id": "mne_viz/utils.py_compare_fiff_doc", "text": "How to compare the contents of two fiff files using diff and show_fiff?", "metadata": {}}
+{"_id": "mne_viz/utils.py_figure_nobar_doc", "text": "How to make matplotlib figure with no toolbar?", "metadata": {}}
+{"_id": "mne_viz/utils.py_add_background_image_doc", "text": "How to add a background image to a plot?", "metadata": {}}
+{"_id": "mne_viz/utils.py_plot_sensors_doc", "text": "How to plot sensors positions?", "metadata": {}}
+{"_id": "mne_viz/utils.py_centers_to_edges_doc", "text": "How to convert center points to edges?", "metadata": {}}
+{"_id": "mne_viz/utils.py_concatenate_images_doc", "text": "How to concatenate a list of images?", "metadata": {}}
+{"_id": "mne_viz/utils.py_onclick_doc", "text": "How to handle mouse clicks?", "metadata": {}}
+{"_id": "mne_viz/utils.py_plot_clicks_doc", "text": "How to plot the x/y positions stored in self.coords?", "metadata": {}}
+{"_id": "mne_viz/utils.py_to_layout_doc", "text": "How to turn coordinates into an mne layout object?", "metadata": {}}
+{"_id": "mne_viz/utils.py_connect_doc", "text": "How to connect to all the events we need?", "metadata": {}}
+{"_id": "mne_viz/utils.py_on_press_doc", "text": "How to handle button press?", "metadata": {}}
+{"_id": "mne_viz/utils.py_key_press_doc", "text": "How to handle key press?", "metadata": {}}
+{"_id": "mne_viz/utils.py_on_motion_doc", "text": "How to handle mouse movements?", "metadata": {}}
+{"_id": "mne_viz/utils.py_on_release_doc", "text": "How to handle release?", "metadata": {}}
+{"_id": "mne_viz/utils.py_on_scroll_doc", "text": "How to handle scroll?", "metadata": {}}
+{"_id": "mne_viz/utils.py_notify_doc", "text": "How to notify listeners that a selection has been made?", "metadata": {}}
+{"_id": "mne_viz/utils.py_on_select_doc", "text": "How to select a subset from the collection?", "metadata": {}}
+{"_id": "mne_viz/utils.py_select_one_doc", "text": "How to select or deselect one sensor?", "metadata": {}}
+{"_id": "mne_viz/utils.py_select_many_doc", "text": "How to select many sensors using indices (for predefined selections)?", "metadata": {}}
+{"_id": "mne_viz/utils.py_style_objects_doc", "text": "How to style selected sensors as \"active\"?", "metadata": {}}
+{"_id": "mne_viz/utils.py_disconnect_doc", "text": "How to disconnect the lasso selector?", "metadata": {}}
+{"_id": "mne_viz/utils.py_set_x_doc", "text": "How to repoisition the line?", "metadata": {}}
+{"_id": "mne_viz/utils.py_on_press_doc", "text": "How to store button press if on top of the line?", "metadata": {}}
+{"_id": "mne_viz/utils.py_on_motion_doc", "text": "How to move the line on drag?", "metadata": {}}
+{"_id": "mne_viz/utils.py_on_release_doc", "text": "How to handle release?", "metadata": {}}
+{"_id": "mne_viz/utils.py_remove_doc", "text": "How to remove the line?", "metadata": {}}
+{"_id": "mne_viz/_figure.py_set_browser_backend_doc", "text": "How to set the 2d browser backend for mne?", "metadata": {}}
+{"_id": "mne_viz/_figure.py_get_browser_backend_doc", "text": "How to return the 2d backend currently used?", "metadata": {}}
+{"_id": "mne_viz/_figure.py_use_browser_backend_doc", "text": "How to create a 2d browser visualization context using the designated backend?", "metadata": {}}
+{"_id": "mne_viz/_figure.py_fake_keypress_doc", "text": "How to pass a fake keypress to the figure?", "metadata": {}}
+{"_id": "mne_viz/circle.py_circular_layout_doc", "text": "How to create layout arranging nodes on a circle?", "metadata": {}}
+{"_id": "mne_viz/circle.py_plot_channel_labels_circle_doc", "text": "How to plot labels for each channel in a circle plot?", "metadata": {}}
+{"_id": "mne_viz/_3d.py_plot_head_positions_doc", "text": "How to plot head positions?", "metadata": {}}
+{"_id": "mne_viz/_3d.py_plot_evoked_field_doc", "text": "How to plot meg/eeg fields on head surface and helmet in 3d?", "metadata": {}}
+{"_id": "mne_viz/_3d.py_plot_alignment_doc", "text": "How to plot head, sensor, and source space alignment in 3d?", "metadata": {}}
+{"_id": "mne_viz/_3d.py_link_brains_doc", "text": "How to plot multiple sourceestimate objects with pyvista?", "metadata": {}}
+{"_id": "mne_viz/_3d.py_plot_source_estimates_doc", "text": "How to plot sourceestimate?", "metadata": {}}
+{"_id": "mne_viz/_3d.py_plot_volume_source_estimates_doc", "text": "How to plot nutmeg style volumetric source estimates using nilearn?", "metadata": {}}
+{"_id": "mne_viz/_3d.py_plot_vector_source_estimates_doc", "text": "How to plot vectorsourceestimate with pyvista?", "metadata": {}}
+{"_id": "mne_viz/_3d.py_plot_sparse_source_estimates_doc", "text": "How to plot source estimates obtained with sparse solver?", "metadata": {}}
+{"_id": "mne_viz/_3d.py_plot_dipole_locations_doc", "text": "How to plot dipole locations?", "metadata": {}}
+{"_id": "mne_viz/_3d.py_snapshot_brain_montage_doc", "text": "How to take a snapshot of a pyvista scene and project channels onto 2d coords?", "metadata": {}}
+{"_id": "mne_viz/_3d.py_plot_brain_colorbar_doc", "text": "How to plot a colorbar that corresponds to a brain activation map?", "metadata": {}}
+{"_id": "mne_viz/_3d.py_set_3d_options_doc", "text": "How to set 3d rendering options?", "metadata": {}}
+{"_id": "mne_viz/backends/renderer.py_set_3d_backend_doc", "text": "How to set the 3d backend for mne?", "metadata": {}}
+{"_id": "mne_viz/backends/renderer.py_get_3d_backend_doc", "text": "How to return the 3d backend currently used?", "metadata": {}}
+{"_id": "mne_viz/backends/renderer.py_use_3d_backend_doc", "text": "How to create a 3d visualization context using the designated backend?", "metadata": {}}
+{"_id": "mne_viz/backends/renderer.py_set_3d_view_doc", "text": "How to configure the view of the given scene?", "metadata": {}}
+{"_id": "mne_viz/backends/renderer.py_set_3d_title_doc", "text": "How to configure the title of the given scene?", "metadata": {}}
+{"_id": "mne_viz/backends/renderer.py_create_3d_figure_doc", "text": "How to return an empty figure based on the current 3d backend?", "metadata": {}}
+{"_id": "mne_viz/backends/renderer.py_close_3d_figure_doc", "text": "How to close the given scene?", "metadata": {}}
+{"_id": "mne_viz/backends/renderer.py_close_all_3d_figures_doc", "text": "How to close all the scenes of the current 3d backend?", "metadata": {}}
+{"_id": "mne_viz/backends/renderer.py_get_brain_class_doc", "text": "How to return the proper brain class based on the current 3d backend?", "metadata": {}}
+{"_id": "mne_viz/backends/_abstract.py_plotter_doc", "text": "How to the native 3d plotting widget?", "metadata": {}}
+{"_id": "mne_viz/backends/_abstract.py_subplot_doc", "text": "How to set the active subplot?", "metadata": {}}
+{"_id": "mne_viz/backends/_abstract.py_scene_doc", "text": "How to return scene handle?", "metadata": {}}
+{"_id": "mne_viz/backends/_abstract.py_set_interaction_doc", "text": "How to set interaction mode?", "metadata": {}}
+{"_id": "mne_viz/backends/_abstract.py_legend_doc", "text": "How to add a legend to the scene?", "metadata": {}}
+{"_id": "mne_viz/backends/_abstract.py_mesh_doc", "text": "How to add a mesh in the scene?", "metadata": {}}
+{"_id": "mne_viz/backends/_abstract.py_contour_doc", "text": "How to add a contour in the scene?", "metadata": {}}
+{"_id": "mne_viz/backends/_abstract.py_surface_doc", "text": "How to add a surface in the scene?", "metadata": {}}
+{"_id": "mne_viz/backends/_abstract.py_sphere_doc", "text": "How to add sphere in the scene?", "metadata": {}}
+{"_id": "mne_viz/backends/_abstract.py_tube_doc", "text": "How to add tube in the scene?", "metadata": {}}
+{"_id": "mne_viz/backends/_abstract.py_quiver3d_doc", "text": "How to add quiver3d in the scene?", "metadata": {}}
+{"_id": "mne_viz/backends/_abstract.py_text2d_doc", "text": "How to add 2d text in the scene?", "metadata": {}}
+{"_id": "mne_viz/backends/_abstract.py_text3d_doc", "text": "How to add 2d text in the scene?", "metadata": {}}
+{"_id": "mne_viz/backends/_abstract.py_scalarbar_doc", "text": "How to add a scalar bar in the scene?", "metadata": {}}
+{"_id": "mne_viz/backends/_abstract.py_show_doc", "text": "How to render the scene?", "metadata": {}}
+{"_id": "mne_viz/backends/_abstract.py_close_doc", "text": "How to close the scene?", "metadata": {}}
+{"_id": "mne_viz/backends/_abstract.py_set_camera_doc", "text": "How to configure the camera of the scene?", "metadata": {}}
+{"_id": "mne_viz/backends/_abstract.py_screenshot_doc", "text": "How to take a screenshot of the scene?", "metadata": {}}
+{"_id": "mne_viz/backends/_abstract.py_project_doc", "text": "How to convert 3d points to a 2d perspective?", "metadata": {}}
+{"_id": "mne_viz/backends/_abstract.py_remove_mesh_doc", "text": "How to remove the given mesh from the scene?", "metadata": {}}
+{"_id": "mne_viz/backends/_abstract.py_show_doc", "text": "How to show the canvas?", "metadata": {}}
+{"_id": "mne_viz/backends/_abstract.py_close_doc", "text": "How to close the canvas?", "metadata": {}}
+{"_id": "mne_viz/backends/_abstract.py_update_doc", "text": "How to update the canvas?", "metadata": {}}
+{"_id": "mne_viz/backends/_abstract.py_clear_doc", "text": "How to clear internal variables?", "metadata": {}}
+{"_id": "mne_viz/backends/_abstract.py_plot_doc", "text": "How to plot a curve?", "metadata": {}}
+{"_id": "mne_viz/backends/_abstract.py_plot_time_line_doc", "text": "How to plot the vertical line?", "metadata": {}}
+{"_id": "mne_viz/backends/_abstract.py_update_plot_doc", "text": "How to update the plot?", "metadata": {}}
+{"_id": "mne_viz/backends/_abstract.py_set_color_doc", "text": "How to set the widget colors?", "metadata": {}}
+{"_id": "mne_viz/backends/_abstract.py_show_doc", "text": "How to show the canvas?", "metadata": {}}
+{"_id": "mne_viz/backends/_abstract.py_close_doc", "text": "How to close the canvas?", "metadata": {}}
+{"_id": "mne_viz/backends/_abstract.py_clear_doc", "text": "How to clear internal variables?", "metadata": {}}
+{"_id": "mne_viz/backends/_abstract.py_on_resize_doc", "text": "How to handle resize events?", "metadata": {}}
+{"_id": "mne_viz/backends/_abstract.py_update_plot_doc", "text": "How to update the plot?", "metadata": {}}
+{"_id": "mne_viz/backends/_abstract.py_on_button_press_doc", "text": "How to handle button presses?", "metadata": {}}
+{"_id": "mne_viz/backends/_abstract.py_clear_doc", "text": "How to clear internal variables?", "metadata": {}}
+{"_id": "mne_viz/backends/_qt.py_minimum_doc", "text": "How to get the minimum?", "metadata": {}}
+{"_id": "mne_viz/backends/_qt.py_setMinimum_doc", "text": "How to set the minimum?", "metadata": {}}
+{"_id": "mne_viz/backends/_qt.py_maximum_doc", "text": "How to get the maximum?", "metadata": {}}
+{"_id": "mne_viz/backends/_qt.py_setMaximum_doc", "text": "How to set the maximum?", "metadata": {}}
+{"_id": "mne_viz/backends/_qt.py_value_doc", "text": "How to get the current value?", "metadata": {}}
+{"_id": "mne_viz/backends/_qt.py_setValue_doc", "text": "How to set the current value?", "metadata": {}}
+{"_id": "mne_viz/backends/_qt.py_mousePressEvent_doc", "text": "How to add snap-to-location handling?", "metadata": {}}
+{"_id": "mne_viz/backends/_pyvista.py_visible_doc", "text": "How to modify visibility attribute of the sensors?", "metadata": {}}
+{"_id": "mne_viz/eyetracking/heatmap.py_plot_gaze_doc", "text": "How to plot a heatmap of eyetracking gaze data?", "metadata": {}}
+{"_id": "mne_viz/_brain/surface.py_load_geometry_doc", "text": "How to load geometry of the surface?", "metadata": {}}
+{"_id": "mne_viz/_brain/surface.py_load_curvature_doc", "text": "How to load in curvature values from the ?h.curv file?", "metadata": {}}
+{"_id": "mne_viz/_brain/_brain.py_setup_time_viewer_doc", "text": "How to configure the time viewer parameters?", "metadata": {}}
+{"_id": "mne_viz/_brain/_brain.py_toggle_interface_doc", "text": "How to toggle the interface?", "metadata": {}}
+{"_id": "mne_viz/_brain/_brain.py_apply_auto_scaling_doc", "text": "How to detect automatically fitting scaling parameters?", "metadata": {}}
+{"_id": "mne_viz/_brain/_brain.py_restore_user_scaling_doc", "text": "How to restore original scaling parameters?", "metadata": {}}
+{"_id": "mne_viz/_brain/_brain.py_toggle_playback_doc", "text": "How to toggle time playback?", "metadata": {}}
+{"_id": "mne_viz/_brain/_brain.py_reset_doc", "text": "How to reset view, current time and time step?", "metadata": {}}
+{"_id": "mne_viz/_brain/_brain.py_set_playback_speed_doc", "text": "How to set the time playback speed?", "metadata": {}}
+{"_id": "mne_viz/_brain/_brain.py_clear_glyphs_doc", "text": "How to clear the picking glyphs?", "metadata": {}}
+{"_id": "mne_viz/_brain/_brain.py_plot_time_course_doc", "text": "How to plot the vertex time course?", "metadata": {}}
+{"_id": "mne_viz/_brain/_brain.py_plot_time_line_doc", "text": "How to add the time line to the mpl widget?", "metadata": {}}
+{"_id": "mne_viz/_brain/_brain.py_help_doc", "text": "How to display the help window?", "metadata": {}}
+{"_id": "mne_viz/_brain/_brain.py_interaction_doc", "text": "How to the interaction style?", "metadata": {}}
+{"_id": "mne_viz/_brain/_brain.py_interaction_doc", "text": "How to set the interaction style?", "metadata": {}}
+{"_id": "mne_viz/_brain/_brain.py_add_data_doc", "text": "How to display data from a numpy array on the surface or volume?", "metadata": {}}
+{"_id": "mne_viz/_brain/_brain.py_remove_data_doc", "text": "How to remove rendered data from the mesh?", "metadata": {}}
+{"_id": "mne_viz/_brain/_brain.py_remove_labels_doc", "text": "How to remove all the roi labels from the image?", "metadata": {}}
+{"_id": "mne_viz/_brain/_brain.py_remove_annotations_doc", "text": "How to remove all annotations from the image?", "metadata": {}}
+{"_id": "mne_viz/_brain/_brain.py_add_label_doc", "text": "How to add an roi label to the image?", "metadata": {}}
+{"_id": "mne_viz/_brain/_brain.py_add_forward_doc", "text": "How to add a quiver to render positions of dipoles?", "metadata": {}}
+{"_id": "mne_viz/_brain/_brain.py_remove_forward_doc", "text": "How to remove forward sources from the rendered scene?", "metadata": {}}
+{"_id": "mne_viz/_brain/_brain.py_add_dipole_doc", "text": "How to add a quiver to render positions of dipoles?", "metadata": {}}
+{"_id": "mne_viz/_brain/_brain.py_remove_dipole_doc", "text": "How to remove dipole objects from the rendered scene?", "metadata": {}}
+{"_id": "mne_viz/_brain/_brain.py_add_head_doc", "text": "How to add a mesh to render the outer head surface?", "metadata": {}}
+{"_id": "mne_viz/_brain/_brain.py_remove_head_doc", "text": "How to remove head objects from the rendered scene?", "metadata": {}}
+{"_id": "mne_viz/_brain/_brain.py_add_skull_doc", "text": "How to add a mesh to render the skull surface?", "metadata": {}}
+{"_id": "mne_viz/_brain/_brain.py_remove_skull_doc", "text": "How to remove skull objects from the rendered scene?", "metadata": {}}
+{"_id": "mne_viz/_brain/_brain.py_add_volume_labels_doc", "text": "How to add labels to the rendering from an anatomical segmentation?", "metadata": {}}
+{"_id": "mne_viz/_brain/_brain.py_remove_volume_labels_doc", "text": "How to remove the volume labels from the rendered scene?", "metadata": {}}
+{"_id": "mne_viz/_brain/_brain.py_add_foci_doc", "text": "How to add spherical foci, possibly mapping to displayed surf?", "metadata": {}}
+{"_id": "mne_viz/_brain/_brain.py_add_sensors_doc", "text": "How to add mesh objects to represent sensor positions?", "metadata": {}}
+{"_id": "mne_viz/_brain/_brain.py_remove_sensors_doc", "text": "How to remove sensors from the rendered scene?", "metadata": {}}
+{"_id": "mne_viz/_brain/_brain.py_add_text_doc", "text": "How to add a text to the visualization?", "metadata": {}}
+{"_id": "mne_viz/_brain/_brain.py_remove_text_doc", "text": "How to remove text from the rendered scene?", "metadata": {}}
+{"_id": "mne_viz/_brain/_brain.py_add_annotation_doc", "text": "How to add an annotation file?", "metadata": {}}
+{"_id": "mne_viz/_brain/_brain.py_close_doc", "text": "How to close all figures and cleanup data structure?", "metadata": {}}
+{"_id": "mne_viz/_brain/_brain.py_show_doc", "text": "How to display the window?", "metadata": {}}
+{"_id": "mne_viz/_brain/_brain.py_get_view_doc", "text": "How to get the camera orientation for a given subplot display?", "metadata": {}}
+{"_id": "mne_viz/_brain/_brain.py_show_view_doc", "text": "How to orient camera to display view?", "metadata": {}}
+{"_id": "mne_viz/_brain/_brain.py_reset_view_doc", "text": "How to reset the camera?", "metadata": {}}
+{"_id": "mne_viz/_brain/_brain.py_save_image_doc", "text": "How to save view from all panels to disk?", "metadata": {}}
+{"_id": "mne_viz/_brain/_brain.py_screenshot_doc", "text": "How to generate a screenshot of current view?", "metadata": {}}
+{"_id": "mne_viz/_brain/_brain.py_update_lut_doc", "text": "How to update the range of the color map?", "metadata": {}}
+{"_id": "mne_viz/_brain/_brain.py_set_data_smoothing_doc", "text": "How to set the number of smoothing steps?", "metadata": {}}
+{"_id": "mne_viz/_brain/_brain.py_time_interpolation_doc", "text": "How to the interpolation mode?", "metadata": {}}
+{"_id": "mne_viz/_brain/_brain.py_set_time_interpolation_doc", "text": "How to set the interpolation mode?", "metadata": {}}
+{"_id": "mne_viz/_brain/_brain.py_set_time_point_doc", "text": "How to set the time point to display (can be a float to interpolate)?", "metadata": {}}
+{"_id": "mne_viz/_brain/_brain.py_set_time_doc", "text": "How to set the time to display (in seconds)?", "metadata": {}}
+{"_id": "mne_viz/_brain/_brain.py_data_doc", "text": "How to data used by time viewer and color bar widgets?", "metadata": {}}
+{"_id": "mne_viz/_brain/_brain.py_save_movie_doc", "text": "How to save a movie (for data with a time axis)?", "metadata": {}}
+{"_id": "mne_viz/_brain/_brain.py_get_picked_points_doc", "text": "How to return the vertices of the picked points?", "metadata": {}}
+{"_id": "mne_viz/_brain/colormap.py_create_lut_doc", "text": "How to return a colormap suitable for setting as a lut?", "metadata": {}}
+{"_id": "mne_viz/_brain/colormap.py_scale_sequential_lut_doc", "text": "How to scale a sequential colormap?", "metadata": {}}
+{"_id": "mne_viz/_brain/colormap.py_get_fill_colors_doc", "text": "How to get the fill colors for the middle of divergent colormaps?", "metadata": {}}
+{"_id": "mne_viz/_brain/colormap.py_calculate_lut_doc", "text": "How to transparent color map calculation?", "metadata": {}}
+{"_id": "mne_minimum_norm/resolution_matrix.py_make_inverse_resolution_matrix_doc", "text": "How to compute resolution matrix for linear inverse operator?", "metadata": {}}
+{"_id": "mne_minimum_norm/resolution_matrix.py_get_point_spread_doc", "text": "How to get point-spread (psfs) functions for vertices?", "metadata": {}}
+{"_id": "mne_minimum_norm/resolution_matrix.py_get_cross_talk_doc", "text": "How to get cross-talk (ctfs) function for vertices?", "metadata": {}}
+{"_id": "mne_minimum_norm/inverse.py_read_inverse_operator_doc", "text": "How to read the inverse operator decomposition from a fif file?", "metadata": {}}
+{"_id": "mne_minimum_norm/inverse.py_write_inverse_operator_doc", "text": "How to write an inverse operator to a fif file?", "metadata": {}}
+{"_id": "mne_minimum_norm/inverse.py_combine_xyz_doc", "text": "How to compute the three cartesian components of a vector or matrix together?", "metadata": {}}
+{"_id": "mne_minimum_norm/inverse.py_prepare_inverse_operator_doc", "text": "How to prepare an inverse operator for actually computing the inverse?", "metadata": {}}
+{"_id": "mne_minimum_norm/inverse.py_apply_inverse_doc", "text": "How to apply inverse operator to evoked data?", "metadata": {}}
+{"_id": "mne_minimum_norm/inverse.py_apply_inverse_raw_doc", "text": "How to apply inverse operator to raw data?", "metadata": {}}
+{"_id": "mne_minimum_norm/inverse.py_apply_inverse_epochs_doc", "text": "How to apply inverse operator to epochs?", "metadata": {}}
+{"_id": "mne_minimum_norm/inverse.py_apply_inverse_tfr_epochs_doc", "text": "How to apply inverse operator to epochstfr?", "metadata": {}}
+{"_id": "mne_minimum_norm/inverse.py_apply_inverse_cov_doc", "text": "How to apply inverse operator to covariance data?", "metadata": {}}
+{"_id": "mne_minimum_norm/inverse.py_make_inverse_operator_doc", "text": "How to assemble inverse operator?", "metadata": {}}
+{"_id": "mne_minimum_norm/inverse.py_compute_rank_inverse_doc", "text": "How to compute the rank of a linear inverse operator (mne, dspm, etc.)?", "metadata": {}}
+{"_id": "mne_minimum_norm/inverse.py_estimate_snr_doc", "text": "How to estimate the snr as a function of time for evoked data?", "metadata": {}}
+{"_id": "mne_minimum_norm/inverse.py_copy_doc", "text": "How to return a copy of the inverseoperator?", "metadata": {}}
+{"_id": "mne_minimum_norm/inverse.py_ch_names_doc", "text": "How to name of channels attached to the inverse operator?", "metadata": {}}
+{"_id": "mne_minimum_norm/inverse.py_info_doc", "text": "How to :class:`~mne.info` attached to the inverse operator?", "metadata": {}}
+{"_id": "mne_minimum_norm/spatial_resolution.py_resolution_metrics_doc", "text": "How to compute spatial resolution metrics for linear solvers?", "metadata": {}}
+{"_id": "mne_minimum_norm/time_frequency.py_source_band_induced_power_doc", "text": "How to compute source space induced power in given frequency bands?", "metadata": {}}
+{"_id": "mne_minimum_norm/time_frequency.py_source_induced_power_doc", "text": "How to compute induced power and phase lock?", "metadata": {}}
+{"_id": "mne_minimum_norm/time_frequency.py_compute_source_psd_doc", "text": "How to compute source power spectral density (psd)?", "metadata": {}}
+{"_id": "mne_minimum_norm/time_frequency.py_compute_source_psd_epochs_doc", "text": "How to compute source power spectral density (psd) from epochs?", "metadata": {}}
+{"_id": "mne_decoding/time_frequency.py_fit_transform_doc", "text": "How to time-frequency transform of times series along the last axis?", "metadata": {}}
+{"_id": "mne_decoding/time_frequency.py_fit_doc", "text": "How to do nothing (for scikit-learn compatibility purposes)?", "metadata": {}}
+{"_id": "mne_decoding/time_frequency.py_transform_doc", "text": "How to time-frequency transform of times series along the last axis?", "metadata": {}}
+{"_id": "mne_decoding/receptive_field.py_fit_doc", "text": "How to fit a receptive field model?", "metadata": {}}
+{"_id": "mne_decoding/receptive_field.py_predict_doc", "text": "How to generate predictions with a receptive field?", "metadata": {}}
+{"_id": "mne_decoding/receptive_field.py_score_doc", "text": "How to score predictions generated with a receptive field?", "metadata": {}}
+{"_id": "mne_decoding/search_light.py_fit_doc", "text": "How to fit a series of independent estimators to the dataset?", "metadata": {}}
+{"_id": "mne_decoding/search_light.py_fit_transform_doc", "text": "How to fit and transform a series of independent estimators to the dataset?", "metadata": {}}
+{"_id": "mne_decoding/search_light.py_transform_doc", "text": "How to transform each data slice/task with a series of independent estimators?", "metadata": {}}
+{"_id": "mne_decoding/search_light.py_predict_doc", "text": "How to predict each data slice/task with a series of independent estimators?", "metadata": {}}
+{"_id": "mne_decoding/search_light.py_predict_proba_doc", "text": "How to predict each data slice with a series of independent estimators?", "metadata": {}}
+{"_id": "mne_decoding/search_light.py_decision_function_doc", "text": "How to estimate distances of each data slice to the hyperplanes?", "metadata": {}}
+{"_id": "mne_decoding/search_light.py_score_doc", "text": "How to score each estimator on each task?", "metadata": {}}
+{"_id": "mne_decoding/search_light.py_transform_doc", "text": "How to transform each data slice with all possible estimators?", "metadata": {}}
+{"_id": "mne_decoding/search_light.py_predict_doc", "text": "How to predict each data slice with all possible estimators?", "metadata": {}}
+{"_id": "mne_decoding/search_light.py_predict_proba_doc", "text": "How to estimate probabilistic estimates of each data slice with all possible estimators?", "metadata": {}}
+{"_id": "mne_decoding/search_light.py_decision_function_doc", "text": "How to estimate distances of each data slice to all hyperplanes?", "metadata": {}}
+{"_id": "mne_decoding/search_light.py_score_doc", "text": "How to score each of the estimators on the tested dimensions?", "metadata": {}}
+{"_id": "mne_decoding/ems.py_compute_ems_doc", "text": "How to compute event-matched spatial filter on epochs?", "metadata": {}}
+{"_id": "mne_decoding/ems.py_fit_doc", "text": "How to fit the spatial filters?", "metadata": {}}
+{"_id": "mne_decoding/ems.py_transform_doc", "text": "How to transform the data by the spatial filters?", "metadata": {}}
+{"_id": "mne_decoding/time_delaying_ridge.py_fit_doc", "text": "How to estimate the coefficients of the linear model?", "metadata": {}}
+{"_id": "mne_decoding/time_delaying_ridge.py_predict_doc", "text": "How to predict the output?", "metadata": {}}
+{"_id": "mne_decoding/base.py_get_coef_doc", "text": "How to retrieve the coefficients of an estimator ending with a linear model?", "metadata": {}}
+{"_id": "mne_decoding/base.py_cross_val_multiscore_doc", "text": "How to evaluate a score by cross-validation?", "metadata": {}}
+{"_id": "mne_decoding/base.py_fit_doc", "text": "How to estimate the coefficients of the linear model?", "metadata": {}}
+{"_id": "mne_decoding/ssd.py_fit_doc", "text": "How to estimate the ssd decomposition on raw or epoched data?", "metadata": {}}
+{"_id": "mne_decoding/ssd.py_transform_doc", "text": "How to estimate epochs sources given the ssd filters?", "metadata": {}}
+{"_id": "mne_decoding/ssd.py_fit_transform_doc", "text": "How to fit ssd to data, then transform it?", "metadata": {}}
+{"_id": "mne_decoding/ssd.py_get_spectral_ratio_doc", "text": "How to get the spectal signal-to-noise ratio for each spatial filter?", "metadata": {}}
+{"_id": "mne_decoding/ssd.py_inverse_transform_doc", "text": "How to not implemented yet?", "metadata": {}}
+{"_id": "mne_decoding/ssd.py_apply_doc", "text": "How to remove selected components from the signal?", "metadata": {}}
+{"_id": "mne_decoding/transformer.py_fit_doc", "text": "How to standardize data across channels?", "metadata": {}}
+{"_id": "mne_decoding/transformer.py_transform_doc", "text": "How to standardize data across channels?", "metadata": {}}
+{"_id": "mne_decoding/transformer.py_fit_transform_doc", "text": "How to fit to data, then transform it?", "metadata": {}}
+{"_id": "mne_decoding/transformer.py_inverse_transform_doc", "text": "How to invert standardization of data across channels?", "metadata": {}}
+{"_id": "mne_decoding/transformer.py_fit_doc", "text": "How to store the shape of the features of x?", "metadata": {}}
+{"_id": "mne_decoding/transformer.py_transform_doc", "text": "How to convert given array into two dimensions?", "metadata": {}}
+{"_id": "mne_decoding/transformer.py_fit_transform_doc", "text": "How to fit the data, then transform in one step?", "metadata": {}}
+{"_id": "mne_decoding/transformer.py_inverse_transform_doc", "text": "How to transform 2d data back to its original feature shape?", "metadata": {}}
+{"_id": "mne_decoding/transformer.py_fit_doc", "text": "How to compute power spectral density (psd) using a multi-taper method?", "metadata": {}}
+{"_id": "mne_decoding/transformer.py_transform_doc", "text": "How to compute power spectral density (psd) using a multi-taper method?", "metadata": {}}
+{"_id": "mne_decoding/transformer.py_fit_doc", "text": "How to filter data?", "metadata": {}}
+{"_id": "mne_decoding/transformer.py_transform_doc", "text": "How to filter data?", "metadata": {}}
+{"_id": "mne_decoding/transformer.py_fit_doc", "text": "How to fit the spatial filters?", "metadata": {}}
+{"_id": "mne_decoding/transformer.py_fit_transform_doc", "text": "How to transform the data to its filtered components after fitting?", "metadata": {}}
+{"_id": "mne_decoding/transformer.py_transform_doc", "text": "How to transform the data to its spatial filters?", "metadata": {}}
+{"_id": "mne_decoding/transformer.py_inverse_transform_doc", "text": "How to inverse transform the data to its original space?", "metadata": {}}
+{"_id": "mne_decoding/transformer.py_fit_doc", "text": "How to do nothing (for scikit-learn compatibility purposes)?", "metadata": {}}
+{"_id": "mne_decoding/transformer.py_transform_doc", "text": "How to filter data along the last dimension?", "metadata": {}}
+{"_id": "mne_decoding/csp.py_fit_doc", "text": "How to estimate the csp decomposition on epochs?", "metadata": {}}
+{"_id": "mne_decoding/csp.py_transform_doc", "text": "How to estimate epochs sources given the csp filters?", "metadata": {}}
+{"_id": "mne_decoding/csp.py_inverse_transform_doc", "text": "How to project csp features back to sensor space?", "metadata": {}}
+{"_id": "mne_decoding/csp.py_fit_transform_doc", "text": "How to fit csp to data, then transform it?", "metadata": {}}
+{"_id": "mne_decoding/csp.py_plot_patterns_doc", "text": "How to plot topographic patterns of components?", "metadata": {}}
+{"_id": "mne_decoding/csp.py_plot_filters_doc", "text": "How to plot topographic filters of components?", "metadata": {}}
+{"_id": "mne_decoding/csp.py_fit_doc", "text": "How to estimate the spoc decomposition on epochs?", "metadata": {}}
+{"_id": "mne_decoding/csp.py_transform_doc", "text": "How to estimate epochs sources given the spoc filters?", "metadata": {}}
+{"_id": "mne_decoding/csp.py_fit_transform_doc", "text": "How to fit spoc to data, then transform it?", "metadata": {}}
+{"_id": "mne_channels/montage.py_get_builtin_montages_doc", "text": "How to get a list of all standard montages shipping with mne-python?", "metadata": {}}
+{"_id": "mne_channels/montage.py_make_dig_montage_doc", "text": "How to make montage from arrays?", "metadata": {}}
+{"_id": "mne_channels/montage.py_transform_to_head_doc", "text": "How to transform a digmontage object into head coordinate?", "metadata": {}}
+{"_id": "mne_channels/montage.py_read_dig_dat_doc", "text": "How to read electrode positions from a ``*.dat`` file?", "metadata": {}}
+{"_id": "mne_channels/montage.py_read_dig_fif_doc", "text": "How to read digitized points from a .fif file?", "metadata": {}}
+{"_id": "mne_channels/montage.py_read_dig_hpts_doc", "text": "How to read historical ``.hpts`` mne-c files?", "metadata": {}}
+{"_id": "mne_channels/montage.py_read_dig_egi_doc", "text": "How to read electrode locations from egi system?", "metadata": {}}
+{"_id": "mne_channels/montage.py_read_dig_captrak_doc", "text": "How to read electrode locations from captrak brain products system?", "metadata": {}}
+{"_id": "mne_channels/montage.py_read_dig_localite_doc", "text": "How to read localite .csv file?", "metadata": {}}
+{"_id": "mne_channels/montage.py_read_dig_polhemus_isotrak_doc", "text": "How to read polhemus digitizer data from a file?", "metadata": {}}
+{"_id": "mne_channels/montage.py_read_polhemus_fastscan_doc", "text": "How to read polhemus fastscan digitizer data from a ``.txt`` file?", "metadata": {}}
+{"_id": "mne_channels/montage.py_read_custom_montage_doc", "text": "How to read a montage from a file?", "metadata": {}}
+{"_id": "mne_channels/montage.py_compute_dev_head_t_doc", "text": "How to compute device to head transform from a digmontage?", "metadata": {}}
+{"_id": "mne_channels/montage.py_compute_native_head_t_doc", "text": "How to compute the native-to-head transformation for a montage?", "metadata": {}}
+{"_id": "mne_channels/montage.py_make_standard_montage_doc", "text": "How to read a generic (built-in) standard montage that ships with mne-python?", "metadata": {}}
+{"_id": "mne_channels/montage.py_rename_channels_doc", "text": "How to rename the channels?", "metadata": {}}
+{"_id": "mne_channels/montage.py_save_doc", "text": "How to save digitization points to fif?", "metadata": {}}
+{"_id": "mne_channels/montage.py_copy_doc", "text": "How to copy the digmontage object?", "metadata": {}}
+{"_id": "mne_channels/montage.py_get_positions_doc", "text": "How to get all channel and fiducial positions?", "metadata": {}}
+{"_id": "mne_channels/montage.py_apply_trans_doc", "text": "How to apply a transformation matrix to the montage?", "metadata": {}}
+{"_id": "mne_channels/montage.py_add_estimated_fiducials_doc", "text": "How to estimate fiducials based on freesurfer ``fsaverage`` subject?", "metadata": {}}
+{"_id": "mne_channels/montage.py_add_mni_fiducials_doc", "text": "How to add fiducials to a montage in mni space?", "metadata": {}}
+{"_id": "mne_channels/montage.py_remove_fiducials_doc", "text": "How to remove the fiducial points from a montage?", "metadata": {}}
+{"_id": "mne_channels/layout.py_read_layout_doc", "text": "How to read layout from a file?", "metadata": {}}
+{"_id": "mne_channels/layout.py_make_eeg_layout_doc", "text": "How to create .lout file from eeg electrode digitization?", "metadata": {}}
+{"_id": "mne_channels/layout.py_make_grid_layout_doc", "text": "How to generate .lout file for custom data, i.e., ica sources?", "metadata": {}}
+{"_id": "mne_channels/layout.py_find_layout_doc", "text": "How to choose a layout based on the channels in the info 'chs' field?", "metadata": {}}
+{"_id": "mne_channels/layout.py_generate_2d_layout_doc", "text": "How to generate a custom 2d layout from xy points?", "metadata": {}}
+{"_id": "mne_channels/layout.py_copy_doc", "text": "How to return a copy of the layout?", "metadata": {}}
+{"_id": "mne_channels/layout.py_save_doc", "text": "How to save layout to disk?", "metadata": {}}
+{"_id": "mne_channels/layout.py_plot_doc", "text": "How to plot the sensor positions?", "metadata": {}}
+{"_id": "mne_channels/layout.py_pick_doc", "text": "How to pick a subset of channels?", "metadata": {}}
+{"_id": "mne_channels/channels.py_equalize_channels_doc", "text": "How to equalize channel picks and ordering across multiple mne-python objects?", "metadata": {}}
+{"_id": "mne_channels/channels.py_unify_bad_channels_doc", "text": "How to unify bad channels across a list of instances?", "metadata": {}}
+{"_id": "mne_channels/channels.py_rename_channels_doc", "text": "How to rename channels?", "metadata": {}}
+{"_id": "mne_channels/channels.py_get_builtin_ch_adjacencies_doc", "text": "How to get a list of all fieldtrip neighbor definitions shipping with mne?", "metadata": {}}
+{"_id": "mne_channels/channels.py_read_ch_adjacency_doc", "text": "How to read a channel adjacency (\"neighbors\") file that ships with mne?", "metadata": {}}
+{"_id": "mne_channels/channels.py_find_ch_adjacency_doc", "text": "How to find the adjacency matrix for the given channels?", "metadata": {}}
+{"_id": "mne_channels/channels.py_fix_mag_coil_types_doc", "text": "How to fix magnetometer coil types?", "metadata": {}}
+{"_id": "mne_channels/channels.py_make_1020_channel_selections_doc", "text": "How to map hemisphere names to corresponding eeg channel names or indices?", "metadata": {}}
+{"_id": "mne_channels/channels.py_combine_channels_doc", "text": "How to combine channels based on specified channel grouping?", "metadata": {}}
+{"_id": "mne_channels/channels.py_read_vectorview_selection_doc", "text": "How to read neuromag vector view channel selection from a file?", "metadata": {}}
+{"_id": "mne_channels/channels.py_set_eeg_reference_doc", "text": "How to specify which reference to use for eeg data?", "metadata": {}}
+{"_id": "mne_channels/channels.py_pick_types_doc", "text": "How to pick some channels by type and names?", "metadata": {}}
+{"_id": "mne_channels/channels.py_pick_channels_doc", "text": "How to pick some channels?", "metadata": {}}
+{"_id": "mne_channels/channels.py_pick_doc", "text": "How to pick a subset of channels?", "metadata": {}}
+{"_id": "mne_channels/channels.py_reorder_channels_doc", "text": "How to reorder channels?", "metadata": {}}
+{"_id": "mne_channels/channels.py_drop_channels_doc", "text": "How to drop channel(s)?", "metadata": {}}
+{"_id": "mne_channels/channels.py_add_channels_doc", "text": "How to append new channels from other mne objects to the instance?", "metadata": {}}
+{"_id": "mne_channels/channels.py_add_reference_channels_doc", "text": "How to add reference channels to data that consists of all zeros?", "metadata": {}}
+{"_id": "mne_channels/channels.py_interpolate_bads_doc", "text": "How to interpolate bad meg and eeg channels?", "metadata": {}}
+{"_id": "mne_channels/channels.py_interpolate_to_doc", "text": "How to interpolate eeg data onto a new montage?", "metadata": {}}
+{"_id": "mne_stats/multi_comp.py_fdr_correction_doc", "text": "How to p-value correction with false discovery rate (fdr)?", "metadata": {}}
+{"_id": "mne_stats/multi_comp.py_bonferroni_correction_doc", "text": "How to p-value correction with bonferroni method?", "metadata": {}}
+{"_id": "mne_stats/permutations.py_permutation_t_test_doc", "text": "How to one sample/paired sample permutation test based on a t-statistic?", "metadata": {}}
+{"_id": "mne_stats/permutations.py_bootstrap_confidence_interval_doc", "text": "How to get confidence intervals from non-parametric bootstrap?", "metadata": {}}
+{"_id": "mne_stats/erp.py_compute_sme_doc", "text": "How to compute standardized measurement error (sme)?", "metadata": {}}
+{"_id": "mne_stats/cluster_level.py_bin_perm_rep_doc", "text": "How to ndim permutations with repetitions of (a,b)?", "metadata": {}}
+{"_id": "mne_stats/cluster_level.py_permutation_cluster_test_doc", "text": "How to cluster-level statistical permutation test?", "metadata": {}}
+{"_id": "mne_stats/cluster_level.py_permutation_cluster_1samp_test_doc", "text": "How to non-parametric cluster-level paired t-test?", "metadata": {}}
+{"_id": "mne_stats/cluster_level.py_spatio_temporal_cluster_1samp_test_doc", "text": "How to non-parametric cluster-level paired t-test for spatio-temporal data?", "metadata": {}}
+{"_id": "mne_stats/cluster_level.py_spatio_temporal_cluster_test_doc", "text": "How to non-parametric cluster-level test for spatio-temporal data?", "metadata": {}}
+{"_id": "mne_stats/cluster_level.py_summarize_clusters_stc_doc", "text": "How to assemble summary sourceestimate from spatiotemporal cluster results?", "metadata": {}}
+{"_id": "mne_stats/regression.py_linear_regression_doc", "text": "How to fit ordinary least squares (ols) regression?", "metadata": {}}
+{"_id": "mne_stats/regression.py_linear_regression_raw_doc", "text": "How to estimate regression-based evoked potentials/fields by linear modeling?", "metadata": {}}
+{"_id": "mne_stats/_adjacency.py_combine_adjacency_doc", "text": "How to create a sparse binary adjacency/neighbors matrix?", "metadata": {}}
+{"_id": "mne_stats/parametric.py_ttest_1samp_no_p_doc", "text": "How to perform one-sample t-test?", "metadata": {}}
+{"_id": "mne_stats/parametric.py_ttest_ind_no_p_doc", "text": "How to independent samples t-test without p calculation?", "metadata": {}}
+{"_id": "mne_stats/parametric.py_f_oneway_doc", "text": "How to perform a 1-way anova?", "metadata": {}}
+{"_id": "mne_stats/parametric.py_f_threshold_mway_rm_doc", "text": "How to compute f-value thresholds for a two-way anova?", "metadata": {}}
+{"_id": "mne_stats/parametric.py_f_mway_rm_doc", "text": "How to compute m-way repeated measures anova for fully balanced designs?", "metadata": {}}
+{"_id": "mne_simulation/raw.py_simulate_raw_doc", "text": "How to simulate raw data?", "metadata": {}}
+{"_id": "mne_simulation/raw.py_add_eog_doc", "text": "How to add blink noise to raw data?", "metadata": {}}
+{"_id": "mne_simulation/raw.py_add_ecg_doc", "text": "How to add ecg noise to raw data?", "metadata": {}}
+{"_id": "mne_simulation/raw.py_add_chpi_doc", "text": "How to add chpi activations to raw data?", "metadata": {}}
+{"_id": "mne_simulation/evoked.py_simulate_evoked_doc", "text": "How to generate noisy evoked data?", "metadata": {}}
+{"_id": "mne_simulation/evoked.py_add_noise_doc", "text": "How to create noise as a multivariate gaussian?", "metadata": {}}
+{"_id": "mne_simulation/source.py_select_source_in_label_doc", "text": "How to select source positions using a label?", "metadata": {}}
+{"_id": "mne_simulation/source.py_simulate_sparse_stc_doc", "text": "How to generate sparse (n_dipoles) sources time courses from data_fun?", "metadata": {}}
+{"_id": "mne_simulation/source.py_simulate_stc_doc", "text": "How to simulate sources time courses from waveforms and labels?", "metadata": {}}
+{"_id": "mne_simulation/source.py_duration_doc", "text": "How to duration of the simulation in same units as tstep?", "metadata": {}}
+{"_id": "mne_simulation/source.py_n_times_doc", "text": "How to number of time samples in the simulation?", "metadata": {}}
+{"_id": "mne_simulation/source.py_add_data_doc", "text": "How to add data to the simulation?", "metadata": {}}
+{"_id": "mne_simulation/source.py_get_stim_channel_doc", "text": "How to get the stim channel from the provided data?", "metadata": {}}
+{"_id": "mne_simulation/source.py_get_stc_doc", "text": "How to simulate a sourceestimate from the provided data?", "metadata": {}}
+{"_id": "mne_simulation/metrics/metrics.py_source_estimate_quantification_doc", "text": "How to calculate stc similarities across all sources and times?", "metadata": {}}
+{"_id": "mne_simulation/metrics/metrics.py_cosine_score_doc", "text": "How to compute cosine similarity between 2 source estimates?", "metadata": {}}
+{"_id": "mne_simulation/metrics/metrics.py_region_localization_error_doc", "text": "How to compute region localization error (rle) between 2 source estimates?", "metadata": {}}
+{"_id": "mne_simulation/metrics/metrics.py_roc_auc_score_doc", "text": "How to compute roc auc between 2 source estimates?", "metadata": {}}
+{"_id": "mne_simulation/metrics/metrics.py_f1_score_doc", "text": "How to compute the f1 score, also known as balanced f-score or f-measure?", "metadata": {}}
+{"_id": "mne_simulation/metrics/metrics.py_precision_score_doc", "text": "How to compute the precision?", "metadata": {}}
+{"_id": "mne_simulation/metrics/metrics.py_recall_score_doc", "text": "How to compute the recall?", "metadata": {}}
+{"_id": "mne_simulation/metrics/metrics.py_peak_position_error_doc", "text": "How to compute the peak position error?", "metadata": {}}
+{"_id": "mne_simulation/metrics/metrics.py_spatial_deviation_error_doc", "text": "How to compute the spatial deviation?", "metadata": {}}
+{"_id": "mne_commands/mne_sys_info.py_run_doc", "text": "How to run command?", "metadata": {}}
+{"_id": "mne_commands/mne_kit2fiff.py_run_doc", "text": "How to run command?", "metadata": {}}
+{"_id": "mne_commands/mne_bti2fiff.py_run_doc", "text": "How to run command?", "metadata": {}}
+{"_id": "mne_commands/mne_compare_fiff.py_run_doc", "text": "How to run command?", "metadata": {}}
+{"_id": "mne_commands/mne_make_scalp_surfaces.py_run_doc", "text": "How to run command?", "metadata": {}}
+{"_id": "mne_commands/mne_setup_source_space.py_run_doc", "text": "How to run command?", "metadata": {}}
+{"_id": "mne_commands/mne_browse_raw.py_run_doc", "text": "How to run command?", "metadata": {}}
+{"_id": "mne_commands/mne_freeview_bem_surfaces.py_freeview_bem_surfaces_doc", "text": "How to view 3-layers bem model with freeview?", "metadata": {}}
+{"_id": "mne_commands/mne_freeview_bem_surfaces.py_run_doc", "text": "How to run command?", "metadata": {}}
+{"_id": "mne_commands/mne_show_info.py_run_doc", "text": "How to run command?", "metadata": {}}
+{"_id": "mne_commands/mne_prepare_bem_model.py_run_doc", "text": "How to run command?", "metadata": {}}
+{"_id": "mne_commands/mne_clean_eog_ecg.py_clean_ecg_eog_doc", "text": "How to clean ecg from raw fif file?", "metadata": {}}
+{"_id": "mne_commands/mne_clean_eog_ecg.py_run_doc", "text": "How to run command?", "metadata": {}}
+{"_id": "mne_commands/mne_report.py_log_elapsed_doc", "text": "How to log elapsed time?", "metadata": {}}
+{"_id": "mne_commands/mne_report.py_run_doc", "text": "How to run command?", "metadata": {}}
+{"_id": "mne_commands/mne_coreg.py_run_doc", "text": "How to run command?", "metadata": {}}
+{"_id": "mne_commands/mne_compute_proj_eog.py_run_doc", "text": "How to run command?", "metadata": {}}
+{"_id": "mne_commands/mne_surf2bem.py_run_doc", "text": "How to run command?", "metadata": {}}
+{"_id": "mne_commands/mne_show_fiff.py_run_doc", "text": "How to run command?", "metadata": {}}
+{"_id": "mne_commands/mne_compute_proj_ecg.py_run_doc", "text": "How to run command?", "metadata": {}}
+{"_id": "mne_commands/mne_anonymize.py_mne_anonymize_doc", "text": "How to call *anonymize_info* on fif file and save?", "metadata": {}}
+{"_id": "mne_commands/mne_anonymize.py_run_doc", "text": "How to run *mne_anonymize* command?", "metadata": {}}
+{"_id": "mne_commands/mne_watershed_bem.py_run_doc", "text": "How to run command?", "metadata": {}}
+{"_id": "mne_commands/utils.py_load_module_doc", "text": "How to load module from .py/.pyc file?", "metadata": {}}
+{"_id": "mne_commands/utils.py_get_optparser_doc", "text": "How to create optionparser with cmd specific settings (e.g., prog value)?", "metadata": {}}
+{"_id": "mne_commands/utils.py_main_doc", "text": "How to entrypoint for mne <command> usage?", "metadata": {}}
+{"_id": "mne_commands/mne_what.py_run_doc", "text": "How to run command?", "metadata": {}}
+{"_id": "mne_commands/mne_setup_forward_model.py_run_doc", "text": "How to run command?", "metadata": {}}
+{"_id": "mne_commands/mne_flash_bem.py_run_doc", "text": "How to run command?", "metadata": {}}
+{"_id": "mne_source_space/_source_space.py_read_source_spaces_doc", "text": "How to read the source spaces from a fif file?", "metadata": {}}
+{"_id": "mne_source_space/_source_space.py_find_source_space_hemi_doc", "text": "How to return the hemisphere id for a source space?", "metadata": {}}
+{"_id": "mne_source_space/_source_space.py_label_src_vertno_sel_doc", "text": "How to find vertex numbers and indices from label?", "metadata": {}}
+{"_id": "mne_source_space/_source_space.py_write_source_spaces_doc", "text": "How to write source spaces to a file?", "metadata": {}}
+{"_id": "mne_source_space/_source_space.py_setup_source_space_doc", "text": "How to set up bilateral hemisphere surface-based source space with subsampling?", "metadata": {}}
+{"_id": "mne_source_space/_source_space.py_setup_volume_source_space_doc", "text": "How to set up a volume source space with grid spacing or discrete source space?", "metadata": {}}
+{"_id": "mne_source_space/_source_space.py_add_source_space_distances_doc", "text": "How to compute inter-source distances along the cortical surface?", "metadata": {}}
+{"_id": "mne_source_space/_source_space.py_get_volume_labels_from_src_doc", "text": "How to return a list of label of segmented volumes included in the src space?", "metadata": {}}
+{"_id": "mne_source_space/_source_space.py_morph_source_spaces_doc", "text": "How to morph an existing source space to a different subject?", "metadata": {}}
+{"_id": "mne_source_space/_source_space.py_compute_distance_to_sensors_doc", "text": "How to compute distances between vertices and sensors?", "metadata": {}}
+{"_id": "mne_source_space/_source_space.py_get_decimated_surfaces_doc", "text": "How to get the decimated surfaces from a source space?", "metadata": {}}
+{"_id": "mne_source_space/_source_space.py_plot_doc", "text": "How to plot the source space?", "metadata": {}}
+{"_id": "mne_source_space/_source_space.py_copy_doc", "text": "How to make a copy of the source spaces?", "metadata": {}}
+{"_id": "mne_source_space/_source_space.py_save_doc", "text": "How to save the source spaces to a fif file?", "metadata": {}}
+{"_id": "mne_source_space/_source_space.py_export_volume_doc", "text": "How to export source spaces to nifti or mgz file?", "metadata": {}}
+{"_id": "mne_forward/forward.py_read_forward_solution_doc", "text": "How to read a forward solution a.k.a. lead field?", "metadata": {}}
+{"_id": "mne_forward/forward.py_convert_forward_solution_doc", "text": "How to convert forward solution between different source orientations?", "metadata": {}}
+{"_id": "mne_forward/forward.py_write_forward_solution_doc", "text": "How to write forward solution to a file?", "metadata": {}}
+{"_id": "mne_forward/forward.py_is_fixed_orient_doc", "text": "How to check if the forward operator is fixed orientation?", "metadata": {}}
+{"_id": "mne_forward/forward.py_write_forward_meas_info_doc", "text": "How to write measurement info stored in forward solution?", "metadata": {}}
+{"_id": "mne_forward/forward.py_compute_orient_prior_doc", "text": "How to compute orientation prior?", "metadata": {}}
+{"_id": "mne_forward/forward.py_compute_depth_prior_doc", "text": "How to compute depth prior for depth weighting?", "metadata": {}}
+{"_id": "mne_forward/forward.py_apply_forward_doc", "text": "How to project source space currents to sensor space using a forward operator?", "metadata": {}}
+{"_id": "mne_forward/forward.py_apply_forward_raw_doc", "text": "How to project source space currents to sensor space using a forward operator?", "metadata": {}}
+{"_id": "mne_forward/forward.py_restrict_forward_to_stc_doc", "text": "How to restrict forward operator to active sources in a source estimate?", "metadata": {}}
+{"_id": "mne_forward/forward.py_restrict_forward_to_label_doc", "text": "How to restrict forward operator to labels?", "metadata": {}}
+{"_id": "mne_forward/forward.py_average_forward_solutions_doc", "text": "How to average forward solutions?", "metadata": {}}
+{"_id": "mne_forward/forward.py_copy_doc", "text": "How to copy the forward instance?", "metadata": {}}
+{"_id": "mne_forward/forward.py_save_doc", "text": "How to save the forward solution?", "metadata": {}}
+{"_id": "mne_forward/forward.py_pick_channels_doc", "text": "How to pick channels from this forward operator?", "metadata": {}}
+{"_id": "mne_forward/_make_forward.py_make_forward_solution_doc", "text": "How to calculate a forward solution for a subject?", "metadata": {}}
+{"_id": "mne_forward/_make_forward.py_make_forward_dipole_doc", "text": "How to convert dipole object to source estimate and calculate forward operator?", "metadata": {}}
+{"_id": "mne_forward/_make_forward.py_use_coil_def_doc", "text": "How to use a custom coil definition file?", "metadata": {}}
+{"_id": "mne_forward/_field_interpolation.py_make_field_map_doc", "text": "How to compute surface maps used for field display in 3d?", "metadata": {}}
+{"_id": "mne_utils/numerics.py_split_list_doc", "text": "How to split list in n (approx) equal pieces, possibly giving indices?", "metadata": {}}
+{"_id": "mne_utils/numerics.py_array_split_idx_doc", "text": "How to do what numpy.array_split does, but add indices?", "metadata": {}}
+{"_id": "mne_utils/numerics.py_sum_squared_doc", "text": "How to compute norm of an array?", "metadata": {}}
+{"_id": "mne_utils/numerics.py_compute_corr_doc", "text": "How to compute pearson correlations between a vector and a matrix?", "metadata": {}}
+{"_id": "mne_utils/numerics.py_random_permutation_doc", "text": "How to emulate the randperm matlab function?", "metadata": {}}
+{"_id": "mne_utils/numerics.py_hashfunc_doc", "text": "How to calculate the hash for a file?", "metadata": {}}
+{"_id": "mne_utils/numerics.py_create_slices_doc", "text": "How to generate slices of time indexes?", "metadata": {}}
+{"_id": "mne_utils/numerics.py_grand_average_doc", "text": "How to make grand average of a list of evoked, averagetfr, or spectrum data?", "metadata": {}}
+{"_id": "mne_utils/numerics.py_object_hash_doc", "text": "How to hash a reasonable python object?", "metadata": {}}
+{"_id": "mne_utils/numerics.py_object_size_doc", "text": "How to estimate the size of a reasonable python object?", "metadata": {}}
+{"_id": "mne_utils/numerics.py_object_diff_doc", "text": "How to compute all differences between two python variables?", "metadata": {}}
+{"_id": "mne_utils/progressbar.py_update_doc", "text": "How to update progressbar with current value of process?", "metadata": {}}
+{"_id": "mne_utils/progressbar.py_update_with_increment_value_doc", "text": "How to update progressbar with an increment?", "metadata": {}}
+{"_id": "mne_utils/progressbar.py_subset_doc", "text": "How to make a joblib-friendly index subset updater?", "metadata": {}}
+{"_id": "mne_utils/linalg.py_eigh_doc", "text": "How to efficient wrapper for eigh?", "metadata": {}}
+{"_id": "mne_utils/linalg.py_sqrtm_sym_doc", "text": "How to compute the sqrt of a positive, semi-definite matrix (or its inverse)?", "metadata": {}}
+{"_id": "mne_utils/linalg.py_pinvh_doc", "text": "How to compute a pseudo-inverse of a hermitian matrix?", "metadata": {}}
+{"_id": "mne_utils/linalg.py_pinv_doc", "text": "How to compute a pseudo-inverse of a matrix?", "metadata": {}}
+{"_id": "mne_utils/_logging.py_verbose_doc", "text": "How to verbose decorator to allow functions to override log-level?", "metadata": {}}
+{"_id": "mne_utils/_logging.py_set_log_level_doc", "text": "How to set the logging level?", "metadata": {}}
+{"_id": "mne_utils/_logging.py_set_log_file_doc", "text": "How to set the log to print to a file?", "metadata": {}}
+{"_id": "mne_utils/_logging.py_warn_doc", "text": "How to emit a warning with trace outside the mne namespace?", "metadata": {}}
+{"_id": "mne_utils/_logging.py_filter_out_warnings_doc", "text": "How to remove particular records from ``warn_record``?", "metadata": {}}
+{"_id": "mne_utils/_logging.py_wrapped_stdout_doc", "text": "How to wrap stdout writes to logger.info, with an optional indent prefix?", "metadata": {}}
+{"_id": "mne_utils/_logging.py_getvalue_doc", "text": "How to get the value?", "metadata": {}}
+{"_id": "mne_utils/misc.py_pformat_doc", "text": "How to format a template string partially?", "metadata": {}}
+{"_id": "mne_utils/misc.py_run_subprocess_doc", "text": "How to run command using subprocess.popen?", "metadata": {}}
+{"_id": "mne_utils/misc.py_running_subprocess_doc", "text": "How to context manager to do something with a command running via popen?", "metadata": {}}
+{"_id": "mne_utils/misc.py_sizeof_fmt_doc", "text": "How to turn number of bytes into human-readable str?", "metadata": {}}
+{"_id": "mne_utils/misc.py_repr_html_doc", "text": "How to decorate _repr_html_ methods?", "metadata": {}}
+{"_id": "mne_utils/mixin.py_metadata_doc", "text": "How to get the metadata?", "metadata": {}}
+{"_id": "mne_utils/mixin.py_time_as_index_doc", "text": "How to convert time to indices?", "metadata": {}}
+{"_id": "mne_utils/mixin.py_times_doc", "text": "How to time vector in seconds?", "metadata": {}}
+{"_id": "mne_utils/mixin.py_tmin_doc", "text": "How to first time point?", "metadata": {}}
+{"_id": "mne_utils/mixin.py_tmax_doc", "text": "How to last time point?", "metadata": {}}
+{"_id": "mne_utils/mixin.py_crop_doc", "text": "How to crop data to a given time interval?", "metadata": {}}
+{"_id": "mne_utils/mixin.py_decimate_doc", "text": "How to decimate the time-series data?", "metadata": {}}
+{"_id": "mne_utils/mixin.py_shift_time_doc", "text": "How to shift time scale in epoched or evoked data?", "metadata": {}}
+{"_id": "mne_utils/check.py_check_fname_doc", "text": "How to enforce mne filename conventions?", "metadata": {}}
+{"_id": "mne_utils/check.py_check_version_doc", "text": "How to check minimum library version required?", "metadata": {}}
+{"_id": "mne_utils/check.py_check_random_state_doc", "text": "How to turn seed into a numpy.random.mtrand.randomstate instance?", "metadata": {}}
+{"_id": "mne_utils/check.py_cast_path_to_str_doc", "text": "How to cast all paths value to string in data?", "metadata": {}}
+{"_id": "mne_utils/check.py_write_hdf5_doc", "text": "How to write h5 and cast all paths to string in data?", "metadata": {}}
+{"_id": "mne_utils/config.py_set_cache_dir_doc", "text": "How to set the directory to be used for temporary file storage?", "metadata": {}}
+{"_id": "mne_utils/config.py_set_memmap_min_size_doc", "text": "How to set the minimum size for memmaping of arrays for parallel processing?", "metadata": {}}
+{"_id": "mne_utils/config.py_get_config_path_doc", "text": "How to get path to standard mne-python config file?", "metadata": {}}
+{"_id": "mne_utils/config.py_get_config_doc", "text": "How to read mne-python preferences from environment or config file?", "metadata": {}}
+{"_id": "mne_utils/config.py_set_config_doc", "text": "How to set a mne-python preference key in the config file and environment?", "metadata": {}}
+{"_id": "mne_utils/config.py_get_subjects_dir_doc", "text": "How to safely use subjects_dir input to return subjects_dir?", "metadata": {}}
+{"_id": "mne_utils/config.py_sys_info_doc", "text": "How to print system information?", "metadata": {}}
+{"_id": "mne_utils/_testing.py_requires_mne_doc", "text": "How to decorate a function as requiring mne?", "metadata": {}}
+{"_id": "mne_utils/_testing.py_requires_mne_mark_doc", "text": "How to mark pytest tests that require mne-c?", "metadata": {}}
+{"_id": "mne_utils/_testing.py_requires_openmeeg_mark_doc", "text": "How to mark pytest tests that require openmeeg?", "metadata": {}}
+{"_id": "mne_utils/_testing.py_requires_freesurfer_doc", "text": "How to require freesurfer?", "metadata": {}}
+{"_id": "mne_utils/_testing.py_run_command_if_main_doc", "text": "How to run a given command if it's __main__?", "metadata": {}}
+{"_id": "mne_utils/_testing.py_has_mne_c_doc", "text": "How to check for mne-c?", "metadata": {}}
+{"_id": "mne_utils/_testing.py_has_freesurfer_doc", "text": "How to check for freesurfer?", "metadata": {}}
+{"_id": "mne_utils/_testing.py_buggy_mkl_svd_doc", "text": "How to decorate tests that make calls to svd and intermittently fail?", "metadata": {}}
+{"_id": "mne_utils/_testing.py_assert_and_remove_boundary_annot_doc", "text": "How to assert that there are boundary annotations and remove them?", "metadata": {}}
+{"_id": "mne_utils/_testing.py_assert_object_equal_doc", "text": "How to assert two objects are equal?", "metadata": {}}
+{"_id": "mne_utils/_testing.py_assert_meg_snr_doc", "text": "How to assert channel snr of a certain level?", "metadata": {}}
+{"_id": "mne_utils/_testing.py_assert_snr_doc", "text": "How to assert actual and desired arrays are within some snr tolerance?", "metadata": {}}
+{"_id": "mne_utils/_testing.py_assert_stcs_equal_doc", "text": "How to check that two stc are equal?", "metadata": {}}
+{"_id": "mne_utils/_testing.py_assert_dig_allclose_doc", "text": "How to assert dig allclose?", "metadata": {}}
+{"_id": "mne_utils/docs.py_fill_doc_doc", "text": "How to fill a docstring with docdict entries?", "metadata": {}}
+{"_id": "mne_utils/docs.py_copy_doc_doc", "text": "How to copy the docstring from another function (decorator)?", "metadata": {}}
+{"_id": "mne_utils/docs.py_copy_function_doc_to_method_doc_doc", "text": "How to use the docstring from a function as docstring for a method?", "metadata": {}}
+{"_id": "mne_utils/docs.py_linkcode_resolve_doc", "text": "How to determine the url corresponding to a python object?", "metadata": {}}
+{"_id": "mne_utils/docs.py_open_docs_doc", "text": "How to launch a new web browser tab with the mne documentation?", "metadata": {}}
+{"_id": "mne_utils/docs.py_deprecated_alias_doc", "text": "How to inject a deprecated alias into the namespace?", "metadata": {}}
+{"_id": "mne_beamformer/resolution_matrix.py_make_lcmv_resolution_matrix_doc", "text": "How to compute resolution matrix for lcmv beamformer?", "metadata": {}}
+{"_id": "mne_beamformer/_compute_beamformer.py_read_beamformer_doc", "text": "How to read a beamformer filter?", "metadata": {}}
+{"_id": "mne_beamformer/_compute_beamformer.py_copy_doc", "text": "How to copy the beamformer?", "metadata": {}}
+{"_id": "mne_beamformer/_compute_beamformer.py_save_doc", "text": "How to save the beamformer filter?", "metadata": {}}
+{"_id": "mne_beamformer/_dics.py_make_dics_doc", "text": "How to compute a dynamic imaging of coherent sources (dics) spatial filter?", "metadata": {}}
+{"_id": "mne_beamformer/_dics.py_apply_dics_doc", "text": "How to apply dynamic imaging of coherent sources (dics) beamformer weights?", "metadata": {}}
+{"_id": "mne_beamformer/_dics.py_apply_dics_epochs_doc", "text": "How to apply dynamic imaging of coherent sources (dics) beamformer weights?", "metadata": {}}
+{"_id": "mne_beamformer/_dics.py_apply_dics_tfr_epochs_doc", "text": "How to apply dynamic imaging of coherent sources (dics) beamformer weights?", "metadata": {}}
+{"_id": "mne_beamformer/_dics.py_apply_dics_csd_doc", "text": "How to apply dynamic imaging of coherent sources (dics) beamformer weights?", "metadata": {}}
+{"_id": "mne_beamformer/_rap_music.py_rap_music_doc", "text": "How to rap-music source localization method?", "metadata": {}}
+{"_id": "mne_beamformer/_rap_music.py_trap_music_doc", "text": "How to trap-music source localization method?", "metadata": {}}
+{"_id": "mne_beamformer/_lcmv.py_make_lcmv_doc", "text": "How to compute lcmv spatial filter?", "metadata": {}}
+{"_id": "mne_beamformer/_lcmv.py_apply_lcmv_doc", "text": "How to apply linearly constrained minimum variance (lcmv) beamformer weights?", "metadata": {}}
+{"_id": "mne_beamformer/_lcmv.py_apply_lcmv_epochs_doc", "text": "How to apply linearly constrained minimum variance (lcmv) beamformer weights?", "metadata": {}}
+{"_id": "mne_beamformer/_lcmv.py_apply_lcmv_raw_doc", "text": "How to apply linearly constrained minimum variance (lcmv) beamformer weights?", "metadata": {}}
+{"_id": "mne_beamformer/_lcmv.py_apply_lcmv_cov_doc", "text": "How to apply linearly constrained  minimum variance (lcmv) beamformer weights?", "metadata": {}}
+{"_id": "mne__fiff/meas_info.py_read_fiducials_doc", "text": "How to read fiducials from a fiff file?", "metadata": {}}
+{"_id": "mne__fiff/meas_info.py_write_fiducials_doc", "text": "How to write fiducials to a fiff file?", "metadata": {}}
+{"_id": "mne__fiff/meas_info.py_read_info_doc", "text": "How to read measurement info from a file?", "metadata": {}}
+{"_id": "mne__fiff/meas_info.py_read_bad_channels_doc", "text": "How to read bad channels?", "metadata": {}}
+{"_id": "mne__fiff/meas_info.py_read_meas_info_doc", "text": "How to read the measurement info?", "metadata": {}}
+{"_id": "mne__fiff/meas_info.py_write_meas_info_doc", "text": "How to write measurement info into a file id (from a fif file)?", "metadata": {}}
+{"_id": "mne__fiff/meas_info.py_write_info_doc", "text": "How to write measurement info in fif file?", "metadata": {}}
+{"_id": "mne__fiff/meas_info.py_create_info_doc", "text": "How to create a basic info instance suitable for use with create_raw?", "metadata": {}}
+{"_id": "mne__fiff/meas_info.py_anonymize_info_doc", "text": "How to anonymize measurement information in place?", "metadata": {}}
+{"_id": "mne__fiff/meas_info.py_get_montage_doc", "text": "How to get a digmontage from instance?", "metadata": {}}
+{"_id": "mne__fiff/meas_info.py_set_montage_doc", "text": "How to set %(montage_types)s channel positions and digitization points?", "metadata": {}}
+{"_id": "mne__fiff/meas_info.py_set_channel_types_doc", "text": "How to specify the sensor types of channels?", "metadata": {}}
+{"_id": "mne__fiff/meas_info.py_rename_channels_doc", "text": "How to rename channels?", "metadata": {}}
+{"_id": "mne__fiff/meas_info.py_plot_sensors_doc", "text": "How to plot sensor positions?", "metadata": {}}
+{"_id": "mne__fiff/meas_info.py_anonymize_doc", "text": "How to anonymize measurement information in place?", "metadata": {}}
+{"_id": "mne__fiff/meas_info.py_set_meas_date_doc", "text": "How to set the measurement start date?", "metadata": {}}
+{"_id": "mne__fiff/meas_info.py_compensation_grade_doc", "text": "How to the current gradient compensation grade?", "metadata": {}}
+{"_id": "mne__fiff/meas_info.py_get_channel_types_doc", "text": "How to get a list of channel type for each channel?", "metadata": {}}
+{"_id": "mne__fiff/meas_info.py_update_doc", "text": "How to update method using __setitem__()?", "metadata": {}}
+{"_id": "mne__fiff/meas_info.py_copy_doc", "text": "How to copy the instance?", "metadata": {}}
+{"_id": "mne__fiff/meas_info.py_normalize_proj_doc", "text": "How to (re-)normalize projection vectors after subselection?", "metadata": {}}
+{"_id": "mne__fiff/meas_info.py_save_doc", "text": "How to write measurement info in fif file?", "metadata": {}}
+{"_id": "mne__fiff/_digitization.py_write_dig_doc", "text": "How to write digitization data to a fif file?", "metadata": {}}
+{"_id": "mne__fiff/open.py_fiff_open_doc", "text": "How to open a fif file?", "metadata": {}}
+{"_id": "mne__fiff/open.py_show_fiff_doc", "text": "How to show fiff information?", "metadata": {}}
+{"_id": "mne__fiff/reference.py_add_reference_channels_doc", "text": "How to add reference channels to data that consists of all zeros?", "metadata": {}}
+{"_id": "mne__fiff/reference.py_set_eeg_reference_doc", "text": "How to specify which reference to use for eeg data?", "metadata": {}}
+{"_id": "mne__fiff/reference.py_set_bipolar_reference_doc", "text": "How to re-reference selected channels using a bipolar referencing scheme?", "metadata": {}}
+{"_id": "mne__fiff/pick.py_get_channel_type_constants_doc", "text": "How to return all known channel types, and associated fiff constants?", "metadata": {}}
+{"_id": "mne__fiff/pick.py_channel_type_doc", "text": "How to get channel type?", "metadata": {}}
+{"_id": "mne__fiff/pick.py_pick_channels_doc", "text": "How to pick channels by names?", "metadata": {}}
+{"_id": "mne__fiff/pick.py_pick_channels_regexp_doc", "text": "How to pick channels using regular expression?", "metadata": {}}
+{"_id": "mne__fiff/pick.py_pick_types_doc", "text": "How to pick channels by type and names?", "metadata": {}}
+{"_id": "mne__fiff/pick.py_pick_info_doc", "text": "How to restrict an info structure to a selection of channels?", "metadata": {}}
+{"_id": "mne__fiff/pick.py_pick_channels_forward_doc", "text": "How to pick channels from forward operator?", "metadata": {}}
+{"_id": "mne__fiff/pick.py_pick_types_forward_doc", "text": "How to pick by channel type and names from a forward operator?", "metadata": {}}
+{"_id": "mne__fiff/pick.py_channel_indices_by_type_doc", "text": "How to get indices of channels by type?", "metadata": {}}
+{"_id": "mne__fiff/pick.py_pick_channels_cov_doc", "text": "How to pick channels from covariance matrix?", "metadata": {}}
+{"_id": "mne__fiff/write.py_write_nop_doc", "text": "How to write a fiff_nop?", "metadata": {}}
+{"_id": "mne__fiff/write.py_write_int_doc", "text": "How to write a 32-bit integer tag to a fif file?", "metadata": {}}
+{"_id": "mne__fiff/write.py_write_double_doc", "text": "How to write a double-precision floating point tag to a fif file?", "metadata": {}}
+{"_id": "mne__fiff/write.py_write_float_doc", "text": "How to write a single-precision floating point tag to a fif file?", "metadata": {}}
+{"_id": "mne__fiff/write.py_write_dau_pack16_doc", "text": "How to write a dau_pack16 tag to a fif file?", "metadata": {}}
+{"_id": "mne__fiff/write.py_write_complex64_doc", "text": "How to write a 64 bit complex floating point tag to a fif file?", "metadata": {}}
+{"_id": "mne__fiff/write.py_write_complex128_doc", "text": "How to write a 128 bit complex floating point tag to a fif file?", "metadata": {}}
+{"_id": "mne__fiff/write.py_write_julian_doc", "text": "How to write a julian-formatted date to a fif file?", "metadata": {}}
+{"_id": "mne__fiff/write.py_write_string_doc", "text": "How to write a string tag?", "metadata": {}}
+{"_id": "mne__fiff/write.py_write_name_list_doc", "text": "How to write a colon-separated list of names?", "metadata": {}}
+{"_id": "mne__fiff/write.py_write_name_list_sanitized_doc", "text": "How to write a sanitized, colon-separated list of names?", "metadata": {}}
+{"_id": "mne__fiff/write.py_write_float_matrix_doc", "text": "How to write a single-precision floating-point matrix tag?", "metadata": {}}
+{"_id": "mne__fiff/write.py_write_double_matrix_doc", "text": "How to write a double-precision floating-point matrix tag?", "metadata": {}}
+{"_id": "mne__fiff/write.py_write_int_matrix_doc", "text": "How to write integer 32 matrix tag?", "metadata": {}}
+{"_id": "mne__fiff/write.py_write_complex_float_matrix_doc", "text": "How to write complex 64 matrix tag?", "metadata": {}}
+{"_id": "mne__fiff/write.py_write_complex_double_matrix_doc", "text": "How to write complex 128 matrix tag?", "metadata": {}}
+{"_id": "mne__fiff/write.py_get_machid_doc", "text": "How to get (mostly) unique machine id?", "metadata": {}}
+{"_id": "mne__fiff/write.py_get_new_file_id_doc", "text": "How to create a new file id tag?", "metadata": {}}
+{"_id": "mne__fiff/write.py_write_id_doc", "text": "How to write fiff id?", "metadata": {}}
+{"_id": "mne__fiff/write.py_start_block_doc", "text": "How to write a fiff_block_start tag?", "metadata": {}}
+{"_id": "mne__fiff/write.py_end_block_doc", "text": "How to write a fiff_block_end tag?", "metadata": {}}
+{"_id": "mne__fiff/write.py_start_file_doc", "text": "How to open a fif file for writing and writes the compulsory header tags?", "metadata": {}}
+{"_id": "mne__fiff/write.py_start_and_end_file_doc", "text": "How to start and (if successfully written) close the file?", "metadata": {}}
+{"_id": "mne__fiff/write.py_check_fiff_length_doc", "text": "How to ensure our file hasn't grown too large to work properly?", "metadata": {}}
+{"_id": "mne__fiff/write.py_end_file_doc", "text": "How to write the closing tags to a fif file and closes the file?", "metadata": {}}
+{"_id": "mne__fiff/write.py_write_coord_trans_doc", "text": "How to write a coordinate transformation structure?", "metadata": {}}
+{"_id": "mne__fiff/write.py_write_ch_info_doc", "text": "How to write a channel information record to a fif file?", "metadata": {}}
+{"_id": "mne__fiff/write.py_write_dig_points_doc", "text": "How to write a set of digitizer data points into a fif file?", "metadata": {}}
+{"_id": "mne__fiff/write.py_write_float_sparse_rcs_doc", "text": "How to write a single-precision sparse compressed row matrix tag?", "metadata": {}}
+{"_id": "mne__fiff/write.py_write_float_sparse_doc", "text": "How to write a single-precision floating-point sparse matrix tag?", "metadata": {}}
+{"_id": "mne__fiff/proj.py_make_projector_doc", "text": "How to create an ssp operator from ssp projection vectors?", "metadata": {}}
+{"_id": "mne__fiff/proj.py_make_projector_info_doc", "text": "How to make an ssp operator using the measurement info?", "metadata": {}}
+{"_id": "mne__fiff/proj.py_activate_proj_doc", "text": "How to set all projections to active?", "metadata": {}}
+{"_id": "mne__fiff/proj.py_deactivate_proj_doc", "text": "How to set all projections to inactive?", "metadata": {}}
+{"_id": "mne__fiff/proj.py_make_eeg_average_ref_proj_doc", "text": "How to create an eeg average reference ssp projection vector?", "metadata": {}}
+{"_id": "mne__fiff/proj.py_setup_proj_doc", "text": "How to set up projection for raw and epochs?", "metadata": {}}
+{"_id": "mne__fiff/proj.py_plot_topomap_doc", "text": "How to plot topographic maps of ssp projections?", "metadata": {}}
+{"_id": "mne__fiff/proj.py_proj_doc", "text": "How to whether or not projections are active?", "metadata": {}}
+{"_id": "mne__fiff/proj.py_add_proj_doc", "text": "How to add ssp projection vectors?", "metadata": {}}
+{"_id": "mne__fiff/proj.py_apply_proj_doc", "text": "How to apply the signal space projection (ssp) operators to the data?", "metadata": {}}
+{"_id": "mne__fiff/proj.py_del_proj_doc", "text": "How to remove ssp projection vector?", "metadata": {}}
+{"_id": "mne__fiff/proj.py_plot_projs_topomap_doc", "text": "How to plot ssp vector?", "metadata": {}}
+{"_id": "mne__fiff/proj.py_sorter_doc", "text": "How to sort in a nice way?", "metadata": {}}
+{"_id": "mne__fiff/matrix.py_write_named_matrix_doc", "text": "How to write named matrix from the given node?", "metadata": {}}
+{"_id": "mne__fiff/what.py_what_doc", "text": "How to try to determine the type of the fif file?", "metadata": {}}
+{"_id": "mne__fiff/tree.py_dir_tree_find_doc", "text": "How to find nodes of the given kind from a directory tree structure?", "metadata": {}}
+{"_id": "mne__fiff/tree.py_make_dir_tree_doc", "text": "How to create the directory tree structure?", "metadata": {}}
+{"_id": "mne__fiff/tag.py_read_tag_doc", "text": "How to read a tag from a file at a given position?", "metadata": {}}
+{"_id": "mne__fiff/tag.py_find_tag_doc", "text": "How to find tag in an open fif file descriptor?", "metadata": {}}
+{"_id": "mne__fiff/tag.py_has_tag_doc", "text": "How to check if the node contains a tag of a given kind?", "metadata": {}}
+{"_id": "mne__fiff/tag.py_next_pos_doc", "text": "How to the next tag position?", "metadata": {}}
+{"_id": "mne__fiff/utils.py_read_str_doc", "text": "How to read string from a binary file in a python version compatible way?", "metadata": {}}
+{"_id": "mne__fiff/compensator.py_get_current_comp_doc", "text": "How to get the current compensation in effect in the data?", "metadata": {}}
+{"_id": "mne__fiff/compensator.py_set_current_comp_doc", "text": "How to set the current compensation in effect in the data?", "metadata": {}}
+{"_id": "mne__fiff/compensator.py_make_compensator_doc", "text": "How to return compensation matrix eg. for ctf system?", "metadata": {}}
+{"_id": "mne__fiff/ctf_comp.py_read_ctf_comp_doc", "text": "How to read the ctf software compensation data from the given node?", "metadata": {}}
+{"_id": "mne__fiff/ctf_comp.py_write_ctf_comp_doc", "text": "How to write the ctf compensation data into a fif file?", "metadata": {}}
