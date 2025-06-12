@@ -541,7 +541,14 @@ def main():
                         print("\n=== Generated Outputs ===")
                         for i, gen in enumerate(generations):
                             print(f"\n--- Generation {i + 1} ---")
-                            print(gen)
+                            if isinstance(gen, list):
+                                print("\n\n".join(gen))
+                            else:
+                                print(gen)
+
+                        '''for i, gen in enumerate(generations):
+                            print(f"\n--- Generation {i + 1} ---")
+                            print(gen)'''
 
                     save_generations_path = f"{os.path.splitext(args.save_generations_path)[0]}_{task}.json"
                     save_references_path = f"references_{task}.json"
