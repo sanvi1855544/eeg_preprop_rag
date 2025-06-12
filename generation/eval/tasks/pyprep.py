@@ -105,16 +105,12 @@ class PyprepTask(Task):
         {top_docs_text}
         ---------------------
 
-        --- User Code ---
-        import numpy as np
-        import mne
-        sfreq = 1000  
-        n_channels = 5
-        n_times = 10000  
+        --- User Input ---
+        {prompt}
+        ---------------------
 
-        info = mne.create_info(ch_names=n_channels, sfreq=sfreq, ch_types='eeg')
-        data = np.random.randn(n_channels, n_times) * 1e-6  # random data in Volts
-        raw = mne.io.RawArray(data, info)
+        --- Documentation ---
+        {top_docs_text}
         ---------------------
 
         Fix or complete the code to meet requirements.
