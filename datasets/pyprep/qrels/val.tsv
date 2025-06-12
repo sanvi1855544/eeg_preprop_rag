@@ -1,0 +1,5 @@
+query-id	corpus-id	score
+pyprep_utils.py__eeglab_fir_filter_doc	pyprep_utils.py__eeglab_fir_filter_code	1
+pyprep_removeTrend.py_runline_doc	pyprep_removeTrend.py_runline_code	1
+pyprep_ransac.py__ransac_by_window_doc	pyprep_ransac.py__ransac_by_window_code	1
+pyprep_find_noisy_channels.py_find_bad_by_correlation_doc	pyprep_find_noisy_channels.py_find_bad_by_correlation_code	1
