@@ -87,15 +87,39 @@ class PyprepTask(Task):
         prompt = f"""
         You are a helpful programming assistant.
 
-        Using the documentation below, write the exact code needed to answer the question.
+        You are provided with:
+        1. Reference documentation (below).
+        2. A user’s code snippet (below).
+        3. Task requirements for valid EEG preprocessing using MNE-Python 
 
-        Documentation:
+        Your job is to **edit or complete the user's code** to fulfill the requirements and match best practices based on the documentation.
+
+        --- Requirements ---
+        - Improve attached script to have better preprocessing (that matches the function calls in the repositories in the corpus)
+        - Do NOT include any model training, deep learning code, or classifiers (e.g., PyTorch).
+        - Do NOT include any visualization or saving code.
+        - Only use valid MNE-Python preprocessing functions.
+        --------------------
+
+        --- Documentation ---
         {top_docs_text}
+        ---------------------
 
-        Question:
-        {prompt}
+        --- User Code ---
+        import numpy as np
+        import mne
+        sfreq = 1000  
+        n_channels = 5
+        n_times = 10000  
 
-        Provide only the code as your answer, no explanations or extra text.
+        info = mne.create_info(ch_names=n_channels, sfreq=sfreq, ch_types='eeg')
+        data = np.random.randn(n_channels, n_times) * 1e-6  # random data in Volts
+        raw = mne.io.RawArray(data, info)
+        ---------------------
+
+        Fix or complete the code to meet requirements.
+
+        Provide only the corrected code as your answer, no extra text or comments.
         """
 
         #print(prompt) #Could get rid of this

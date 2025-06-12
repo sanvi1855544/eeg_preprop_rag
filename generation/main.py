@@ -551,7 +551,7 @@ def main():
                             print(gen)'''
 
                     save_generations_path = f"{os.path.splitext(args.save_generations_path)[0]}_{task}.json"
-                    save_references_path = f"references_{task}.json"
+                    save_references_path = args.save_references_path or f"references_{task}.json"
                     evaluator.save_json_files(
                         generations,
                         references,
