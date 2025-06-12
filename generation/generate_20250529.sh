@@ -6,7 +6,7 @@ DEFAULT_DATASET_PATH="/p3/home/abaxter/eeg_preprop_rag/"
 USER_PROMPT="${1:-$DEFAULT_PROMPT}"
 DATASET_PATH="${2:-$DEFAULT_DATASET_PATH}"
 
-python3 generation/main.py \
+python3.10 generation/main.py \
   --model_backend api \
   --precision bf16 \
   --task "pyprep" \
