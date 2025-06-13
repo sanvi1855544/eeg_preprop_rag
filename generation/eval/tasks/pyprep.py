@@ -108,9 +108,73 @@ class PyprepTask(Task):
         {prompt}
         ---------------------
 
-        --- Documentation ---
-        {top_docs_text}
-        ---------------------
+        --- Example ---
+        1.  USER INPUT:
+            import numpy as np
+            import mne
+            import matplotlib.pyplot as plt
+
+            # Parameters
+            sfreq = 512  # Sampling frequency in Hz
+            n_channels = 128
+            duration_secs = 3
+            n_samples = duration_secs * sfreq
+
+            # Generate synthetic EEG data (sine waves + noise)
+            rng = np.random.RandomState(42)
+            time = np.arange(n_samples) / sfreq
+            synthetic_data = 1e-6 * np.sin(2 * np.pi * 10 * time)  # 10 Hz sine wave
+            data = synthetic_data + 1e-6 * rng.randn(n_channels, n_samples)
+
+            # Channel info
+            ch_names = [f"EEG {i+1}" for i in range(n_channels)]
+            ch_types = ['eeg'] * n_channels
+            info = mne.create_info(ch_names=ch_names, sfreq=sfreq, ch_types=ch_types)
+
+            # Create Raw object
+            raw = mne.io.RawArray(data, info)
+
+            RELEVANT TOP K FUNCTIONS: 
+            raw.filter, raw.notch_filter, raw.resample
+        
+            OUTPUT:
+            import numpy as np
+            import mne
+            import matplotlib.pyplot as plt
+
+            # Parameters
+            sfreq = 512  # Sampling frequency in Hz
+            n_channels = 128
+            duration_secs = 3
+            n_samples = duration_secs * sfreq
+
+            # Generate synthetic EEG data (sine waves + noise)
+            rng = np.random.RandomState(42)
+            time = np.arange(n_samples) / sfreq
+            synthetic_data = 1e-6 * np.sin(2 * np.pi * 10 * time)  # 10 Hz sine wave
+            data = synthetic_data + 1e-6 * rng.randn(n_channels, n_samples)
+
+            # Channel info
+            ch_names = [f"EEG {i+1}" for i in range(n_channels)]
+            ch_types = ['eeg'] * n_channels
+            info = mne.create_info(ch_names=ch_names, sfreq=sfreq, ch_types=ch_types)
+
+            # Create Raw object
+            raw = mne.io.RawArray(data, info)
+
+            # -----------------
+            # Preprocessing
+            # -----------------
+
+            # Bandpass filter (1–40 Hz)
+            raw.filter(1., 40., fir_design='firwin', verbose=False)
+
+            # Notch filter (60 Hz to remove powerline noise)
+            raw.notch_filter(freqs=60., fir_design='firwin', verbose=False)
+
+            # Resample to 256 Hz
+            raw.resample(256, verbose=False)
+        
 
         Fix or complete the code to meet requirements.
 
