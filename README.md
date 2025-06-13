@@ -3,7 +3,9 @@
 Our CS 159 Project was doing RAG on a corpus of strictly EEG repositories.
 This is a modification of the code repository for the project ["CodeRAG-Bench: Can Retrieval Augment Code Generation?"](https://code-rag-bench.github.io/).
 
-Report:
+## Report
+
+- [CS_159_report.pdf](./CS_159_report.pdf)
 
 ## Links to Demos
 
