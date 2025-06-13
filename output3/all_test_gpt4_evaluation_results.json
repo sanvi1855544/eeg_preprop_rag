@@ -46,7 +46,7 @@
     "save_references": false,
     "save_references_path": "references.json",
     "prompt": "prompt",
-    "user_prompt": "How do I initialize the PREP class?",
+    "user_prompt": "Write a Python script using MNE-Python to create synthetic EEG data and preprocess it.\nDO NOT USE ANY NEURAL NETWORKS AND PLEASE RELY ON THE FOLLOWING DOCUMENTATION WHEN GENERATING CODE.\nDo not use PREP.\n\nThe pipeline MUST include:\n\n1. Data creation:\n    - Use  and .\n    - 5 EEG channels, 1000 Hz sampling rate, 10 seconds of random noise.\n\n2. Preprocessing:\n    - Band-pass filter (1\u201340 Hz)\n    - Set EEG average reference\n    - ICA: Remove at least 2 components\n\nDO NOT:\n- Use \n- Visualize anything\n- Save anything to disk\n",
     "new_tokens_only": false,
     "max_memory_per_gpu": null,
     "check_references": false,

@@ -1,0 +1,1 @@
+[["from dataclasses import dataclass, field\nfrom typing import Any, Dict\n\n@dataclass\nclass PREP:\n    model_fwd_kwargs: Dict = field(default_factory=dict)\n    accum_steps: int = 1\n\n# Initializing the PREP class\nprep_instance = PREP()"]]
