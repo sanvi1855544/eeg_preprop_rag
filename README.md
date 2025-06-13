@@ -5,7 +5,7 @@ This is a modification of the code repository for the project ["CodeRAG-Bench: C
 
 ## Report
 
-- [CS_159_report.pdf](./CS_159_report.pdf)
+- [CS 159 Report](./CS_159_report.pdf)
 
 ## Links to Demos
 
