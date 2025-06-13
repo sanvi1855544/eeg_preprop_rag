@@ -85,7 +85,6 @@ class PyprepTask(Task):
         top_docs_text = "\n\n".join(doc["text"] for doc in top_docs)
         # Optionally format a prompt, e.g. add the original question
         prompt = f"""
-        You are a helpful programming assistant.
 
         You are provided with:
         1. Reference documentation (below).
@@ -117,7 +116,7 @@ class PyprepTask(Task):
 
         Provide only the corrected code as your answer, no extra text or comments.
         """
-
+        
         #print(prompt) #Could get rid of this
         #quit()
         return prompt
