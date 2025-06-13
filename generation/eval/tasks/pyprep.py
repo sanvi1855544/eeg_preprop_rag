@@ -83,7 +83,10 @@ class PyprepTask(Task):
 
         top_docs = [corpus_index[i] for i in topk_indices]
         top_docs_text = "\n\n".join(doc["text"] for doc in top_docs)
-        return prompt
+        full_prompt = f"""{prompt}
+        \n--- Documentation ---\n{top_docs_text}"""
+        print(full_prompt)
+        return full_prompt
 
 
     def get_reference(self, doc):
