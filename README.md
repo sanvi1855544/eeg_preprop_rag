@@ -4,10 +4,12 @@ This is a modification of the code repository for the project ["CodeRAG-Bench: C
 
 Report:
 
-Links to Demos:
-• Canonical retrieval notebook: https://colab.research.google.com/drive/1mrqxg_F7dJNWkNi088yIs3XUYL8661Xv?usp=sharing
-• Open retrieval notebook: https://colab.research.google.com/drive/1atFGomyJCbrI2S-9OK4QvcANrtvGu9nM?usp=sharing
-• EEG data experiment notebook: https://colab.research.google.com/drive/1JXk2TGh3RdKOL02GBv8yX0XwuqZUNRbu?usp=sharing
+## Links to Demos
+
+- [Canonical Retrieval Notebook](https://colab.research.google.com/drive/1mrqxg_F7dJNWkNi088yIs3XUYL8661Xv?usp=sharing)
+- [Open Retrieval Notebook](https://colab.research.google.com/drive/1atFGomyJCbrI2S-9OK4QvcANrtvGu9n?usp=sharing)
+- [EEG Data Experiment Notebook](https://colab.research.google.com/drive/1JXk2TGh3RdKOL02GBv8yX0XwuqZUNRbu?usp=sharing)
+
 
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
