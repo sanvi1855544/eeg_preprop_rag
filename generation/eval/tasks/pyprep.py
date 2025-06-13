@@ -67,9 +67,9 @@ class PyprepTask(Task):
         #prompt = "How do I run inference using a trained CBraMod model to generate predictions?"
 
         # Load corpus embeddings and metadata
-        corpus_embeddings = np.load("../retrieval/combined_embeddings_repoeval_all/corpus_embeddings.npy")
+        corpus_embeddings = np.load("retrieval/combined_embeddings_repoeval_all/corpus_embeddings.npy")
 
-        with open("../retrieval/combined_embeddings_repoeval_all/corpus_index.json", "r") as f:
+        with open("retrieval/combined_embeddings_repoeval_all/corpus_index.json", "r") as f:
             corpus_index = json.load(f)
 
         # Embed the new prompt
@@ -83,28 +83,14 @@ class PyprepTask(Task):
 
         top_docs = [corpus_index[i] for i in topk_indices]
         top_docs_text = "\n\n".join(doc["text"] for doc in top_docs)
-        # Optionally format a prompt, e.g. add the original question
-        prompt = f"""
-        You are a helpful programming assistant.
-
-        Using the documentation below, write the exact code needed to answer the question.
-
-        Documentation:
-        {top_docs_text}
-
-        Question:
-        {prompt}
-
-        Provide only the code as your answer, no explanations or extra text.
-        """
-
-        #print(prompt) #Could get rid of this
-        #quit()
         return prompt
 
 
     def get_reference(self, doc):
-        return doc["canonical_solution"]
+        ref = doc["canonical_solution"]
+        print("Reference:\n")
+        print(ref)
+        return ref
 
     def postprocess_generation(self, generation, idx=None, new_tokens_only=False):
         for stop in self.stop_words:
