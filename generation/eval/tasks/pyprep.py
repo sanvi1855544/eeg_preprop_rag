@@ -85,19 +85,65 @@ class PyprepTask(Task):
         top_docs_text = "\n\n".join(doc["text"] for doc in top_docs)
         # Optionally format a prompt, e.g. add the original question
         prompt = f"""
-        You are a helpful programming assistant.
 
-        Using the documentation below, write the exact code needed to answer the question.
+        You are an expert Python developer working with MNE-Python to simulate and preprocess EEG data.
 
-        Documentation:
+        Using the retrieved documentation below, write a complete Python script that meets the exact task requirements. Base your answer on both the provided documentation and your own knowledge, but **prefer the documentation when there is ambiguity**.
+        ---
         {top_docs_text}
+        ---
+        
+        ---
+        **Synthetic EEG Data Creation**
+        - Use `mne.create_info` and `mne.io.RawArray`.
+        - Generate 10 seconds of random EEG noise sampled at 1000 Hz.
+        - Simulate **5 EEG channels** labeled 'EEG 001' to 'EEG 005'.
+        
+        ---
+        **Preprocessing Pipeline**
+        1. **Band-pass filter** the raw data between **1 Hz and 40 Hz**, using `'firwin'` design.
+        2. **Set EEG average reference** using `raw.set_eeg_reference('average')`.
+        3. **ICA (Independent Component Analysis)**:
+           - Use `mne.preprocessing.ICA` with `n_components=5` and a fixed `random_state=97`.
+           - Fit ICA on the filtered, rereferenced data.
+           - **Exclude the first 2 ICA components** (`ica.exclude = [0, 1]`) and apply the ICA solution.
 
-        Question:
-        {prompt}
+        ---
+        **Constraints**
+        - Do NOT use `linear_regression_raw`.
+        - Do NOT save any data to disk.
+        - Do NOT include any plots or visualizations.
+        
+        ---
+        **Output Format**
+        Provide **only** the final Python code in a single code block (```python), with no explanations or extra text.
+        
+        ---
+        **Example Output Start**:
+        ```python
+        import numpy as np
+        import mne
+        
+        # Create synthetic data...
 
-        Provide only the code as your answer, no explanations or extra text.
+        # Step 1: Create synthetic data
+        info = mne.create_info(ch_names=5, sfreq=1000., ch_types='eeg')
+        data = np.random.randn(5, 10000)  # 5 channels, 10 sec at 1000 Hz
+        raw = mne.io.RawArray(data, info)
+        
+        # Step 2: Band-pass filter
+        raw.filter(1., 40., fir_design='firwin')
+        
+        # Step 3: Set average reference
+        raw.set_eeg_reference('average')
+        
+        # Step 4: ICA
+        ica = mne.preprocessing.ICA(n_components=5, random_state=97)
+        ica.fit(raw)
+        ica.exclude = [0, 1]  # exclude first 2 components
+        ica.apply(raw)
         """
-
+        
         #print(prompt) #Could get rid of this
         #quit()
         return prompt
