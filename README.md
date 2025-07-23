@@ -1,4 +1,4 @@
-# EEG-PreProp-RAG, inspireed by CodeRAG-Bench
+# EEG-PreProp-RAG, inspired by CodeRAG-Bench
 
 Our CS 159 Project does RAG on a corpus of strictly EEG repositories.
 This is a modification of the code repository for the project ["CodeRAG-Bench: Can Retrieval Augment Code Generation?"](https://code-rag-bench.github.io/).
